@@ -1,0 +1,21 @@
+@use "../base";
+
+// LOADING BAR
+.bar-container {
+	width: 100%;
+	background: base.$light;
+	overflow: hidden;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.bar {
+	height: 100%;
+	background: base.$green;
+	width: 0%;
+	transition: width 1s linear;
+}
+
+.percent {
+	font-size: 18px;
+}

@@ -1,0 +1,105 @@
+@use "../base";
+@use 'sass:math';
+@use 'sass:list';
+
+// DATA FEED
+a,
+span {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+span.time-stop-data-feed {
+    color: base.$green;
+    // color: #d9d9d9;
+}
+
+ul.text-feed {
+    background-color: base.$dark;
+    height: 100%;
+    height: 350px;
+    overflow: auto;
+    scroll-snap-type: both mandatory;
+    overscroll-behavior-x: contain;
+}
+
+li {
+    scroll-snap-align: center;
+    font-family: monospace;
+    counter-increment: items 1;
+}
+
+.glitch-wrapper {
+
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+    padding-right: 5rem;
+
+    $steps: 50;
+
+    .glitch {
+        font-family: "NeueHaasDisplay-Bold";
+        color: base.$green;
+
+        &,
+        * {
+            animation: glitch 30s infinite steps($steps);
+            display: inline-block;
+        }
+    }
+
+    @keyframes glitch {
+        @for $i from 1 to $steps {
+            $per: math.div(100%, $steps * $i);
+            $weight: (
+                100,
+                200,
+                300,
+                400,
+                500,
+                600,
+                700
+            );
+        $style: (
+            normal,
+            italic,
+            normal,
+            normal
+        );
+    $decor: (
+        none,
+        none,
+        lowercase,
+        underline,
+        none,
+        none,
+        none
+    );
+$trans: (
+    none,
+    none,
+    uppercase,
+    lowercase,
+    capitalize,
+    none,
+    none,
+    none,
+    none,
+    none,
+    none
+);
+
+$arrayW: math.random(7);
+$arrayS: math.random(4);
+$arrayD: math.random(7);
+$arrayT: math.random(11);
+
+#{$per} {
+    font-weight: list.nth($weight, $arrayW);
+    font-style: list.nth($style, $arrayS);
+    text-decoration: list.nth($decor, $arrayD);
+    text-transform: list.nth($trans, $arrayT);
+}
+}
+}
+}
