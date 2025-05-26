@@ -50,7 +50,7 @@ li {
 
     @keyframes glitch {
         @for $i from 1 to $steps {
-            $per: math.div(100%, $steps * $i);
+            $per: math.div(100%, $steps) * $i;
             $weight: (
                 100,
                 200,
