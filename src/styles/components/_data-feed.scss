@@ -2,7 +2,7 @@
 @use 'sass:math';
 @use 'sass:list';
 
-// DATA FEED
+// // DATA FEED
 a,
 span {
     font-size: 12px;
@@ -11,40 +11,58 @@ span {
 
 span.time-stop-data-feed {
     color: base.$green;
-    // color: #d9d9d9;
+    padding-right: 1rem;
+    display: inline-block;
+    height: 100%;
 }
 
-ul.text-feed {
+ul.text-feed__container {
     background-color: base.$dark;
-    height: 100%;
     height: 350px;
     overflow: auto;
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
-}
+    list-style: square;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-li {
-    scroll-snap-align: center;
-    font-family: monospace;
-    counter-increment: items 1;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .glitch-wrapper {
-
-    display: grid;
-    grid-template-columns: 0.15fr 1fr;
+    position: relative;
+    scroll-snap-align: center;
+    font-family: monospace;
+    counter-increment: items 1;
+    display: flex;
     padding-right: 5rem;
-
+    color: base.$green;
     $steps: 50;
+
+    &::before {
+        content: "";
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        margin-left: -23px;
+        width: 7px;
+        height: 7px;
+        background: base.$green;
+    }
 
     .glitch {
         font-family: "NeueHaasDisplay-Bold";
         color: base.$green;
+        display: inline;
 
         &,
         * {
             animation: glitch 30s infinite steps($steps);
-            display: inline-block;
         }
     }
 

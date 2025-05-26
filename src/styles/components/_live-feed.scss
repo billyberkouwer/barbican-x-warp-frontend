@@ -1,6 +1,15 @@
+@use "../base";
+
 .mux__container {
     display: block;
     position: relative;
+}
+
+#mux-player {
+    height: 100%;
+    --media-object-fit: cover;
+    --media-object-position: center;
+    --controls: none;
 }
 
 .mux-error__cover {
@@ -8,11 +17,58 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: red;
+    background-color: base.$dark;
     top: 0;
     left: 0;
 
     &.visible {
         display: block;
+    }
+}
+
+
+
+.mux-subdivide-screen__container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .grid-screen-area__container {
+        border-style: solid;
+        border-color: base.$light;
+        border-width: 0px;
+        display: flex;
+        align-items: flex-end;
+
+        &.right {
+            border-right-width: 1px;
+        }
+
+        &.left {
+            border-left-width: 1px;
+        }
+
+        &.top {
+            border-top-width: 1px;
+        }
+
+        &.bottom {
+            border-bottom-width: 1px;
+        }
+    }
+
+    .live-stream-label {
+        background-color: base.$pale-blue;
+        height: 1rem;
+        width: 100%;
+        color: base.$light;
+        font-family: base.$font;
+        line-height: 1.2rem;
     }
 }
