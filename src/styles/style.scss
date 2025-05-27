@@ -3,5 +3,5 @@
 @use "./bootstrap/bootstrap-grid.scss";
 
 .top-row__container {
-    height: calc(100vh - 350px);
+    height: max(67vh, calc(100vh - (1rem * 350 / 16)));
 }

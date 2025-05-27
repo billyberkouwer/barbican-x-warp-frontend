@@ -18,7 +18,7 @@ span.time-stop-data-feed {
 
 ul.text-feed__container {
     background-color: base.$dark;
-    height: 350px;
+    height: min(33vh, 1rem * 360 / 16);
     overflow: auto;
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
