@@ -11,8 +11,8 @@ export default async function initLiveFeed() {
     await fetch(SERVER_ORIGIN + "/sign-in", {
         method: "GET",
     }).then(async res => {
-        const json = await res.json();
-        console.log(json.token)
+        console.log(res)
+        const json = await res?.json();
         playerOne.setAttribute("playback-token", json.token);
     }).catch((err) => console.log(err))
 
