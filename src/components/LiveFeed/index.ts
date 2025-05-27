@@ -8,7 +8,7 @@ export default async function initLiveFeed() {
     const playerOne = document.querySelector("#mux-player") as HTMLVideoElement;
     const playerOneCover = document.querySelector("#mux-error__cover-1")
 
-    await fetch(process.env.VITE_SERVER_ORIGIN + "/sign-in", {
+    await fetch(SERVER_ORIGIN + "/sign-in", {
         method: "GET",
     }).then(async res => {
         const json = await res.json();
