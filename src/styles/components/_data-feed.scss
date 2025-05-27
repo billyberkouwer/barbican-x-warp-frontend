@@ -46,9 +46,8 @@ ul.text-feed__container {
     &::before {
         content: "";
         position: absolute;
-        transform: translateY(-50%);
-        top: 50%;
         left: 0;
+        top: 3px;
         margin-left: -23px;
         width: 7px;
         height: 7px;

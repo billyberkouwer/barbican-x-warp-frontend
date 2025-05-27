@@ -9,7 +9,6 @@ export default function createDataFeed() {
     let randomDelay = 0;
 
     function recursiveDataLoop() {
-        console.log("timeout created")
         setTimeout(() => {
             initializeLine(data[count])
             if (count < data.length - 1) {
@@ -20,7 +19,6 @@ export default function createDataFeed() {
             randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
             recursiveDataLoop();
         }, randomDelay);
-        console.log(randomDelay)
     }
 
     recursiveDataLoop();
