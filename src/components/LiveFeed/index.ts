@@ -2,10 +2,8 @@ import { io } from "socket.io-client";
 import { DEFAULT_PLAYBACK_ID, SERVER_ORIGIN } from "../../variables/constants";
 
 export default async function initLiveFeed() {
-    const socket = io(SERVER_ORIGIN);
+    const socket = io(SERVER_ORIGIN, { extraHeaders: { "ngrok-skip-browser-warning": "69420" } });
     let playbackId = DEFAULT_PLAYBACK_ID;
-
-    console.log(socket)
 
     const playerOne = document.querySelector("#mux-player") as HTMLVideoElement;
     const playerOneCover = document.querySelector("#mux-error__cover-1")
