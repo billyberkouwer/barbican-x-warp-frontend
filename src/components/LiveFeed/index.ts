@@ -5,6 +5,8 @@ export default async function initLiveFeed() {
     const socket = io(SERVER_ORIGIN);
     let playbackId = DEFAULT_PLAYBACK_ID;
 
+    console.log(socket)
+
     const playerOne = document.querySelector("#mux-player") as HTMLVideoElement;
     const playerOneCover = document.querySelector("#mux-error__cover-1")
 
@@ -28,6 +30,9 @@ export default async function initLiveFeed() {
     }
 
     playerOne.addEventListener("canplay", () => playerOne?.play())
+
+    socket.on("connect", () => console.log("connected"))
+    socket.on("connection", () => console.log("connected"))
 
     socket.on("id", (e) => {
         playerOne.setAttribute("metadata-viewer-user-id", e)
