@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.scss" class="stylesheet" />
     <title>Barbican X Warp</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <div class="row top-row__container">
           <div class="mux__container col-6 p-0">
             <mux-player muted id="mux-player"></mux-player>
-            <div class="mux-error__cover" id="mux-error__cover-1"></div>
+            <div class="mux-error__cover visible" id="mux-error__cover-1"></div>
             <div class="mux-subdivide-screen__container">
               <div class="grid-screen-area__container right">
                 <div class="live-stream-label">Mechcam</div>
@@ -28,13 +29,38 @@
               </div>
             </div>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6 p-0">
+            <div class="top-right__container">
+              <div class="inner__container">
+                <div class="map__container"></div>
+                <div class="banner__container">
+                  <div class="top__banner">
+                    <div class="green-section__container">
+                      <span>Prologue</span>
+                      <span>Conservatory</span>
+                    </div>
+                    <div class="event-time-stamps__wrapper">
+                      <div class="event-time-stamps__container">
+                        <span>17:30<br />[From]</span>
+                        <span>13:00<br />[Until]</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="large-text__container">
+                    <h2 class="large-text">Mark <br />Leckey</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
+        <div class="row bottom-row__container">
           <div class="col-6 p-0">
             <ul class="text-feed__container"></ul>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6 p-0">
+            <div class="set-times__container"></div>
+          </div>
         </div>
       </div>
     </div>
