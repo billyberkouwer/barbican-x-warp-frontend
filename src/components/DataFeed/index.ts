@@ -1,12 +1,13 @@
 import { DATA_FEED_NEW_LINE_SPEED, DATA_FEED_TYPE_SPEED } from "../../variables/constants";
 import data from "./data.json";
 
-const dataFeed = document.querySelector('.text-feed__container') as HTMLUListElement;
+const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
+const container = document.querySelector('.text-feed__container') as HTMLUListElement;
 let currentTimestamp;
 
 export default function createDataFeed() {
     let count = 0;
-    let randomDelay = 0;
+    let randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
 
     function recursiveDataLoop() {
         setTimeout(() => {
@@ -26,22 +27,50 @@ export default function createDataFeed() {
 
 function initializeLine(dataEl: any) {
     currentTimestamp = getCurrentTime();
-    const li = document.createElement('li');
-    li.classList.add('glitch-wrapper');
-    const timeSpan = document.createElement('span');
+    const tr = document.createElement('tr');
+    tr.classList.add('glitch-wrapper');
+
+    const squareContainer = document.createElement('td');
+    const square = document.createElement('div');
+    square.classList.add('terminal-square');
+    squareContainer.appendChild(square);
+    tr.appendChild(squareContainer)
+
+    const timeSpan = document.createElement('td');
     timeSpan.classList.add('time-stop-data-feed');
     timeSpan.textContent = currentTimestamp;
-    li.appendChild(timeSpan);
+    tr.appendChild(timeSpan);
 
-    const title = document.createElement('a');
-    title.classList.add('glitch');
-    li.appendChild(title);
+    const colon = document.createElement('td');
+    colon.textContent = ":";
+    tr.appendChild(colon);
 
-    dataFeed.appendChild(li);
-    dataFeed.scrollTop = dataFeed.scrollHeight;
+    const locationEl = document.createElement("td");
+    locationEl.classList.add("terminal-location")
+    locationEl.innerHTML = dataEl.location
+    tr.append(locationEl)
 
-    typingEffect(title, dataEl.title, 100);
+    const text = document.createElement('td');
+    text.classList.add('glitch', "text-content");
+    tr.appendChild(text);
+
+    dataFeed.appendChild(tr);
+    typingEffect(text, dataEl.title, DATA_FEED_TYPE_SPEED);
 }
+
+const config = { childList: true };
+
+const callback = function (mutationsList: MutationRecord[]) {
+    console.log("firing")
+    for (let mutation of mutationsList) {
+        if (mutation.type === "childList") {
+            container.scrollTo(0, container.scrollHeight);
+        }
+    }
+};
+
+const observer = new MutationObserver(callback);
+observer.observe(dataFeed, config);
 
 // TYPE OUT THE JSON DATA BY ADDING CHAR BY CHAR 
 function typingEffect(element: HTMLElement, text: string, speed = DATA_FEED_TYPE_SPEED) {

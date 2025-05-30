@@ -1,0 +1,101 @@
+@use "variables";
+@use 'sass:math';
+@use 'sass:list';
+
+@mixin glitch-in {
+    @keyframes glitch-in {
+        @for $i from 1 to 20 {
+            $per: math.div(100%, 20) * $i;
+            $visibility: (
+                visible,
+                hidden
+            );
+        $skew: (
+            scaleY(1000%),
+            scaleY(0%),
+            scaleY(0%),
+            scaleY(600%),
+            scaleY(2000%),
+            scaleY(100%),
+            scaleY(5000%),
+        );
+    $blur: (
+        blur(3px),
+        blur(0px),
+    );
+$opacity: (
+    50%,
+    100%,
+);
+$arrayO: math.random(2);
+$arrayB: math.random(2);
+$arrayV: math.random(2);
+$arrayS: math.random(7);
+
+#{$per} {
+    visibility: list.nth($visibility, $arrayV);
+    filter: list.nth($blur, $arrayB);
+    opacity: list.nth($opacity, $arrayO);
+    // transform: list.nth($skew, $arrayS);
+}
+}
+}
+}
+
+
+
+@keyframes glitch {
+
+    @for $i from 1 to variables.$steps {
+        $per: math.div(100%, variables.$steps) * $i;
+        $weight: (
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700
+        );
+    $style: (
+        normal,
+        italic,
+        normal,
+        normal
+    );
+$decor: (
+    none,
+    none,
+    lowercase,
+    underline,
+    none,
+    none,
+    none
+);
+$trans: (
+    none,
+    none,
+    uppercase,
+    lowercase,
+    capitalize,
+    none,
+    none,
+    none,
+    none,
+    none,
+    none
+);
+
+$arrayW: math.random(7);
+$arrayS: math.random(4);
+$arrayD: math.random(7);
+$arrayT: math.random(11);
+
+#{$per} {
+    font-weight: list.nth($weight, $arrayW);
+    font-style: list.nth($style, $arrayS);
+    text-decoration: list.nth($decor, $arrayD);
+    text-transform: list.nth($trans, $arrayT);
+}
+}
+}

@@ -1,34 +1,46 @@
 @use "../base";
-@use 'sass:math';
-@use 'sass:list';
 
-// // DATA FEED
-a,
-span {
-    font-size: 12px;
-    line-height: 12px;
-}
 
-span.time-stop-data-feed {
-    color: base.$green;
-    padding-right: 1rem;
-    display: inline-block;
-}
-
-ul.text-feed__container {
+table {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    height: 33vh;
     background-color: base.$dark;
-    height: base.$bottom-row-height;
-    overflow: auto;
+    line-height: 1rem;
+    font-size: 1rem;
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
     list-style: square;
-    margin: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-right: 5rem;
+    border-spacing: 1rem 0.2rem;
+}
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+td {
+    vertical-align: top;
+    width: min-content;
+    position: relative;
+}
+
+.time-stop-data-feed {
+    color: base.$green;
+    display: inline-block;
+}
+
+.terminal-square {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: base.$green;
+}
+
+.terminal-location {
+    text-transform: uppercase;
+    margin: 20px;
 }
 
 .glitch-wrapper {
@@ -36,85 +48,15 @@ ul.text-feed__container {
     scroll-snap-align: center;
     font-family: monospace;
     counter-increment: items 1;
-    display: flex;
-    padding-right: 5rem;
     color: base.$green;
-    $steps: 50;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 3px;
-        margin-left: -23px;
-        width: 7px;
-        height: 7px;
-        background: base.$green;
-    }
 
     .glitch {
         font-family: "NeueHaasDisplay-Bold";
         color: base.$green;
-        display: inline;
 
         &,
         * {
-            animation: glitch 30s infinite steps($steps);
+            animation: glitch 30s infinite steps(base.$steps);
         }
     }
-
-    @keyframes glitch {
-        @for $i from 1 to $steps {
-            $per: math.div(100%, $steps) * $i;
-            $weight: (
-                100,
-                200,
-                300,
-                400,
-                500,
-                600,
-                700
-            );
-        $style: (
-            normal,
-            italic,
-            normal,
-            normal
-        );
-    $decor: (
-        none,
-        none,
-        lowercase,
-        underline,
-        none,
-        none,
-        none
-    );
-$trans: (
-    none,
-    none,
-    uppercase,
-    lowercase,
-    capitalize,
-    none,
-    none,
-    none,
-    none,
-    none,
-    none
-);
-
-$arrayW: math.random(7);
-$arrayS: math.random(4);
-$arrayD: math.random(7);
-$arrayT: math.random(11);
-
-#{$per} {
-    font-weight: list.nth($weight, $arrayW);
-    font-style: list.nth($style, $arrayS);
-    text-decoration: list.nth($decor, $arrayD);
-    text-transform: list.nth($trans, $arrayT);
-}
-}
-}
 }
