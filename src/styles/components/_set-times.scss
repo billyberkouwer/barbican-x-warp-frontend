@@ -4,6 +4,13 @@
     height: 100%;
     background-color: base.$dark;
     position: relative;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: -0.025rem;
+
+    .margin {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .terminal-right-inner__container {
@@ -21,12 +28,19 @@
     color: base.$dark;
 }
 
-.weather, .location {
+.weather,
+.location {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: flex-end;
     justify-self: flex-end;
     width: 100%;
+}
+
+.location {
+    div {
+        height: fit-content;
+    }
 }
 
 #current-date,
@@ -43,4 +57,36 @@
 
 address {
     font-style: normal;
+}
+
+.acts-table {
+    color: base.$green;
+    width: 100%;
+    border-spacing: 0rem 0.5rem;
+
+    .nested-table {
+        border-spacing: 0.5rem 0.1rem;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    tbody {
+        width: 100%;
+    }
+
+    .event-name {
+        width: 40%;
+    }
+
+    .loading-bar__wrapper {
+        width: 50%;
+        position: relative;
+
+        div {
+            height: 1rem;
+            // position: relative;
+        }
+    }
 }

@@ -1,14 +1,14 @@
 @use "../base";
 
-
-table {
+.data-feed__table {
     display: block;
     position: relative;
     overflow-y: auto;
     height: 33vh;
     background-color: base.$dark;
-    line-height: 1rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: -0.025rem;
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
     list-style: square;
@@ -16,31 +16,32 @@ table {
     scrollbar-width: none;
     padding-right: 5rem;
     border-spacing: 1rem 0.2rem;
-}
 
-td {
-    vertical-align: top;
-    width: min-content;
-    position: relative;
-}
 
-.time-stop-data-feed {
-    color: base.$green;
-    display: inline-block;
-}
+    td {
+        vertical-align: top;
+        width: min-content;
+        position: relative;
+    }
 
-.terminal-square {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background: base.$green;
-}
+    .time-stop-data-feed {
+        color: base.$green;
+        display: inline-block;
+    }
 
-.terminal-location {
-    text-transform: uppercase;
-    margin: 20px;
+    .terminal-square {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        background: base.$green;
+    }
+
+    .terminal-location {
+        text-transform: uppercase;
+        margin: 20px;
+    }
 }
 
 .glitch-wrapper {

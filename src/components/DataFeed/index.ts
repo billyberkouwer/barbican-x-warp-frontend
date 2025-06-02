@@ -2,7 +2,7 @@ import { DATA_FEED_NEW_LINE_SPEED, DATA_FEED_TYPE_SPEED } from "../../variables/
 import data from "./data.json";
 
 const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
-const container = document.querySelector('.text-feed__container') as HTMLUListElement;
+const container = document.querySelector('.data-feed__table') as HTMLUListElement;
 let currentTimestamp;
 
 export default function createDataFeed() {
