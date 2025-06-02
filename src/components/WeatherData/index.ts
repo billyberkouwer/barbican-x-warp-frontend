@@ -1,6 +1,3 @@
-
-let long;
-let lat;
 let temperature = document.getElementById("temp") as HTMLElement;
 let wind = document.getElementById("wind") as HTMLElement;
 let summary = document.getElementById("summary") as HTMLElement;
