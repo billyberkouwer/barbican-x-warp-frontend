@@ -77,22 +77,34 @@
     @include base.glitch-in;
     animation: glitch-in 0.35s 2;
     transform-origin: top left;
+}
 
-    .green-section__container {
-        position: relative;
-        grid-column: 1 / 9;
-        background-color: base.$green;
+.green-banner__container {
+    position: relative;
+    display: flex;
+    background-color: base.$green;
+    filter: blur(0.5px);
+    padding-right: 5rem;
+    width: fit-content;
+
+    .live-now {
+        font-size: 2rem;
+        line-height: 1.75rem;
+    }
+
+    span {
+        line-height: 1rem;
+    }
+
+    .grey-text {
+        margin-top: 0.3rem;
+        font-size: 1.75rem;
+        line-height: 1.25rem;
         color: base.$light;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        filter: blur(0.5px);
+    }
 
-        span {
-            margin-top: 0.3rem;
-            padding-left: 1rem;
-            font-size: 1.75rem;
-            line-height: 1.25rem;
-        }
+    .grey-text__container {
+        padding: 0 2rem;
     }
 }
 
@@ -151,24 +163,49 @@
     }
 }
 
-.large-text-inverted__container {
+
+.live-now__container {
+    position: absolute;
+    bottom: 0;
+}
+
+.current-act__container {
+    display: flex;
+    margin-right: 3rem;
+
+    .performer-description__container {
+        position: absolute;
+        width: 70%;
+        bottom: 0;
+        line-height: 0.9rem;
+    }
+}
+
+.text-inverted__container {
     background-color: base.$blue;
     width: fit-content;
-    padding-right: 3rem;
     position: relative;
     filter: blur(0.5px);
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-
+    height: fit-content;
+    font-family: base.$font;
+    color: base.$light;
 
     .large-text-inverted {
         font-size: 4rem;
+        line-height: 3.25rem;
         letter-spacing: -0.25rem;
-        font-family: base.$font;
-        color: base.$light;
         margin-top: 0.4rem;
         margin-bottom: -0.4rem;
+        max-width: 20rem;
+    }
+
+    p {
+        font-size: 1.75rem;
+        line-height: 1.45rem;
+        letter-spacing: -0.1rem;
     }
 }
 

@@ -99,17 +99,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="color-squares__container left">
-                  <div class="square green"></div>
-                  <div class="square blue"></div>
-                  <div class="square dark"></div>
-                  <div class="square pale-blue"></div>
-                </div>
-                <div class="color-squares__container right">
-                  <div class="square green"></div>
-                  <div class="square blue"></div>
-                  <div class="square dark"></div>
-                  <div class="square pale-blue"></div>
+                <div>
+                  <div class="color-squares__container left">
+                    <div class="square green"></div>
+                    <div class="square blue"></div>
+                    <div class="square dark"></div>
+                    <div class="square pale-blue"></div>
+                  </div>
+                  <div class="color-squares__container right">
+                    <div class="square green"></div>
+                    <div class="square blue"></div>
+                    <div class="square dark"></div>
+                    <div class="square pale-blue"></div>
+                  </div>
                 </div>
                 <div>
                   <div class="cross absolute" style="top: 65%">
@@ -123,6 +125,44 @@
                   </div>
                 </div>
                 <div class="map__container"></div>
+                <div class="live-now__container">
+                  <div>
+                    <div class="green-banner__container">
+                      <span class="live-now">Live Now</span>
+                      <div class="grey-text__container">
+                        <span class="grey-text">Confrontation (Act II): </span>
+                      </div>
+                      <span>From<br />[18:00]</span>
+                      <div class="grey-text__container">
+                        <span class="grey-text">Main Stage</span>
+                      </div>
+                      <span>Until<br />[20:20]</span>
+                    </div>
+                  </div>
+                  <div class="current-act__container">
+                    <div class="text-inverted__container">
+                      <h2 class="large-text-inverted">Slauson Malone 1</h2>
+                    </div>
+                    <div class="text-inverted__container">
+                      <div class="act-description__container">
+                        <p class="act-description">
+                          Live at Barbican, Marsalis plays guitar, vocal and
+                          original programming, alongside cellist Nicky
+                          Wetherell. The duo share a rare, unspoken shorthand -
+                          layering dissonant sounds on top of one another to
+                          create a dense and dizzying suite of sonic collages.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="performer-description__container">
+                      <p class="performer-description">
+                        Aka Jasper Marsalis - an artist and musician who
+                        explores the intersections of popular music and
+                        avant-garde performance
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -131,12 +171,12 @@
           <div class="col-6 p-0">
             <table class="text-feed__container">
               <tbody class="text-feed__body">
-
+                <!-- text feed injected here -->
               </tbody>
             </table>
           </div>
           <div class="col-6 p-0">
-            <div class="set-times__container">
+            <div class="terminal-right__container">
               <div>
                 <div class="cross absolute" style="top: 0%">
                   <img src="./src/components/SVGs/cross-ccff00.svg" />
@@ -147,7 +187,7 @@
                 <div class="cross absolute" style="top: 60%">
                   <img src="./src/components/SVGs/cross-ccff00.svg" />
                 </div>
-                <div class="cross absolute" style="bottom: 0%;">
+                <div class="cross absolute" style="bottom: 0%">
                   <img src="./src/components/SVGs/cross-ccff00.svg" />
                 </div>
                 <div class="cross absolute" style="top: 60%; right: 0">
@@ -155,6 +195,49 @@
                 </div>
                 <div class="cross absolute" style="bottom: 0%; right: 0">
                   <img src="./src/components/SVGs/cross-ccff00.svg" />
+                </div>
+              </div>
+              <div class="terminal-right-inner__container">
+                <div class="geo-data__container container">
+                  <div class="row green-bg">
+                    <div class="date-time__wrapper col-3 px-0">
+                      <span>Date&Time:</span>
+                    </div>
+                    <div class="date-time__wrapper col-5 px-0">
+                      <span>Location</span>
+                    </div>
+                    <div class="date-time__wrapper col-4 px-0">
+                      <span>Weather</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 date-time px-0">
+                      <div>
+                        <span id="current-date"></span>
+                      </div>
+                      <div>
+                        <span>Time: </span><span id="current-time"></span>
+                      </div>
+                    </div>
+                    <div class="col-5 px-0 d-flex">
+                      <div class="location">
+                        <address class="address">
+                          Barbican Center<br />
+                          Silk Street, London, EC2Y 8DS
+                        </address>
+                        <div class="coords">
+                          <div>Latitude: 51.51939</div>
+                          <div>Longitude: -0.09403</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-0 d-flex">
+                      <div class="weather">
+                        <span id="summary"></span><span id="wind"></span
+                        ><span id="temp"></span><span id="humidity"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

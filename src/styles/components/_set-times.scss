@@ -1,7 +1,46 @@
 @use "../base";
 
-.set-times__container {
+.terminal-right__container {
     height: 100%;
     background-color: base.$dark;
     position: relative;
+}
+
+.terminal-right-inner__container {
+    padding: 2rem;
+}
+
+.geo-data__container {
+    line-height: 1rem;
+    color: base.$green;
+    letter-spacing: -0.05rem;
+}
+
+.green-bg {
+    background-color: base.$green;
+    color: base.$dark;
+}
+
+.weather, .location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 100%;
+}
+
+#current-date,
+#current-time {
+    vertical-align: top;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+}
+
+.date-time {
+    display: grid;
+    grid-column: 1fr;
+}
+
+address {
+    font-style: normal;
 }
