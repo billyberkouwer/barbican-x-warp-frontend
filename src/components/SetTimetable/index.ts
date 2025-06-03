@@ -51,13 +51,13 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
                 <table class="nested-table">
                     <tbody>
                             ${location.includes("act") ? (//html
-                                `
+            `
                                     <div class= "act__wrapper uppercase" id="${json[location][0]?.act}-block" >
-                                        ${json[location][0]?.act_full}
+                                        ${location === "act_1" ? "I&nbsp;&nbsp; SETUP" : location === "act_2" ? "II &nbsp;&nbsp;CONFRONTATION" : location === "act_3" ? "III &nbsp;&nbsp;RESOLUTION" : ""}
                                     </div>
                                 `
-                                ) : ""
-                            }
+        ) : ""
+        }
                         ${elements.join("")}
                     </tbody>
                 </table>
