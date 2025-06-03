@@ -1,10 +1,17 @@
 @use "../base";
 
+table {
+    border-spacing: 0;
+}
+
+td {
+    padding: 0;
+}
+
 .terminal-right__wrapper {
     overflow-y: auto;
     height: inherit;
     background-color: base.$dark;
-
 }
 
 .date-time__wrapper {
@@ -20,18 +27,22 @@
     width: 100%;
 
     .margin {
-        margin-bottom: 0.25rem;
+        margin-bottom: 1rem;
     }
+}
 
-    .act__wrapper {
-        position: relative;
+.act__wrapper {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    border: 1px solid base.$green;
 
-        .act-inner__wrapper {
-            position: absolute;
+    .act-inner__wrapper {
+        position: absolute;
+        width: 100%;
 
-            span {
-                word-break: break-all;
-            }
+        span {
+            word-break: break-all;
         }
     }
 }
@@ -98,15 +109,22 @@ address {
     gap: 1%;
 }
 
-#acts-table-body {
-    .location-table__track {
-        display: grid;
-        grid-template-columns: 100px 10fr;
+.location-table__track {
+    display: grid;
+    grid-template-columns: 100px 10fr;
+
+    td {
+        position: relative;
     }
 }
 
 .event-name {
     width: 100%;
+}
+
+#acts-table-body {
+    display: grid;
+    gap: 0.5rem;
 }
 
 .acts-table {
@@ -115,7 +133,8 @@ address {
 
     tbody {
         width: 100%;
-
+        display: grid;
+        gap: 0.15rem;
     }
 
     .loading-bar__wrapper {

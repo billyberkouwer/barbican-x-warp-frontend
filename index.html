@@ -132,40 +132,57 @@
                 <div class="map__container"></div>
 
                 <!-- LIVE NOW -->
-                <div class="live-now__container">
+                <div class="live-now__container" id="live-now-container">
                   <div>
                     <div class="green-banner__container">
                       <span class="live-now">Live Now</span>
                       <div class="grey-text__container">
-                        <span class="grey-text">Confrontation (Act II): </span>
+                        <span class="grey-text" id="current-live-act">
+                          <!-- ACT -->
+                        </span>
                       </div>
-                      <span>From<br />[18:00]</span>
+                      <span
+                        >From<br />[<span id="current-live-act-start-time">
+                          <!-- START TIME --> </span
+                        >]</span
+                      >
                       <div class="grey-text__container">
-                        <span class="grey-text">Main Stage</span>
+                        <span class="grey-text" id="current-live-act-location"
+                          >Main Stage</span
+                        >
                       </div>
-                      <span>Until<br />[20:20]</span>
+                      <span
+                        >Until<br />[<span id="current-live-act-end-time">
+                          <!-- END TIME --> </span
+                        >]</span
+                      >
                     </div>
                   </div>
                   <div class="current-act__container">
                     <div class="text-inverted__container">
-                      <h2 class="large-text-inverted">Slauson Malone 1</h2>
+                      <h2
+                        class="large-text-inverted"
+                        id="current-live-act-name"
+                      >
+                        <!-- PERFORMER NAME -->
+                      </h2>
                     </div>
                     <div class="text-inverted__container">
                       <div class="act-description__container">
-                        <p class="act-description">
-                          Live at Barbican, Marsalis plays guitar, vocal and
-                          original programming, alongside cellist Nicky
-                          Wetherell. The duo share a rare, unspoken shorthand -
-                          layering dissonant sounds on top of one another to
-                          create a dense and dizzying suite of sonic collages.
+                        <p
+                          class="act-description"
+                          id="current-live-act-description"
+                        >
+                          <!-- ACT DESCRIPTION -->
                         </p>
                       </div>
                     </div>
-                    <div class="performer-description__container">
+                    <div
+                      class="performer-description__container"
+                      id="current-live-performer-description"
+                    >
                       <p class="performer-description">
-                        Aka Jasper Marsalis - an artist and musician who
-                        explores the intersections of popular music and
-                        avant-garde performance
+                        <!-- PERFORMER BIO -->
                       </p>
                     </div>
                   </div>
@@ -252,9 +269,7 @@
                 <!-- SET TIMES -->
                 <div class="acts-table__container">
                   <table class="acts-table">
-                    <tbody id="acts-table-body">
-                      
-                    </tbody>
+                    <tbody id="acts-table-body"></tbody>
                   </table>
                 </div>
               </div>

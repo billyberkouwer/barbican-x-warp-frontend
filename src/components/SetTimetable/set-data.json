@@ -30,79 +30,95 @@
   "act_1": [
     {
       "performer": "Freeka Tet",
-      "act": "Setup (Act I)",
+      "act": "act_1",
+      "act_full": "Setup (Act I)",
       "location": "HALL",
-      "startTime": "17:15:00",
+      "startTime": "16:15:00",
       "endTime": "17:25:00",
-      "artistBio": null,
-      "image": ""
+      "artistBio": "Artist bio goes here",
+      "image": "",
+      "performanceDescription": "Performance description goes here"
     },
     {
       "performer": "Seefeel",
-      "act": "Setup (Act I)",
+      "act_full": "Setup (Act I)",
+      "act": "act_1",
       "location": "HALL",
       "startTime": "17:25:00",
       "endTime": "18:00:00",
       "artistBio": null,
-      "image": "./img/seefeel.svg"
+      "image": "./img/seefeel.svg",
+      "performanceDescription": null
     },
     {
       "performer": "Clarissa Connelly",
-      "act": "Setup (Act I)",
+      "act": "act_1",
+      "act_full": "Setup (Act I)",
       "location": "HALL",
       "startTime": "17:25:00",
       "endTime": "18:00:00",
       "artistBio": null,
-      "image": "./img/clarissa-connelly.svg"
+      "image": "./img/clarissa-connelly.svg",
+      "performanceDescription": null
     }
   ],
   "act_2": [
     {
       "performer": "Mark Lecky",
-      "act": "Confrontation (Act II)",
+      "act": "act_2",
+      "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "19:15:00",
-      "endTime": "19:40:00",
+      "startTime": "18:14:00",
+      "endTime": "18:16:00",
       "artistBio": null,
-      "image": "./img/mark-leckey.svg"
+      "image": "./img/mark-leckey.svg",
+      "performanceDescription": null
     },
     {
       "performer": "Slauson Malonel",
-      "act": "Confrontation (Act II)",
+      "act": "act_2",
+      "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "19:45:00",
-      "endTime": "20:20:00",
+      "startTime": "18:27:20",
+      "endTime": "18:27:30",
       "artistBio": null,
-      "image": "./img/slauson-malone-1.svg"
+      "image": "./img/slauson-malone-1.svg",
+      "performanceDescription": null
     },
     {
       "performer": "Battles",
-      "act": "Confrontation (Act II)",
+      "act": "act_2",
+      "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "20:20:00",
-      "endTime": "20:45:00",
+      "startTime": "18:27:45",
+      "endTime": "18:27:50",
       "artistBio": null,
-      "image": "./img/battles.svg"
+      "image": "./img/battles.svg",
+      "performanceDescription": null
     }
   ],
   "act_3": [
     {
       "performer": "Bullyache",
-      "act": "Resolution (Act III)",
+      "act": "act_3",
+      "act_full": "Resolution (Act III)",
       "location": "HALL",
       "startTime": "21:15:00",
       "endTime": "21:30:00",
       "artistBio": null,
-      "image": "./img/bullyache.svg"
+      "image": "./img/bullyache.svg",
+      "performanceDescription": null
     },
     {
       "performer": "Evian Christ",
-      "act": "Resolution (Act III)",
+      "act": "act_3",
+      "act_full": "Resolution (Act III)",
       "location": "HALL",
       "startTime": "21:30:00",
       "endTime": "22:15:00",
       "artistBio": null,
-      "image": "./img/evian-christ.svg"
+      "image": "./img/evian-christ.svg",
+      "performanceDescription": null
     }
   ]
 }

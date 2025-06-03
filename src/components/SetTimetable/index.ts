@@ -1,3 +1,4 @@
+import { EVENT_DATE } from "@/variables/constants";
 import { updateBar } from "../ProgressBar";
 import json from "./set-data.json";
 
@@ -6,8 +7,8 @@ const progressBarsData: { id: string, startTime: Date, endTime: Date }[] = [];
 function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_3" | "cinema", hasLocation: boolean = true) {
     const events = json[location];
     const elements = events.map((event, i) => {
-        const start = new Date("2025-06-03T" + event.startTime);
-        const end = new Date("2025-06-03T" + event.endTime);
+        const start = new Date(EVENT_DATE + event.startTime);
+        const end = new Date(EVENT_DATE + event.endTime);
         const startTimeFormatted = start.getHours() + ":" + (start.getMinutes() === 0 ? "00" : start.getMinutes());
         const endTimeFormatted = end.getHours() + ":" + (end.getMinutes() === 0 ? "00" : end.getMinutes());
         const loadingBarId = `${location}-${i}-bar`;
@@ -15,14 +16,8 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
 
         const eventName = event.act ? (//html
             `
-            <div class="performer-with-act">
-                <div class="uppercase act__wrapper">
-                    <div class="act-inner__wrapper">
-                    <span>
-                        ${i === 0 ? event.act : ""}
-                    </span>
-                    </div>
-                </div>
+            <div class="performer-with-act ${location}-type">
+                <div></div>
                 <div class="green-bg">
                     ${event.performer}
                 </div>
@@ -55,12 +50,19 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
             <td colspan="100">
                 <table class="nested-table">
                     <tbody>
+                            ${location.includes("act") ? (//html
+                                `
+                                    <div class= "act__wrapper uppercase" id="${json[location][0]?.act}-block" >
+                                        ${json[location][0]?.act_full}
+                                    </div>
+                                `
+                                ) : ""
+                            }
                         ${elements.join("")}
                     </tbody>
                 </table>
             </td>
-        </tr>
-    `);
+        </tr>`);
 }
 
 

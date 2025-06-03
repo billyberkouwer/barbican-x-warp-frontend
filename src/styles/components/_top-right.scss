@@ -170,6 +170,42 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    visibility: hidden;
+
+    &.visible {
+        visibility: visible;
+
+        #current-live-act-name {
+            animation: glitch-in 0.45s 2;
+        }
+
+        #current-live-act-description {
+            animation: glitch-in 0.37s 2;
+        }
+
+        #current-live-performer-description {
+            animation: glitch-in 0.23s 2;
+        }
+
+        #current-live-act-end-time {
+            animation: glitch-in 0.29s 2;
+        }
+
+        #current-live-act-start-time {
+            animation: glitch-in 0.30s 2;
+        }
+
+        #current-live-act {
+            animation: glitch-in 0.35s 2;
+        }
+
+        .text-inverted__container {
+            animation: glitch-in 0.36s 2;
+        }
+        .green-banner__container {
+            animation: glitch-in 0.28s 2;
+        }
+    }
 }
 
 .current-act__container {
