@@ -1,6 +1,3 @@
-const startTime = new Date('2025-05-22T09:00:00');
-const endTime = new Date('2025-05-22T18:00:00');
-
 export function updateBar(id: string, startTime: Date, endTime: Date) {
     const loadingBar = document.getElementById(id) as HTMLElement;
     const loadingBarText = document.getElementById(id + "-text") as HTMLElement;
@@ -12,5 +9,5 @@ export function updateBar(id: string, startTime: Date, endTime: Date) {
     percentage = Math.max(0, Math.min(100, percentage));
 
     loadingBar.style.width = percentage + '%';
-    loadingBarText.textContent = percentage.toFixed(2) + '%';
+    loadingBarText.textContent = percentage.toFixed(1) + '%';
 }
