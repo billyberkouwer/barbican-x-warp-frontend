@@ -29,7 +29,7 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
 
         return (//html
             `    
-            <tr>
+            <tr class="event-track">
                 <td class="event-name ${event.act ? "" : "green-bg"}">
                     ${eventName}
                 </td>
@@ -47,7 +47,7 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
 
     return (//html
         `
-        <tr>
+        <tr class="location-table__track">
             <td colspan="1" class="uppercase">${hasLocation ? location.includes("act") ? "Hall" : location : ""}</td>
             <td colspan="100">
                 <table class="nested-table">
@@ -61,11 +61,12 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
 }
 
 const conservatory = generateTableEntry("conservatory");
+const cinema = generateTableEntry("cinema");
 const act_1 = generateTableEntry("act_1")
 const act_2 = generateTableEntry("act_2", false)
 const act_3 = generateTableEntry("act_3", false)
 export function initSetTimesTable() {
-    if (table)
-        table.innerHTML += conservatory;
-    table.innerHTML += act_1 + act_2 + act_3;
+    if (table) {
+        table.innerHTML += conservatory + cinema + act_1 + act_2 + act_3;
+    }
 }

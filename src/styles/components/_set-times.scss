@@ -1,12 +1,15 @@
 @use "../base";
 
 .terminal-right__wrapper {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: inherit;
     background-color: base.$dark;
+
 }
 
-
+.date-time__wrapper {
+    line-height: 0.75rem;
+}
 
 .terminal-right__container {
     height: 100%;
@@ -14,9 +17,10 @@
     font-size: 0.75rem;
     line-height: 0.75rem;
     letter-spacing: -0.025rem;
+    width: 100%;
 
     .margin {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
     }
 
     .act__wrapper {
@@ -33,7 +37,8 @@
 }
 
 .terminal-right-inner__container {
-    padding: 2rem;
+    padding: 1.5rem;
+    width: 100%;
 }
 
 .geo-data__container {
@@ -54,6 +59,8 @@
     align-self: flex-end;
     justify-self: flex-end;
     width: 100%;
+    font-size: 0.75rem;
+    line-height: 0.575rem;
 }
 
 .location {
@@ -65,59 +72,63 @@
 #current-date,
 #current-time {
     vertical-align: top;
-    font-size: 1.5rem;
-    line-height: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1rem;
 }
 
 .date-time {
     display: grid;
     grid-column: 1fr;
+    line-height: 0.5rem;
 }
 
 address {
     font-style: normal;
 }
 
+.nested-table {
+    width: 100%;
+}
+
+.event-track {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 2% 5% 2% 5% 34% 7%;
+    // justify-items: center;
+    gap: 1%;
+}
+
+#acts-table-body {
+    .location-table__track {
+        display: grid;
+        grid-template-columns: 100px 10fr;
+    }
+}
+
+.event-name {
+    width: 100%;
+}
+
 .acts-table {
     color: base.$green;
     width: 100%;
-    border-spacing: 0rem 0.5rem;
-
-    .nested-table {
-        width: 100%;
-        border-spacing: 0.5rem 0.05rem;
-        position: relative;
-
-        tr {
-            position: relative;
-        }
-    }
-
-    td {
-        vertical-align: top;
-    }
 
     tbody {
         width: 100%;
-    }
 
-    .event-name {
-        width: 40%;
     }
 
     .loading-bar__wrapper {
-        width: 50%;
+        width: 100%;
         position: relative;
-        // display: block;
 
         div {
-            height: 0.8rem;
-            // position: relative;
+            height: 0.75rem;
         }
     }
 
     .performer-with-act {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
     }
 }
