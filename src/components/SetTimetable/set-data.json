@@ -1,0 +1,108 @@
+{
+  "event_info": {
+    "title": "A Warp Happening at the Barbican",
+    "date": "14.06.25",
+    "location": "Barbican Centre",
+    "address": "Silk Street, London, EC2Y 8DS",
+    "startTime": "12:00:00",
+    "endTime": "23:00:00"
+  },
+  "conservatory": [
+    {
+      "act": null,
+      "performer": "kwes. presents Kind (premiere)",
+      "startTime": "12:00:00",
+      "endTime": "16:30:00",
+      "artistBio": null,
+      "performanceDescription": null
+    }
+  ],
+  "cinema": [
+    {
+      "act": null,
+      "performer": "Warp Vision: Selected Music Video & Experimental Shorts : Hosted by Deeper Than Movies",
+      "startTime": "12:00:00",
+      "endTime": "20:20:00",
+      "artistBio": null,
+      "performanceDescription": null
+    }
+  ],
+  "act_1": [
+    {
+      "performer": "Freeka Tet",
+      "act": "Setup (Act I)",
+      "location": "HALL",
+      "startTime": "17:15:00",
+      "endTime": "17:25:00",
+      "artistBio": null,
+      "image": ""
+    },
+    {
+      "performer": "Seefeel",
+      "act": "Setup (Act I)",
+      "location": "HALL",
+      "startTime": "17:25:00",
+      "endTime": "18:00:00",
+      "artistBio": null,
+      "image": "./img/seefeel.svg"
+    },
+    {
+      "performer": "Clarissa Connelly",
+      "act": "Setup (Act I)",
+      "location": "HALL",
+      "startTime": "17:25:00",
+      "endTime": "18:00:00",
+      "artistBio": null,
+      "image": "./img/clarissa-connelly.svg"
+    }
+  ],
+  "act_2": [
+    {
+      "performer": "Mark Lecky",
+      "act": "Confrontation (Act II)",
+      "location": "HALL",
+      "startTime": "19:15:00",
+      "endTime": "19:40:00",
+      "artistBio": null,
+      "image": "./img/mark-leckey.svg"
+    },
+    {
+      "performer": "Slauson Malonel",
+      "act": "Confrontation (Act II)",
+      "location": "HALL",
+      "startTime": "19:45:00",
+      "endTime": "20:20:00",
+      "artistBio": null,
+      "image": "./img/slauson-malone-1.svg"
+    },
+    {
+      "performer": "Battles",
+      "act": "Confrontation (Act II)",
+      "location": "HALL",
+      "startTime": "20:20:00",
+      "endTime": "20:45:00",
+      "artistBio": null,
+      "image": "./img/battles.svg"
+    }
+  ],
+  "act_3": [
+    {
+      "performer": "Bullyache",
+      "act": "Resolution (Act III)",
+      "location": "HALL",
+      "startTime": "21:15:00",
+      "endTime": "21:30:00",
+      "artistBio": null,
+      "image": "./img/bullyache.svg"
+    },
+    {
+      "performer": "Evian Christ",
+      "act": "Resolution (Act III)",
+      "location": "HALL",
+      "startTime": "21:30:00",
+      "endTime": "22:15:00",
+      "artistBio": null,
+      "image": "./img/evian-christ.svg"
+    }
+  ]
+}

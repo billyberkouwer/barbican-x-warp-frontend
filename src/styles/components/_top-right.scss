@@ -86,6 +86,7 @@
     filter: blur(0.5px);
     padding-right: 5rem;
     width: fit-content;
+    align-items: flex-end;
 
     .live-now {
         font-size: 2rem;
@@ -93,7 +94,8 @@
     }
 
     span {
-        line-height: 1rem;
+        font-size: 0.8rem;
+        line-height: 0.7rem;
     }
 
     .grey-text {
