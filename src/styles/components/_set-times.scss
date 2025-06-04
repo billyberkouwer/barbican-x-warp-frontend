@@ -142,6 +142,8 @@ address {
 .acts-table {
     color: base.$green;
     width: 100%;
+    animation: glitch-in 0.29s 3 0.1s;
+
 
     tbody {
         width: 100%;

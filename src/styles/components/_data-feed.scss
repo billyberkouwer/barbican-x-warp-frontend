@@ -18,6 +18,7 @@
     border-spacing: 1rem 0.2rem;
 
 
+
     td {
         vertical-align: top;
         width: min-content;
@@ -50,13 +51,14 @@
     font-family: monospace;
     counter-increment: items 1;
     color: base.$green;
+    animation: glitch-in 0.5s 2;
+
 
     .glitch {
         font-family: "NeueHaasDisplay-Bold";
         color: base.$green;
 
-        &,
-        * {
+        &,* {
             animation: glitch 30s infinite steps(base.$steps);
         }
     }
