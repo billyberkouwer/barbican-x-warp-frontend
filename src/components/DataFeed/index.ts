@@ -1,13 +1,12 @@
-import { DATA_FEED_NEW_LINE_SPEED, DATA_FEED_TYPE_SPEED, EVENT_DATE } from "../../variables/constants";
-import data from "./data.json";
-import data2 from "./awarphappening_script.json";
+import { DATA_FEED_TYPE_SPEED, EVENT_DATE } from "../../variables/constants";
+import data from "./awarphappening_script.json";
 const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
 const container = document.querySelector('.data-feed__table') as HTMLUListElement;
 let currentTimestamp;
 
 export function updateDataFeed() {
     const now = new Date().getTime();
-    const previousEntries = data2.filter(entry => {
+    const previousEntries = data.filter(entry => {
         const entryTime = new Date(EVENT_DATE + entry.time).getTime();
         return (now - entryTime > 0);
     })
@@ -30,7 +29,7 @@ export function updateDataFeed() {
 
 export function getNextEntry() {
     const now = new Date().getTime();
-    const nextEntries = data2.filter(entry => {
+    const nextEntries = data.filter(entry => {
         const entryTime = new Date(EVENT_DATE + entry.time).getTime();
         return (now - entryTime < 0);
     });
