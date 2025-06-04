@@ -100,31 +100,33 @@ function typingEffect(element: HTMLElement, text: string, speed = DATA_FEED_TYPE
     typing();
 }
 
-function createDataFeed() {
-    let count = 0;
-    let randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
+// ----- UNUSED
 
-    function recursiveDataLoop() {
-        setTimeout(() => {
-            initializeLine(data[count])
-            if (count < data.length - 1) {
-                count++;
-            } else {
-                count = 0;
-            }
-            randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
-            recursiveDataLoop();
-        }, randomDelay);
-    }
-    getLatestEntry()
+// function createDataFeed() {
+//     let count = 0;
+//     let randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
 
-    recursiveDataLoop();
-}
+//     function recursiveDataLoop() {
+//         setTimeout(() => {
+//             initializeLine(data[count])
+//             if (count < data.length - 1) {
+//                 count++;
+//             } else {
+//                 count = 0;
+//             }
+//             randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
+//             recursiveDataLoop();
+//         }, randomDelay);
+//     }
+//     getLatestEntry()
 
-function getCurrentTime() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    return `[${hours}:${minutes}:${seconds}]`;
-}
+//     recursiveDataLoop();
+// }
+
+// function getCurrentTime() {
+//     const now = new Date();
+//     const hours = now.getHours().toString().padStart(2, '0');
+//     const minutes = now.getMinutes().toString().padStart(2, '0');
+//     const seconds = now.getSeconds().toString().padStart(2, '0');
+//     return `[${hours}:${minutes}:${seconds}]`;
+// }
