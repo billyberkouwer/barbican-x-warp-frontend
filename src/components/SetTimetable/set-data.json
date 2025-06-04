@@ -45,7 +45,7 @@
       "startTime": "17:25:00",
       "endTime": "18:00:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/seefeel.svg",
+      "image": "/assets/seefeel.svg",
       "performanceDescription": null
     },
     {
@@ -56,7 +56,7 @@
       "startTime": "17:25:00",
       "endTime": "18:00:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/clarissa-connelly.svg",
+      "image": "/assets/clarissa-connelly.svg",
       "performanceDescription": null
     }
   ],
@@ -69,7 +69,7 @@
       "startTime": "19:15:00",
       "endTime": "19:40:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/mark-leckey.svg",
+      "image": "/assets/mark-leckey.svg",
       "performanceDescription": null
     },
     {
@@ -80,7 +80,7 @@
       "startTime": "19:45:00",
       "endTime": "20:20:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/slauson-malone-1.svg",
+      "image": "/assets/slauson-malone-1.svg",
       "performanceDescription": null
     },
     {
@@ -91,7 +91,7 @@
       "startTime": "20:20:00",
       "endTime": "20:45:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/battles.svg",
+      "image": "/assets/battles.svg",
       "performanceDescription": null
     }
   ],
@@ -104,7 +104,7 @@
       "startTime": "21:15:00",
       "endTime": "21:30:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/bullyache.svg",
+      "image": "/assets/bullyache.svg",
       "performanceDescription": null
     },
     {
@@ -115,7 +115,7 @@
       "startTime": "21:30:00",
       "endTime": "22:15:00",
       "artistBio": null,
-      "image": "./src/components/SVGs/evian-christ.svg",
+      "image": "/assets/evian-christ.svg",
       "performanceDescription": null
     }
   ]

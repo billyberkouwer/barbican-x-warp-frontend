@@ -10,6 +10,7 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, './src/styles'),
     },
   },
+  assetsInclude: ["/src/components/SVGs/**.svg"],
   css: {
     preprocessorOptions: {
       scss: {
