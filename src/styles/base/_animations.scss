@@ -19,6 +19,12 @@
             scaleY(100%),
             scaleY(5000%),
         );
+        $top: (
+            5px,
+            -5px,
+            0px,
+            0px
+        );
     $blur: (
         blur(3px),
         blur(0px),
@@ -27,15 +33,18 @@ $opacity: (
     50%,
     100%,
 );
+$arrayT: math.random(4);
 $arrayO: math.random(2);
 $arrayB: math.random(2);
 $arrayV: math.random(2);
 $arrayS: math.random(7);
 
 #{$per} {
+    position: relative;
     visibility: list.nth($visibility, $arrayV);
     filter: list.nth($blur, $arrayB);
     opacity: list.nth($opacity, $arrayO);
+    // top: list.nth($top, $arrayT);
     // transform: list.nth($skew, $arrayS);
 }
 }

@@ -9,6 +9,7 @@ const performerDescription = document.getElementById("current-live-performer-des
 const location = document.getElementById("current-live-act-location") as HTMLElement;
 const startTime = document.getElementById("current-live-act-start-time") as HTMLElement
 const endTime = document.getElementById("current-live-act-end-time") as HTMLElement
+const logo = document.getElementById("current-live-act-logo") as HTMLImageElement;
 
 const allActs = ["act_1", "act_2", "act_3"];
 
@@ -29,6 +30,9 @@ function updateCurrentActInfo() {
         location.textContent = currentAct.location ?? "";
         startTime.textContent = start ? `${start.getHours()}:${start.getMinutes()}` : "";
         endTime.textContent = end ? `${end.getHours()}:${end.getMinutes()}` : "";
+        logo.style.visibility = currentAct.image ? "visible" : "hidden";
+        logo.src = currentAct.image ?? "";
+        logo.alt = currentAct.performer;
         container.classList.add("visible");
         return;
     }

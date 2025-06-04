@@ -1,14 +1,12 @@
 // js
 import initCurrentAct from "./components/CurrentAct";
-import createDataFeed from "./components/DataFeed";
+import { updateDataFeed } from "./components/DataFeed";
 import initTime from "./components/DateTime";
-import initLiveFeed from "./components/LiveFeed";
-import { initSetTimesTable } from "./components/SetTimetable";
+import { initRightTerminal } from "./components/SetTimetable";
 import initWeatherData from "./components/WeatherData";
 
-initLiveFeed();
-createDataFeed();
+updateDataFeed()
 initWeatherData();
 initTime();
 initCurrentAct();
-initSetTimesTable();
+initRightTerminal();

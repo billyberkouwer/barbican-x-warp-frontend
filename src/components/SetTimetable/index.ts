@@ -1,6 +1,7 @@
 import { EVENT_DATE } from "@/variables/constants";
-import { updateBar } from "../ProgressBar";
+import { createLoadingBar, updateBar } from "../ProgressBar";
 import json from "./set-data.json";
+import eventData from "./event-data.json";
 
 const progressBarsData: { id: string, startTime: Date, endTime: Date }[] = [];
 
@@ -22,8 +23,8 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
                     ${event.performer}
                 </div>
             </div>
-            `
-        ) : `${event.performer}`
+            `//
+        ) : `${event.performer}`//
 
         return (//html
             `    
@@ -35,12 +36,11 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
                 <td>${startTimeFormatted}</td>
                 <td>—</td>
                 <td>${endTimeFormatted}</td>
-                <td class="loading-bar__wrapper" colspan="10">
-                    <div id="${loadingBarId}" class="green-bg"></div>
-                </td>
+                ${createLoadingBar(loadingBarId, "loading-bar__wrapper")}
                 <td id="${loadingBarId}-text">0.0%</td>
             </tr>
-        `)
+        `//
+        )
     });
 
     return (//html
@@ -55,33 +55,51 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
                                     <div class= "act__wrapper uppercase" id="${json[location][0]?.act}-block" >
                                         ${location === "act_1" ? "I&nbsp;&nbsp; SETUP" : location === "act_2" ? "II &nbsp;&nbsp;CONFRONTATION" : location === "act_3" ? "III &nbsp;&nbsp;RESOLUTION" : ""}
                                     </div>
-                                `
+                                `//
         ) : ""
         }
                         ${elements.join("")}
                     </tbody>
                 </table>
             </td>
-        </tr>`);
+        </tr>`//
+    );
 }
 
 
 const table = document.getElementById("acts-table-body");
+const eventProgressBarWrapper = document.getElementById("event-progress-bar-wrapper")
 const conservatory = generateTableEntry("conservatory");
 const cinema = generateTableEntry("cinema");
 const act_1 = generateTableEntry("act_1")
 const act_2 = generateTableEntry("act_2", false)
 const act_3 = generateTableEntry("act_3", false)
 
+export function createEventProgressBar() {
+    const text = (//html
+        `<span class="event-progress-text">Event Progress: <span class="event-progress-text" id="event-progress-bar-text"></span></span>`//
+    );
+
+    if (eventProgressBarWrapper) {
+        eventProgressBarWrapper.innerHTML = text + createLoadingBar("event-progress-bar", "")
+    }
+}
+
 export function initSetTimesTable() {
     if (table) {
         table.innerHTML += conservatory + cinema + act_1 + act_2 + act_3;
     };
-    setInterval(updateTimeElements, 1000)
 };
+
+export function initRightTerminal() {
+    initSetTimesTable();
+    createEventProgressBar();
+    setInterval(updateTimeElements, 1000)
+}
 
 function updateTimeElements() {
     progressBarsData.forEach((data) => {
         updateBar(data.id, data.startTime, data.endTime)
     });
+    updateBar("event-progress-bar", new Date(EVENT_DATE + eventData.event_info.startTime), new Date(EVENT_DATE + eventData.event_info.endTime))
 }

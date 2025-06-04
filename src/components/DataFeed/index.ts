@@ -1,32 +1,45 @@
-import { DATA_FEED_NEW_LINE_SPEED, DATA_FEED_TYPE_SPEED } from "../../variables/constants";
+import { DATA_FEED_NEW_LINE_SPEED, DATA_FEED_TYPE_SPEED, EVENT_DATE } from "../../variables/constants";
 import data from "./data.json";
-
+import data2 from "./awarphappening_script.json";
 const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
 const container = document.querySelector('.data-feed__table') as HTMLUListElement;
 let currentTimestamp;
 
-export default function createDataFeed() {
-    let count = 0;
-    let randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
+export function updateDataFeed() {
+    const now = new Date().getTime();
+    const previousEntries = data2.filter(entry => {
+        const entryTime = new Date(EVENT_DATE + entry.time).getTime();
+        return (now - entryTime > 0);
+    })
+    previousEntries.forEach(entry => {
+        const { text, content } = initializeLine(entry);
+        text.innerHTML = content;
+    })
+    let { nextEntry } = getNextEntry();
+    setInterval(() => {
+        console.log(nextEntry)
+        const now = new Date().getTime();
+        let nextEntryTime = new Date(EVENT_DATE + nextEntry.time).getTime()
+        if (now - nextEntryTime > 0) {
+            const { text, content } = initializeLine(nextEntry);
+            typingEffect(text, content, DATA_FEED_TYPE_SPEED)
+            nextEntry = getNextEntry().nextEntry;
+        }
+    }, 1000)
+}
 
-    function recursiveDataLoop() {
-        setTimeout(() => {
-            initializeLine(data[count])
-            if (count < data.length - 1) {
-                count++;
-            } else {
-                count = 0;
-            }
-            randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
-            recursiveDataLoop();
-        }, randomDelay);
-    }
-
-    recursiveDataLoop();
+export function getNextEntry() {
+    const now = new Date().getTime();
+    const nextEntries = data2.filter(entry => {
+        const entryTime = new Date(EVENT_DATE + entry.time).getTime();
+        return (now - entryTime < 0);
+    });
+    const nextEntry = nextEntries[0];
+    return { nextEntry }
 }
 
 function initializeLine(dataEl: any) {
-    currentTimestamp = getCurrentTime();
+    currentTimestamp = `[${dataEl.time}]`;
     const tr = document.createElement('tr');
     tr.classList.add('glitch-wrapper');
 
@@ -47,15 +60,17 @@ function initializeLine(dataEl: any) {
 
     const locationEl = document.createElement("td");
     locationEl.classList.add("terminal-location")
-    locationEl.innerHTML = dataEl.location
+    locationEl.innerHTML = dataEl.zone
     tr.append(locationEl)
 
     const text = document.createElement('td');
     text.classList.add('glitch', "text-content");
+    text.style.animationDuration = (Math.random() + 1) * 50 + "s";
+
     tr.appendChild(text);
 
     dataFeed.appendChild(tr);
-    typingEffect(text, dataEl.title, DATA_FEED_TYPE_SPEED);
+    return { text, content: dataEl.content };
 }
 
 const config = { childList: true };
@@ -72,7 +87,6 @@ const callback = function (mutationsList: MutationRecord[]) {
 const observer = new MutationObserver(callback);
 observer.observe(dataFeed, config);
 
-// TYPE OUT THE JSON DATA BY ADDING CHAR BY CHAR 
 function typingEffect(element: HTMLElement, text: string, speed = DATA_FEED_TYPE_SPEED) {
     let i = 0;
     element.innerHTML = "";
@@ -84,6 +98,27 @@ function typingEffect(element: HTMLElement, text: string, speed = DATA_FEED_TYPE
         }
     }
     typing();
+}
+
+function createDataFeed() {
+    let count = 0;
+    let randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
+
+    function recursiveDataLoop() {
+        setTimeout(() => {
+            initializeLine(data[count])
+            if (count < data.length - 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+            randomDelay = Math.floor(Math.random() * DATA_FEED_NEW_LINE_SPEED) + 1000;
+            recursiveDataLoop();
+        }, randomDelay);
+    }
+    getLatestEntry()
+
+    recursiveDataLoop();
 }
 
 function getCurrentTime() {

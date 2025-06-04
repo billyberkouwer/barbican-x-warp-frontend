@@ -50,12 +50,18 @@ td {
 .terminal-right-inner__container {
     padding: 1.5rem;
     width: 100%;
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
 }
 
 .geo-data__container {
     line-height: 1rem;
     color: base.$green;
     letter-spacing: -0.05rem;
+
 }
 
 .green-bg {
@@ -74,7 +80,13 @@ td {
     line-height: 0.575rem;
 }
 
+.weather {
+    animation: glitch-in 0.5s 3;
+}
+
 .location {
+    animation: glitch-in 0.3s 3 0.75s;
+
     div {
         height: fit-content;
     }
@@ -141,6 +153,7 @@ address {
         width: 100%;
         position: relative;
 
+
         div {
             height: 0.75rem;
             width: 0%;
@@ -152,4 +165,35 @@ address {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+}
+
+.right-terminal__footer {
+    position: relative;
+    display: grid;
+    height: 3rem;
+    grid-template-columns: 1fr 1fr 2fr 4fr;
+    gap: 1rem;
+    align-items: flex-end;
+
+    img {
+        height: inherit;
+        color: base.$green;
+        text-transform: uppercase;
+        animation: glitch-in 0.5s 3;
+    }
+
+    .event-progress-text {
+        position: relative;
+        color: base.$green;
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+}
+
+#event-progress-bar {
+    height: 1.5rem;
+    position: relative;
+    top: -0.1rem;
+    width: 0%;
+    transition: width 0.1s;
 }

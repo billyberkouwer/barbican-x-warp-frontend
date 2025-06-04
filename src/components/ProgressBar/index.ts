@@ -7,3 +7,13 @@ export function updateBar(id: string, startTime: Date, endTime: Date) {
     loadingBar.style.width = percentage + '%';
     loadingBarText.textContent = percentage.toFixed(1) + '%';
 }
+
+export function createLoadingBar(loadingBarId: string, className: string) {
+    return (//html
+        `   <td class="${className}" colspan="10">
+                <div id="${loadingBarId}" class="green-bg"></div>
+            </td>
+        `
+    )
+
+}
