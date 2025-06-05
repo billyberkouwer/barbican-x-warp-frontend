@@ -33,8 +33,12 @@ td {
 .act__wrapper {
     position: absolute;
     height: 100%;
-    width: 20%;
+    width: 30%;
     border: 1px solid base.$green;
+
+    @include base.lg {
+        width: 20%; // half of grid size
+    }
 
     .act-inner__wrapper {
         position: absolute;
@@ -65,6 +69,7 @@ td {
     color: base.$green;
     letter-spacing: -0.05rem;
 
+
 }
 
 .green-bg {
@@ -79,8 +84,13 @@ td {
     align-self: flex-end;
     justify-self: flex-end;
     width: 100%;
-    font-size: 0.75rem;
-    line-height: 0.575rem;
+    font-size: 0.6rem;
+    line-height: 0.5rem;
+
+    @include base.lg {
+        font-size: 0.75rem;
+        line-height: 0.575rem;
+    }
 }
 
 .weather {
@@ -133,7 +143,7 @@ address {
 .event-track {
     width: 100%;
     display: grid;
-    grid-template-columns: 40% auto auto auto auto 30%;
+    grid-template-columns: 60% auto auto auto auto 30%;
 
 
     @include base.lg {
@@ -146,6 +156,7 @@ address {
 
 .location-table__track {
     display: grid;
+    position: relative;
     // grid-template-columns: 100px 10fr;
 
     @include base.lg {
@@ -170,6 +181,15 @@ address {
     color: base.$green;
     width: 100%;
     animation: glitch-in 0.29s 3 0.1s;
+    font-size: 0.1rem;
+    font-size: 0.6rem;
+    line-height: 0.5rem;
+
+    @include base.lg {
+        font-size: 0.75rem;
+        line-height: 0.6rem;
+
+    }
 
 
     tbody {
@@ -238,8 +258,8 @@ address {
     .event-progress-text {
         position: relative;
         color: base.$green;
-        font-size: 0.8rem;
-        line-height: 0.7rem;
+        font-size: 0.6rem;
+        line-height: 0.5rem;
 
         @include base.lg {
             font-size: 1.5rem;
@@ -249,10 +269,9 @@ address {
 }
 
 #event-progress-bar {
-    height: 0.5rem;
-
+    height: 0.4rem;
     position: relative;
-    top: -0.1rem;
+    top: -0.15rem;
     width: 0%;
     transition: width 0.1s;
 

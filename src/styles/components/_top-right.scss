@@ -41,15 +41,13 @@
         @include base.xxl {
             padding-right: 5rem;
         }
-
-
     }
 }
 
 .paragraph-text {
-    line-height: 0.6rem;
+    line-height: 0.5rem;
     letter-spacing: -0.05rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 
     @include base.sm {
         line-height: 0.7rem;
