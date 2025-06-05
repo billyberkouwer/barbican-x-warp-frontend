@@ -14,14 +14,21 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding-right: 5rem;
-    border-spacing: 1rem 0.2rem;
+    border-spacing: 0.25rem 0.15rem;
 
-
+    @include base.lg {
+        border-spacing: 1rem 0.2rem;
+    }
 
     td {
+        font-size: 0.6rem;
         vertical-align: top;
         width: min-content;
         position: relative;
+
+        @include base.lg {
+            font-size: 0.75rem;
+        }
     }
 
     .time-stop-data-feed {
@@ -57,7 +64,8 @@
         font-family: "NeueHaasDisplay-Bold";
         color: base.$green;
 
-        &,* {
+        &,
+        * {
             animation: glitch 30s infinite steps(base.$steps);
         }
     }

@@ -15,6 +15,13 @@
 .banner__container {
     // background-color: base.$blue;
     position: relative;
+    visibility: hidden;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    position: relative;
 
     .paragraph__wrapper {
         position: relative;
@@ -188,8 +195,36 @@
 .event-time-stamps__container {
     position: relative;
 
+    .paragraph-text {
+        top: -0.5rem;
+        position: absolute;
+
+        @include base.lg {
+            top: -1rem;
+        }
+    }
+
+    img {
+        display: none;
+
+        @include base.lg {
+            width: 1.5rem;
+            z-index: 1;
+            margin: 0.25rem;
+            display: block;
+        }
+
+    }
+
     span {
-        line-height: 0.9rem;
+        font-size: 0.6rem;
+        line-height: 0.5rem;
+        height: min-content;
+
+        @include base.lg {
+            font-size: 0.8rem;
+            line-height: 0.75rem;
+        }
     }
 }
 
