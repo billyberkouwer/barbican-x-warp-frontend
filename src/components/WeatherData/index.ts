@@ -14,8 +14,6 @@ export default function initWeatherData() {
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
-                // convert kelvin to deg
                 temperature.textContent = "TEMP: " + Math.floor(data.main.temp - kelvin) + "°C";
                 wind.textContent = "WIND SPEED: " + data.wind.speed;
                 summary.textContent = data.weather[0].main + ", " + data.weather[0].description;

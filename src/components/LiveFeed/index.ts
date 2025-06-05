@@ -33,6 +33,8 @@ export default async function initLiveFeed() {
         playerOne?.setAttribute("metadata-viewer-user-id", e)
     })
 
+    socket.on("connect", () => console.log("connected") )
+
     socket.on("streamData", (e) => {
         console.log(e)
         playbackId = e.playbackId;

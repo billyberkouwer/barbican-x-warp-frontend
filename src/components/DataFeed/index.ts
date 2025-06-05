@@ -16,13 +16,14 @@ export function updateDataFeed() {
     })
     let { nextEntry } = getNextEntry();
     setInterval(() => {
-        console.log(nextEntry)
         const now = new Date().getTime();
-        let nextEntryTime = new Date(EVENT_DATE + nextEntry.time).getTime()
-        if (now - nextEntryTime > 0) {
-            const { text, content } = initializeLine(nextEntry);
-            typingEffect(text, content, DATA_FEED_TYPE_SPEED)
-            nextEntry = getNextEntry().nextEntry;
+        if (nextEntry) {
+            let nextEntryTime = new Date(EVENT_DATE + nextEntry.time).getTime()
+            if (now - nextEntryTime > 0) {
+                const { text, content } = initializeLine(nextEntry);
+                typingEffect(text, content, DATA_FEED_TYPE_SPEED)
+                nextEntry = getNextEntry().nextEntry;
+            }
         }
     }, 1000)
 }

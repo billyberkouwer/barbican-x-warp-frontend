@@ -1,6 +1,6 @@
 import { EVENT_DATE } from "@/variables/constants";
 import { createLoadingBar, updateBar } from "../ProgressBar";
-import json from "./set-data.json";
+import json from "./set-timetable-data.json";
 import eventData from "./event-data.json";
 
 const progressBarsData: { id: string, startTime: Date, endTime: Date }[] = [];
