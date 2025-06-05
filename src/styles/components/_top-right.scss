@@ -18,10 +18,14 @@
 
     .paragraph__wrapper {
         padding-right: 3rem;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         z-index: 1;
+
+        @include base.lg {
+            position: absolute;
+        }
 
         @include base.xl {
             padding-right: 4rem;
@@ -202,6 +206,7 @@
         .text-inverted__container {
             animation: glitch-in 0.36s 2;
         }
+
         .green-banner__container {
             animation: glitch-in 0.28s 2;
         }

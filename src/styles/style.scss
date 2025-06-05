@@ -7,13 +7,66 @@
     font-family: base.$font;
 }
 
-.top-row__container {
-    height: base.$top-row-height;
+.page__wrapper {
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+    ;
+    grid-template-rows: 1fr 40% 20% 20% 1fr;
+
+
+    @include base.lg {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 20% 20%;
+
+        grid-template-areas:
+            "a b"
+            "a b"
+            "c d"
+            "c d"
+        ;
+
+    }
 }
 
-.bottom-row__container {
-    height: base.$bottom-row-height;
-    overflow: hidden;
+.top-left__container {
+    grid-area: b;
+
+    @include base.lg {
+        grid-area: a;
+    }
+}
+
+.banner__container {
+    grid-area: a;
+}
+
+.top-right__container {
+    grid-area: c;
+
+    @include base.lg {
+        grid-area: b;
+    }
+}
+
+.terminal-left__container {
+    grid-area: e;
+
+    @include base.lg {
+        grid-area: c;
+    }
+}
+
+.terminal-right__wrapper {
+    overflow-y: auto;
+    background-color: base.$dark;
+    grid-area: d;
 }
 
 .cross {
