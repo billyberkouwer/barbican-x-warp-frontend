@@ -37,7 +37,7 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
                 <td>—</td>
                 <td>${endTimeFormatted}</td>
                 ${createLoadingBar(loadingBarId, "loading-bar__wrapper")}
-                <td id="${loadingBarId}-text">0.0%</td>
+                <td id="${loadingBarId}-text" class="loading-bar-text__wrapper">0.0%</td>
             </tr>
         `//
         )

@@ -21,7 +21,12 @@ td {
     width: 100%;
 
     .margin {
-        margin-bottom: 1rem;
+        margin-bottom: 0.25rem;
+
+        @include base.lg {
+            margin-bottom: 0.75rem;
+
+        }
     }
 }
 
@@ -42,13 +47,17 @@ td {
 }
 
 .terminal-right-inner__container {
-    padding: 1.5rem;
+    padding: 1.25rem;
     width: 100%;
     display: grid;
     grid-template-areas:
         "a"
         "b"
         "c";
+
+    @include base.lg {
+        padding: 1.5rem;
+    }
 }
 
 .geo-data__container {
@@ -93,10 +102,24 @@ td {
     line-height: 1rem;
 }
 
+#date-time-header {
+    display: none;
+
+    @include base.lg {
+        display: block;
+    }
+}
+
 .date-time {
     display: grid;
     grid-column: 1fr;
     line-height: 0.5rem;
+    display: none;
+
+
+    @include base.lg {
+        display: block;
+    }
 }
 
 address {
@@ -110,14 +133,24 @@ address {
 .event-track {
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 2% 5% 2% 5% 34% 7%;
+    grid-template-columns: 40% auto auto auto auto 30%;
+
+
+    @include base.lg {
+        grid-template-columns: 40% 2% 5% 2% 5% 34% 7%;
+    }
+
     // justify-items: center;
     gap: 1%;
 }
 
 .location-table__track {
     display: grid;
-    grid-template-columns: 100px 10fr;
+    // grid-template-columns: 100px 10fr;
+
+    @include base.lg {
+        grid-template-columns: 100px 10fr;
+    }
 
     td {
         position: relative;
@@ -148,13 +181,26 @@ address {
     .loading-bar__wrapper {
         width: 100%;
         position: relative;
+        display: none;
 
+        @include base.lg {
+            display: block;
+        }
 
         div {
             height: 0.75rem;
             width: 0%;
             transition: width 0.1s;
         }
+    }
+
+    .loading-bar-text__wrapper {
+        display: none;
+
+        @include base.lg {
+            display: block;
+        }
+
     }
 
     .performer-with-act {
@@ -166,30 +212,53 @@ address {
 .right-terminal__footer {
     position: relative;
     display: grid;
-    height: 3rem;
     grid-template-columns: 1fr 1fr 2fr 4fr;
     gap: 1rem;
     align-items: flex-end;
+    grid-area: b;
+
+    @include base.lg {
+        grid-area: c;
+    }
+
+
 
     img {
         height: inherit;
         color: base.$green;
         text-transform: uppercase;
         animation: glitch-in 0.5s 3;
+        height: 1rem;
+
+        @include base.lg {
+            height: 3rem;
+        }
     }
 
     .event-progress-text {
         position: relative;
         color: base.$green;
-        font-size: 1.5rem;
-        line-height: 1rem;
+        font-size: 0.8rem;
+        line-height: 0.7rem;
+
+        @include base.lg {
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
     }
 }
 
 #event-progress-bar {
-    height: 1.5rem;
+    height: 0.5rem;
+
     position: relative;
     top: -0.1rem;
     width: 0%;
     transition: width 0.1s;
+
+
+    @include base.lg {
+        height: 1.5rem;
+
+    }
 }

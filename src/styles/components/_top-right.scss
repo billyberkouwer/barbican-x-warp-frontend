@@ -17,13 +17,13 @@
     position: relative;
 
     .paragraph__wrapper {
-        padding-right: 3rem;
         position: relative;
         top: 0;
         left: 0;
         z-index: 1;
 
         @include base.lg {
+            padding-right: 3rem;
             position: absolute;
         }
 
@@ -81,41 +81,108 @@
     @include base.glitch-in;
     animation: glitch-in 0.35s 2;
     transform-origin: top left;
+    display: grid;
+    grid-template-areas:
+        "a b"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @include base.lg {
+        grid-template-areas:
+            "a b"
+            "c c"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .large-text__container {
+        grid-area: a;
+    }
+
+    .paragraph__wrapper {
+        grid-area: b;
+
+        @include base.lg {
+            grid-area: a;
+            grid-column-end: b;
+        }
+    }
+
+    .event-time-stamps__wrapper {
+        grid-area: a;
+        align-self: flex-end;
+
+        @include base.lg {
+            grid-area: c;
+        }
+    }
 }
 
 .green-banner__container {
     position: relative;
     display: flex;
     background-color: base.$green;
-    // filter: blur(0.5px);
-    padding-right: 5rem;
-    width: fit-content;
     align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 1rem;
+
+    @include base.lg {
+        width: fit-content;
+        padding-right: 5rem;
+    }
 
     .live-now {
-        font-size: 2rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
+        line-height: 0.8rem;
+
+        @include base.lg {
+            font-size: 2rem;
+            line-height: 1.75rem;
+            margin-top: 0.1rem;
+        }
+
     }
 
     span {
-        font-size: 0.8rem;
-        line-height: 0.7rem;
+        font-size: 0.5rem;
+        line-height: 0.4rem;
+
+        @include base.lg {
+            font-size: 0.8rem;
+            line-height: 0.7rem;
+        }
     }
 
     .grey-text {
-        margin-top: 0.3rem;
-        font-size: 1.75rem;
-        line-height: 1.25rem;
+        // margin-top: 0.3rem;
+        font-size: 1.15rem;
+        line-height: 0.95rem;
+        letter-spacing: -0.0.75rem;
         color: base.$light;
+
+        @include base.lg {
+            font-size: 1.75rem;
+            line-height: 1.25rem;
+            letter-spacing: -0.1rem;
+        }
     }
 
     .grey-text__container {
-        padding: 0 2rem;
+        padding: 0 0.5rem;
+        display: flex;
+
+        @include base.lg {
+            padding: 0 2rem;
+
+        }
     }
 }
 
 .event-time-stamps__wrapper {
     position: relative;
+    grid-area: a;
 }
 
 .event-time-stamps__container {
@@ -175,6 +242,7 @@
     bottom: 0;
     left: 0;
     visibility: hidden;
+    width: 100%;
 
     &.visible {
         visibility: visible;
@@ -222,12 +290,17 @@
         width: 70%;
         bottom: 0;
         line-height: 0.9rem;
+        display: none;
+
+        @include base.lg {
+            display: block;
+        }
     }
 }
 
 .text-inverted__container {
     background-color: base.$blue;
-    width: fit-content;
+    // width: fit-content;
     position: relative;
     // filter: blur(0.5px);
     overflow: hidden;
@@ -237,30 +310,86 @@
     font-family: base.$font;
     color: base.$light;
 
+    .act-description {
+        white-space: normal;
+        width: auto;
+    }
+
     .large-text-inverted {
-        font-size: 4rem;
-        line-height: 3.25rem;
-        letter-spacing: -0.25rem;
-        margin-top: 0.4rem;
+        line-height: 1.75rem;
+        letter-spacing: -0.15rem;
+        font-size: 2rem;
         margin-bottom: -0.4rem;
         max-width: 20rem;
+
+        @include base.md {
+            line-height: 2.75rem;
+            letter-spacing: -0.25rem;
+            font-size: 3rem;
+        }
+
+        @include base.lg {
+            font-size: 4rem;
+            line-height: 3.25rem;
+            letter-spacing: -0.25rem;
+            margin-top: 0.4rem;
+        }
     }
 
     p {
-        font-size: 1.75rem;
-        line-height: 1.45rem;
-        letter-spacing: -0.1rem;
+
+        line-height: 0.75rem;
+        letter-spacing: -0.01rem;
+        font-size: 0.8rem;
+
+        @include base.sm {
+            line-height: 0.85rem;
+            letter-spacing: -0.01rem;
+            font-size: 1rem;
+        }
+
+        @include base.md {
+            line-height: 1rem;
+            letter-spacing: -0.05rem;
+            font-size: 1.25rem;
+        }
+
+        @include base.lg {
+            font-size: 1.75rem;
+            line-height: 1.45rem;
+            letter-spacing: -0.1rem;
+        }
     }
 }
 
 .large-text {
     color: base.$blue;
-    font-size: 3rem;
-    line-height: 2.5rem;
-    letter-spacing: -0.25rem;
+
     transform-origin: top left;
     @include base.glitch-in;
     animation: glitch-in 0.5s 2;
+
+    line-height: 1.35rem;
+    letter-spacing: -0.15rem;
+    font-size: 1.5rem;
+
+    @include base.sm {
+        line-height: 1.5rem;
+        letter-spacing: -0.15rem;
+        font-size: 2rem;
+    }
+
+    @include base.md {
+        line-height: 2rem;
+        letter-spacing: -0.25rem;
+        font-size: 2.5rem;
+    }
+
+    @include base.lg {
+        font-size: 3rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.25rem;
+    }
 }
 
 .map__container {

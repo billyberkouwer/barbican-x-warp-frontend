@@ -13,8 +13,8 @@ export default async function initLiveFeed() {
         headers: { "ngrok-skip-browser-warning": "69420" }
     }).then(async res => {
         const json = await res.json();
-        playerOne?.setAttribute("playback-token", json.token);
         playerOne?.setAttribute("thumbnail-token", json.thumbnailToken);
+        playerOne?.setAttribute("playback-token", json.token);
     }).catch((err) => console.log(err))
 
     function initialiseStream(isStreamActive: boolean) {
@@ -33,10 +33,9 @@ export default async function initLiveFeed() {
         playerOne?.setAttribute("metadata-viewer-user-id", e)
     })
 
-    socket.on("connect", () => console.log("connected") )
+    socket.on("connect", () => console.log("Logged In."))
 
     socket.on("streamData", (e) => {
-        console.log(e)
         playbackId = e.playbackId;
         initialiseStream(e.canPlay)
     })

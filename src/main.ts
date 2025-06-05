@@ -13,4 +13,6 @@ initWeatherData();
 initTime();
 initCurrentAct();
 initRightTerminal();
-mobileDOMRestructure()
+mobileDOMRestructure();
+
+console.log("Web Design: Felix Luke www.felixluke.co.uk | Web Development: Billy Myles-Berkouwer www.billyberkouwer.dev")

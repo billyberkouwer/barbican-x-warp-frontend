@@ -80,7 +80,6 @@ function initializeLine(dataEl: any) {
 const config = { childList: true };
 
 const callback = function (mutationsList: MutationRecord[]) {
-    console.log("firing")
     for (let mutation of mutationsList) {
         if (mutation.type === "childList") {
             container.scrollTo(0, container.scrollHeight);

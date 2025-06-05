@@ -7,18 +7,26 @@
     font-family: base.$font;
 }
 
+html {
+    background-color: base.$light;
+}
+
 .page__wrapper {
     display: grid;
     height: 100vh;
+    padding-top: 0.3rem;
 
-    grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
+    @include base.lg {
+        padding: unset;
+    }
+
+    grid-template-areas: "a"
+    "b"
+    "c"
+    "d"
+    "e"
     ;
-    grid-template-rows: 1fr 40% 20% 20% 1fr;
+    grid-template-rows: min-content 40% 20% 25% 1fr;
 
 
     @include base.lg {
@@ -37,21 +45,31 @@
 
 .top-left__container {
     grid-area: b;
+    margin: 0 0.3rem;
 
     @include base.lg {
         grid-area: a;
+        margin: unset;
     }
 }
 
 .banner__container {
     grid-area: a;
+    margin: 0 0.3rem;
+
+    @include base.lg {
+        margin: unset;
+    }
+
 }
 
 .top-right__container {
     grid-area: c;
+    margin: 0 0.3rem;
 
     @include base.lg {
         grid-area: b;
+        margin: unset;
     }
 }
 
@@ -70,8 +88,14 @@
 }
 
 .cross {
-    width: 1.5rem;
+    width: 1rem;
     margin: 0.25rem;
+
+    @include base.lg {
+        width: 1.5rem;
+        margin: 0.25rem;
+
+    }
 
     &.center {
         transform: translate(0, -50%);
