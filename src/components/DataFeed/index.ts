@@ -6,7 +6,9 @@ let currentTimestamp;
 
 export function updateDataFeed() {
     const now = new Date().getTime();
-    const previousEntries = data.filter(entry => {
+    const previousEntries = data.sort(function (a, b) {
+        return new Date(EVENT_DATE + a.time).getTime() - new Date(EVENT_DATE + b.time).getTime();
+    }).filter(entry => {
         const entryTime = new Date(EVENT_DATE + entry.time).getTime();
         return (now - entryTime > 0);
     })
@@ -30,7 +32,9 @@ export function updateDataFeed() {
 
 export function getNextEntry() {
     const now = new Date().getTime();
-    const nextEntries = data.filter(entry => {
+    const nextEntries = data.sort(function (a, b) {
+        return new Date(EVENT_DATE + a.time).getTime() - new Date(EVENT_DATE + b.time).getTime();
+    }).filter(entry => {
         const entryTime = new Date(EVENT_DATE + entry.time).getTime();
         return (now - entryTime < 0);
     });
