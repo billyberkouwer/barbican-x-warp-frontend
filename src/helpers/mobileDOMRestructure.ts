@@ -1,14 +1,11 @@
 import { MOBILE_BREAKPOINT } from "@/variables/constants";
 
-const parentElement = document.getElementById("page-wrapper")
 const muxContainer = document.getElementById("mux-container")
 const mapContainer = document.getElementById("map-container")
 const eventBanner = document.getElementById("event-banner");
 
 export default function mobileDOMRestructure() {
-    console.log(parentElement)
-    
-    window.addEventListener("resize", (e) => {
+    window.addEventListener("resize", () => {
         const x = window.innerWidth;
         movableElements.forEach((el) => {
             let insertElement;
@@ -17,7 +14,7 @@ export default function mobileDOMRestructure() {
             } else {
                 insertElement = el.desktopLocation;
             }
-            insertElement?.parentElement?.children.namedItem(eventBanner.id) === null ?
+            eventBanner?.id && insertElement?.parentElement?.children.namedItem(eventBanner.id) === null && el.element ?
                 insertElement?.parentElement.insertBefore(el.element, insertElement) : null;
         })
     })
