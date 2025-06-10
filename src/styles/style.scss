@@ -26,17 +26,14 @@ html {
     "d"
     "e"
     ;
-    grid-template-rows: min-content 4fr 3fr minmax(max-content, 4fr) minmax(5%, 1fr);
+    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) minmax(6%, 1fr);
 
 
     @include base.lg {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 30% 20% 20%;
-
+        grid-template-rows: minmax(45%, 3fr) minmax(max-content, 2fr);
         grid-template-areas:
             "a b"
-            "a b"
-            "c d"
             "c d"
         ;
 
@@ -78,6 +75,11 @@ html {
 
 .terminal-left__container {
     grid-area: e;
+    background-color: base.$dark;
+    overflow: auto;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     @include base.lg {
         grid-area: c;
@@ -93,11 +95,16 @@ html {
 .cross {
     width: 1rem;
     margin: 0.25rem;
+    display: none;
 
     @include base.lg {
         width: 1.5rem;
         margin: 0.25rem;
+        display: block;
+    }
 
+    &.mobile-visible {
+        display: block;
     }
 
     &.center {

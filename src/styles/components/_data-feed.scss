@@ -2,19 +2,20 @@
 
 .data-feed__table {
     display: block;
-    position: relative;
+    position: absolute;
     overflow-y: auto;
-    background-color: base.$dark;
     font-size: 0.75rem;
     line-height: 0.75rem;
     letter-spacing: -0.025rem;
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
     list-style: square;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
     padding-right: 5rem;
     border-spacing: 0.25rem 0.15rem;
+    height: 100%;
+    overflow: visible;
+    bottom: 0;
 
     @include base.lg {
         border-spacing: 1rem 0.2rem;

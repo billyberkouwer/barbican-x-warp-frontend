@@ -46,7 +46,7 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
     return (//html
         `
         <tr class="location-table__track">
-            <td colspan="1" class="uppercase">${hasLocation ? location.includes("act") ? "Hall" : location : ""}</td>
+            <td colspan="1" class="uppercase event-location">${hasLocation ? location.includes("act") ? "Hall" : location : ""}</td>
             <td colspan="100">
                 <table class="nested-table">
                     <tbody>

@@ -9,7 +9,12 @@ td {
 }
 
 .date-time__wrapper {
-    line-height: 0.75rem;
+    line-height: 0.5rem;
+    font-size: 0.6rem;
+    @include base.lg {
+        line-height: 0.75rem;
+        font-size: 0.75rem;
+    }
 }
 
 .terminal-right__container {
@@ -35,6 +40,7 @@ td {
     height: 100%;
     width: 30%;
     border: 1px solid base.$green;
+    word-wrap: break-word;
 
     @include base.lg {
         width: 20%; // half of grid size
@@ -51,7 +57,7 @@ td {
 }
 
 .terminal-right-inner__container {
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 0.25rem 1.25rem;
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -60,7 +66,7 @@ td {
         "c";
 
     @include base.lg {
-        padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.25rem 1.5rem;
     }
 }
 
@@ -160,7 +166,7 @@ address {
     // grid-template-columns: 100px 10fr;
 
     @include base.lg {
-        grid-template-columns: 100px 10fr;
+        grid-template-columns: min(100px, 6vw) 10fr;
     }
 
     td {
@@ -175,6 +181,10 @@ address {
 #acts-table-body {
     display: grid;
     gap: 0.5rem;
+}
+
+.event-location {
+    word-wrap: break-word;
 }
 
 .acts-table {
@@ -208,7 +218,7 @@ address {
         }
 
         div {
-            height: 0.75rem;
+            height: min(0.75rem, 100%);
             width: 0%;
             transition: width 0.1s;
         }

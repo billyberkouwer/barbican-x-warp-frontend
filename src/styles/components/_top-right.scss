@@ -162,8 +162,8 @@
 
     .grey-text {
         // margin-top: 0.3rem;
-        font-size: 1.15rem;
-        line-height: 0.95rem;
+        font-size: 0.85rem;
+        line-height: 0.65rem;
         letter-spacing: -0.0.75rem;
         color: base.$light;
 
@@ -240,6 +240,11 @@
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
+
+    @include base.lg {
+        display: block;
+    }
 }
 
 .warp-logo-dark__container {
@@ -272,10 +277,15 @@
 
 .live-now__container {
     position: absolute;
-    bottom: 0;
     left: 0;
+    top: 0;
+    bottom: 0;
     visibility: hidden;
     width: 100%;
+
+    @include base.lg {
+        top: unset;
+    }
 
     &.visible {
         visibility: visible;
@@ -352,7 +362,7 @@
         line-height: 1.75rem;
         letter-spacing: -0.15rem;
         font-size: 2rem;
-        margin-bottom: -0.4rem;
+        margin-bottom: -0.2rem;
         max-width: 20rem;
 
         @include base.md {
@@ -433,6 +443,11 @@
     margin-top: 0.4rem;
     position: absolute;
     z-index: 0;
+    display: none;
+
+    @include base.lg {
+        display: block;
+    }
 
     &.left {
         position: absolute;
