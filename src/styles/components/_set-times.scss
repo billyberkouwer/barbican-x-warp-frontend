@@ -11,6 +11,7 @@ td {
 .date-time__wrapper {
     line-height: 0.5rem;
     font-size: 0.6rem;
+
     @include base.lg {
         line-height: 0.75rem;
         font-size: 0.75rem;
@@ -42,6 +43,11 @@ td {
     border: 1px solid base.$green;
     word-wrap: break-word;
 
+    @include base.sm {
+        display: flex;
+        justify-content: center;
+    }
+
     @include base.lg {
         width: 20%; // half of grid size
     }
@@ -66,7 +72,7 @@ td {
         "c";
 
     @include base.lg {
-    padding: 1.5rem 1.5rem 0.25rem 1.5rem;
+        padding: 1.5rem 1.5rem 0.25rem 1.5rem;
     }
 }
 
