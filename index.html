@@ -10,21 +10,23 @@
   <body>
     <div class="page__wrapper" id="page-wrapper">
       <!-- LIVE FEED -->
-      <div id="mux-container" class="mux__container top-left__container">
-        <mux-player muted id="mux-player"></mux-player>
-        <div class="mux-error__cover visible" id="mux-error__cover-1"></div>
-        <div class="mux-subdivide-screen__container">
-          <div class="grid-screen-area__container right">
-            <div class="live-stream-label">Mechcam</div>
-          </div>
-          <div class="grid-screen-area__container">
-            <div class="live-stream-label">Conservatory</div>
-          </div>
-          <div class="grid-screen-area__container right">
-            <div class="live-stream-label">Stage</div>
-          </div>
-          <div class="grid-screen-area__container">
-            <div class="live-stream-label">Foyer</div>
+      <div class="top-left__container" id="top-right-container">
+        <div id="mux-container" class="mux__container">
+          <mux-player muted id="mux-player"></mux-player>
+          <div class="mux-error__cover visible" id="mux-error__cover-1"></div>
+          <div class="mux-subdivide-screen__container">
+            <div class="grid-screen-area__container right">
+              <div class="live-stream-label">Mechcam</div>
+            </div>
+            <div class="grid-screen-area__container">
+              <div class="live-stream-label">Conservatory</div>
+            </div>
+            <div class="grid-screen-area__container right">
+              <div class="live-stream-label">Stage</div>
+            </div>
+            <div class="grid-screen-area__container">
+              <div class="live-stream-label">Foyer</div>
+            </div>
           </div>
         </div>
       </div>
@@ -60,10 +62,7 @@
               <div class="event-time-stamps__wrapper">
                 <div class="container">
                   <div class="event-time-stamps__container row px-0">
-                    <span
-                      class="paragraph-text px-0"
-                      >14.06.25</span
-                    >
+                    <span class="paragraph-text px-0">14.06.25</span>
                     <span class="col-lg-2 col-2 px-0 offset-lg-0">Time:</span>
                     <span class="col-lg-2 col-3 px-0 offset-lg-1"
                       >17:30<br />[From]</span

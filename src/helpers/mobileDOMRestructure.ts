@@ -1,6 +1,6 @@
 import { MOBILE_BREAKPOINT } from "@/variables/constants";
 
-const muxContainer = document.getElementById("mux-container")
+const topRightContainer = document.getElementById("top-right-container")
 const mapContainer = document.getElementById("map-container")
 const eventBanner = document.getElementById("event-banner");
 
@@ -24,4 +24,4 @@ export default function mobileDOMRestructure() {
     window.addEventListener("resize", restructureDOMEElements)
 };
 
-const movableElements = [{ element: eventBanner, desktopLocation: mapContainer, mobileLocation: muxContainer }]
+const movableElements = [{ element: eventBanner, desktopLocation: mapContainer, mobileLocation: topRightContainer }]

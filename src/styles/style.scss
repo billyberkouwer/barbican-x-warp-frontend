@@ -26,7 +26,7 @@ html {
     "d"
     "e"
     ;
-    grid-template-rows: min-content 39% 19% 25% auto;
+    grid-template-rows: min-content 4fr 3fr minmax(max-content, 4fr) minmax(5%, 1fr);
 
 
     @include base.lg {
@@ -46,6 +46,9 @@ html {
 .top-left__container {
     grid-area: b;
     margin: 0 0.3rem;
+    overflow: hidden;
+    position: relative;
+
 
     @include base.lg {
         grid-area: a;
