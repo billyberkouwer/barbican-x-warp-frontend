@@ -86,6 +86,10 @@ html {
     }
 }
 
+#current-live-act-logo {
+    visibility: hidden;
+}
+
 .terminal-right__wrapper {
     overflow-y: auto;
     background-color: base.$dark;

@@ -228,7 +228,7 @@
 }
 
 .map__container {
-    top: 20px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -238,10 +238,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 0% 0%;
     }
 
     @include base.lg {
-        top: 0px;
         padding: 1rem;
     }
 }

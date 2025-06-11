@@ -39,7 +39,7 @@ td {
 .act__wrapper {
     position: absolute;
     height: 100%;
-    width: 30%;
+    width: 35%;
     border: 1px solid base.$green;
     word-wrap: break-word;
 
@@ -155,8 +155,7 @@ address {
 .event-track {
     width: 100%;
     display: grid;
-    grid-template-columns: 60% auto auto auto auto 30%;
-
+    grid-template-columns: 70% auto auto auto auto;
 
     @include base.lg {
         grid-template-columns: 40% 2% 5% 2% 5% 34% 7%;
@@ -195,23 +194,56 @@ address {
 
 .acts-table {
     color: base.$green;
-    width: 100%;
+    // width: 100%;
     animation: glitch-in 0.29s 3 0.1s;
     font-size: 0.1rem;
     font-size: 0.6rem;
     line-height: 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr min-content;
+    position: relative;
 
     @include base.lg {
         font-size: 0.75rem;
         line-height: 0.6rem;
-
+        grid-template-columns: 1fr;
     }
-
 
     tbody {
         width: 100%;
         display: grid;
         gap: 0.15rem;
+    }
+
+    #current-live-act-logo-wrapper {
+        visibility: hidden;
+        display: block;
+        position: relative;
+        height: 100%;
+        width: auto;
+        
+        @include base.lg {
+            aspect-ratio: unset !important;
+        }
+
+        &.visible {
+            visibility: visible;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            transform-origin: top left;
+            /* Note: for a CLOCKWISE rotation, use the commented-out
+     transform instead of this one. */
+            transform: rotate(90deg) translate(0, -100%);
+            // translate: 100%;
+            // height: 1rem;
+            // width: 100%;
+            // width: 200px;
+            max-width: unset;
+        }
+
     }
 
     .loading-bar__wrapper {
@@ -269,6 +301,10 @@ address {
         @include base.lg {
             height: 3rem;
         }
+    }
+
+    #current-live-act-logo {
+        animation: none;
     }
 
     .event-progress-text {

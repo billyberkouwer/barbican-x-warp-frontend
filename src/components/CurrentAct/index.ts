@@ -1,3 +1,4 @@
+import { sizeBandLogo } from "@/helpers";
 import getCurrentAct from "@/helpers/getCurrentAct";
 import { EVENT_DATE } from "@/variables/constants";
 
@@ -33,9 +34,10 @@ function updateCurrentActInfo() {
         location.textContent = currentAct.location ?? "";
         startTime.textContent = start ? `${start.getHours()}:${start.getMinutes()}` : "";
         endTime.textContent = end ? `${end.getHours()}:${end.getMinutes()}` : "";
-        logo.style.visibility = currentAct.image ? "visible" : "hidden";
+        logo.style.visibility = "hidden";
         logo.src = currentAct.image ?? "";
         logo.alt = currentAct.performer;
+        logo.onload = () => {sizeBandLogo(logo); logo.style.visibility = "visible"}
         container.classList.add("visible");
     }
 

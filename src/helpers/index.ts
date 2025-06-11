@@ -1,3 +1,5 @@
+import { MOBILE_BREAKPOINT } from "@/variables/constants";
+
 export function getEventProgress(startTime: Date, endTime: Date) {
     const now = new Date();
     const totalDuration = endTime.getTime() - startTime.getTime();
@@ -13,5 +15,23 @@ export function getEventProgress(startTime: Date, endTime: Date) {
         started,
         finished,
         inProgress
+    }
+}
+
+export function sizeBandLogo(logo: HTMLImageElement) {
+    const wrapper = document.getElementById("current-live-act-logo-wrapper");
+    const { y } = { y: wrapper?.clientHeight }
+    const aspectRatio = `${logo.naturalWidth} / ${logo.naturalHeight}`;
+
+    if (wrapper) {
+        if (window.innerWidth < MOBILE_BREAKPOINT) {
+            wrapper.style.aspectRatio = `${logo.naturalHeight} / ${logo.naturalWidth}`;
+            logo.style.aspectRatio = aspectRatio;
+            logo.style.width = y + "px";
+        } else {
+            wrapper.style.aspectRatio = "unset"
+            logo.style.aspectRatio = "unset"
+            logo.style.width = "100%"
+        }
     }
 }

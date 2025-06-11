@@ -1,10 +1,20 @@
 import { MOBILE_BREAKPOINT } from "@/variables/constants";
+import { sizeBandLogo } from ".";
 
 const topRightContainer = document.getElementById("top-right-container")
 const mapContainer = document.getElementById("map-container")
 const eventBanner = document.getElementById("event-banner");
 
+const currentActLogoWrapper = document.getElementById("current-live-act-logo-wrapper");
+const currentActLogo = document.getElementById("current-live-act-logo") as HTMLImageElement | null;
+const logoDesktopLocation = document.getElementById("event-progress-bar-wrapper");
+const logoMobileLocation = document.getElementById("acts-table-body")
+
 function restructureDOMEElements() {
+    if (currentActLogo) {
+        sizeBandLogo(currentActLogo)
+    }
+
     const x = window.innerWidth;
     movableElements.forEach((el) => {
         let insertElement;
@@ -24,4 +34,4 @@ export default function mobileDOMRestructure() {
     window.addEventListener("resize", restructureDOMEElements)
 };
 
-const movableElements = [{ element: eventBanner, desktopLocation: mapContainer, mobileLocation: topRightContainer }]
+const movableElements = [{ element: eventBanner, desktopLocation: mapContainer, mobileLocation: topRightContainer }, { element: currentActLogoWrapper, desktopLocation: logoDesktopLocation, mobileLocation: logoMobileLocation?.nextSibling }]
