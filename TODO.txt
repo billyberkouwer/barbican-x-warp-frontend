@@ -3,9 +3,10 @@ TODO
 - Cut off letters in live stream locations - DONE
 - map svg element - DONE
 - current act container - DONE
+- terminal right current act indicator - DONE
+- right terminal element positioning on mobile (logo, event time, logo) - DONE
+
 - scrollbar styles
 - At the end of live stream, more glitching
-- terminal right current act indicator
 - change live stream position on tap on mobile
-- right terminal element positioning on mobile (logo, event time, logo)
 - Orange banner when live stream not started

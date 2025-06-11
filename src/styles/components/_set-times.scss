@@ -155,7 +155,11 @@ address {
 .event-track {
     width: 100%;
     display: grid;
-    grid-template-columns: 70% auto auto auto auto;
+    grid-template-columns: 70% auto auto auto auto 1rem;
+
+    &.active {
+        background-color: red;
+    }
 
     @include base.lg {
         grid-template-columns: 40% 2% 5% 2% 5% 34% 7%;
@@ -221,7 +225,7 @@ address {
         position: relative;
         height: 100%;
         width: auto;
-        
+
         @include base.lg {
             aspect-ratio: unset !important;
         }
@@ -236,7 +240,7 @@ address {
             transform-origin: top left;
             /* Note: for a CLOCKWISE rotation, use the commented-out
      transform instead of this one. */
-            transform: rotate(90deg) translate(0, -100%);
+            transform: rotate(-90deg) translate(-100%, 0);
             // translate: 100%;
             // height: 1rem;
             // width: 100%;
@@ -280,12 +284,16 @@ address {
 .right-terminal__footer {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 4fr;
+    grid-template-columns: 3fr 1fr 1fr 4fr;
+
+
     gap: 1rem;
     align-items: flex-end;
     grid-area: b;
+    color: base.$green;
 
     @include base.lg {
+        grid-template-columns: 1fr 1fr 2fr 4fr;
         grid-area: c;
     }
 

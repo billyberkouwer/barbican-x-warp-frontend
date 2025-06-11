@@ -371,7 +371,7 @@
 
     &.performer-name {
         width: min-content;
-        max-width: 10rem;
+        max-width: 15rem;
 
         @include base.lg {
             max-width: 20rem;
@@ -484,10 +484,15 @@
 }
 
 .square {
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: red;
     position: relative;
+
+    @include base.lg {
+        width: 1rem;
+        height: 1rem;
+    }
 
     &.blue {
         background-color: base.$blue;

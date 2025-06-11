@@ -16,9 +16,16 @@ const allActs = ["act_1", "act_2", "act_3"];
 
 let previousAct: any = null;
 
+const square = document.createElement("div")
+square.classList.add("square", "green")
+
 function updateCurrentActInfo() {
     const currentAct = getCurrentAct();
     if (currentAct !== previousAct) {
+        const previousTrack = document.getElementById(currentAct.performer + "-track");
+        if (previousTrack?.lastChild) {
+            previousTrack?.removeChild(previousTrack?.lastChild)
+        }
         previousAct = currentAct;
         const start = currentAct.startTime ? new Date(EVENT_DATE + currentAct.startTime) : null
         const end = currentAct.endTime ? new Date(EVENT_DATE + currentAct.endTime) : null;
@@ -26,7 +33,10 @@ function updateCurrentActInfo() {
         inactiveActs.forEach((act) => {
             document.getElementById(act + "-block")?.classList.remove("green-bg");
         })
-        document.getElementById(currentAct.act + "-block")?.classList.add("green-bg");
+        const activeBlock = document.getElementById(currentAct.act + "-block")
+        activeBlock?.classList.add("green-bg");
+        const activeTrack = document.getElementById(currentAct.performer + "-track");
+        activeTrack?.appendChild(square)
         act.textContent = currentAct.act_full ?? "";
         name.textContent = currentAct.performer ?? "";
         actDescription.textContent = currentAct.performanceDescription ?? "";
@@ -36,8 +46,9 @@ function updateCurrentActInfo() {
         endTime.textContent = end ? `${end.getHours()}:${end.getMinutes()}` : "";
         logo.style.visibility = "hidden";
         logo.src = currentAct.image ?? "";
+        console.log(currentAct.image)
         logo.alt = currentAct.performer;
-        logo.onload = () => {sizeBandLogo(logo); logo.style.visibility = "visible"}
+        logo.onload = () => { sizeBandLogo(logo); logo.style.visibility = "visible" }
         container.classList.add("visible");
     }
 

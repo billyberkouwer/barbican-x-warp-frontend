@@ -18,11 +18,11 @@ export function getEventProgress(startTime: Date, endTime: Date) {
     }
 }
 
+const wrapper = document.getElementById("current-live-act-logo-wrapper");
+
 export function sizeBandLogo(logo: HTMLImageElement) {
-    const wrapper = document.getElementById("current-live-act-logo-wrapper");
     const { y } = { y: wrapper?.clientHeight }
     const aspectRatio = `${logo.naturalWidth} / ${logo.naturalHeight}`;
-
     if (wrapper) {
         if (window.innerWidth < MOBILE_BREAKPOINT) {
             wrapper.style.aspectRatio = `${logo.naturalHeight} / ${logo.naturalWidth}`;

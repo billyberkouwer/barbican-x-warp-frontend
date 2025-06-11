@@ -123,3 +123,19 @@ html {
 .uppercase {
     text-transform: uppercase;
 }
+
+.mobile-no-display {
+    display: none;
+
+    @include base.lg {
+        display: block;
+    }
+}
+
+.mobile-only-display {
+    display: block;
+
+    @include base.lg {
+        display: none;
+    }
+}

@@ -11,10 +11,6 @@ const logoDesktopLocation = document.getElementById("event-progress-bar-wrapper"
 const logoMobileLocation = document.getElementById("acts-table-body")
 
 function restructureDOMEElements() {
-    if (currentActLogo) {
-        sizeBandLogo(currentActLogo)
-    }
-
     const x = window.innerWidth;
     movableElements.forEach((el) => {
         let insertElement;
@@ -29,8 +25,13 @@ function restructureDOMEElements() {
     })
 }
 
+const logoResizeObserver = new ResizeObserver(() => { currentActLogo ? sizeBandLogo(currentActLogo) : null })
+
 export default function mobileDOMRestructure() {
     restructureDOMEElements()
+    if (currentActLogoWrapper) {
+        logoResizeObserver.observe(currentActLogoWrapper)
+    }
     window.addEventListener("resize", restructureDOMEElements)
 };
 

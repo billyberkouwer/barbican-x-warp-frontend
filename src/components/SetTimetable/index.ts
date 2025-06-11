@@ -28,7 +28,7 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
 
         return (//html
             `    
-            <tr class="event-track">
+            <tr class="event-track" id="${event.performer}-track">
                 <td class="event-name ${event.act ? "" : "green-bg"}">
                     ${eventName}
                 </td>
