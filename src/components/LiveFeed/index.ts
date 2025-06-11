@@ -4,7 +4,7 @@ import { DEFAULT_PLAYBACK_ID, SERVER_ORIGIN } from "../../variables/constants";
 const muxContainer = document.getElementById("mux-container") as HTMLDivElement;
 let currentMobileVideoDisplay = 0;
 const liveNowText = document.getElementById("live-now") as HTMLSpanElement;
-const liveNowBanner = document.querySelector(".live-now-banner__container") 
+const liveNowBanner = document.querySelector(".live-now-banner__container")
 
 export default async function initLiveFeed() {
     const socket = io(SERVER_ORIGIN, { extraHeaders: { "ngrok-skip-browser-warning": "69420" } });
@@ -12,6 +12,9 @@ export default async function initLiveFeed() {
 
     const playerOne = document.querySelector("#mux-player") as HTMLVideoElement | undefined;
     const playerOneCover = document.querySelector("#mux-error__cover-1")
+
+    liveNowText.innerHTML = "Offline";
+    liveNowBanner?.classList.add("orange")
 
     await fetch(SERVER_ORIGIN + "/sign-in", {
         method: "GET",
@@ -53,7 +56,7 @@ export default async function initLiveFeed() {
         muxContainer.classList.remove("position-" + currentMobileVideoDisplay)
         if (currentMobileVideoDisplay < 3) {
             currentMobileVideoDisplay++;
-        }   else {
+        } else {
             currentMobileVideoDisplay = 0;
         }
         muxContainer.classList.add("position-" + currentMobileVideoDisplay)
