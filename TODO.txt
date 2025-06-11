@@ -7,6 +7,6 @@ TODO
 - right terminal element positioning on mobile (logo, event time, logo) - DONE
 
 - scrollbar styles
-- At the end of live stream, more glitching
 - change live stream position on tap on mobile
 - Orange banner when live stream not started
+- At the end of live stream, more glitching

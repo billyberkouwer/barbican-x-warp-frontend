@@ -5,6 +5,27 @@
 
 * {
     font-family: base.$font;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: base.$green;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: base.$green;
+    }
 }
 
 html {
@@ -76,10 +97,8 @@ html {
 .terminal-left__container {
     grid-area: e;
     background-color: base.$dark;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 
     @include base.lg {
         grid-area: c;

@@ -10,15 +10,16 @@
     scroll-snap-type: both mandatory;
     overscroll-behavior-x: contain;
     list-style: square;
-
-    padding-right: 5rem;
+    margin: 0 1rem;
+    overflow: auto;
     border-spacing: 0.25rem 0.15rem;
     height: 100%;
-    overflow: visible;
     bottom: 0;
 
     @include base.lg {
         border-spacing: 1rem 0.2rem;
+        padding-right: 5rem;
+
     }
 
     td {

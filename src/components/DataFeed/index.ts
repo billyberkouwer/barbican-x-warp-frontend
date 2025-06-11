@@ -2,6 +2,7 @@ import { DATA_FEED_TYPE_SPEED, EVENT_DATE } from "../../variables/constants";
 import data from "./awarphappening_script.json";
 const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
 const container = document.querySelector('.terminal-left__container') as HTMLUListElement;
+const scrollElement = document.querySelector(".data-feed__table") as HTMLUListElement;
 let currentTimestamp;
 
 export function updateDataFeed() {
@@ -82,7 +83,7 @@ const config = { childList: true };
 const callback = function (mutationsList: MutationRecord[]) {
     for (let mutation of mutationsList) {
         if (mutation.type === "childList") {
-            container.scrollTo(0, container.scrollHeight);
+            scrollElement.scrollTo(0, scrollElement.scrollHeight);
         }
     }
 };
