@@ -47,7 +47,7 @@ html {
     "d"
     "e"
     ;
-    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) minmax(6%, 1fr);
+    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) minmax(3%, 1fr);
 
 
     @include base.lg {
