@@ -13,9 +13,12 @@ const logo = document.getElementById("current-live-act-logo") as HTMLImageElemen
 
 const allActs = ["act_1", "act_2", "act_3"];
 
+let previousAct: any = null;
+
 function updateCurrentActInfo() {
     const currentAct = getCurrentAct();
-    if (currentAct) {
+    if (currentAct !== previousAct) {
+        previousAct = currentAct;
         const start = currentAct.startTime ? new Date(EVENT_DATE + currentAct.startTime) : null
         const end = currentAct.endTime ? new Date(EVENT_DATE + currentAct.endTime) : null;
         const inactiveActs = allActs.filter(act => act !== currentAct.act);
@@ -34,12 +37,14 @@ function updateCurrentActInfo() {
         logo.src = currentAct.image ?? "";
         logo.alt = currentAct.performer;
         container.classList.add("visible");
-        return;
     }
-    allActs.forEach((act) => {
-        document.getElementById(act + "-block")?.classList.remove("green-bg");
-    })
-    container.classList.remove("visible");
+
+    if (!currentAct) {
+        allActs.forEach((act) => {
+            document.getElementById(act + "-block")?.classList.remove("green-bg");
+        })
+        container.classList.remove("visible");
+    }
 }
 
 export default function initCurrentAct() {
