@@ -47,7 +47,7 @@ html {
     "d"
     "e"
     ;
-    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) minmax(3%, 1fr);
+    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) 1fr;
 
 
     @include base.lg {
@@ -113,6 +113,16 @@ html {
     overflow-y: auto;
     background-color: base.$dark;
     grid-area: d;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox, Safari 18.2+, Chromium 121+ */
+
+    &::-webkit-scrollbar {
+        display: none;
+        /* Older Safari and Chromium */
+
+    }
 }
 
 .cross {

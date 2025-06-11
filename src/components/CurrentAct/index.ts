@@ -12,6 +12,7 @@ const startTime = document.getElementById("current-live-act-start-time") as HTML
 const endTime = document.getElementById("current-live-act-end-time") as HTMLElement
 const logo = document.getElementById("current-live-act-logo") as HTMLImageElement;
 const allActs = ["act_1", "act_2", "act_3"];
+const fromUntilSpans = Array.from(document.querySelectorAll(".from-until"))
 
 let previousAct: any = null;
 
@@ -19,7 +20,14 @@ const square = document.createElement("div")
 square.classList.add("square", "green", "mobile-only-display")
 
 function updateCurrentActInfo() {
+    container.classList.add("visible");
+
     const currentAct = getCurrentAct();
+
+    if (currentAct) {
+        fromUntilSpans.forEach((el) => el.classList.add("visible"))
+    }
+
     if (currentAct !== previousAct) {
         const previousTrack = document.getElementById(previousAct?.performer + "-track");
         if (previousTrack?.lastChild) {
@@ -50,10 +58,10 @@ function updateCurrentActInfo() {
         logo.src = currentAct.image ?? "";
         logo.alt = currentAct.performer;
         logo.onload = () => { sizeBandLogo(logo); logo.style.visibility = "visible" }
-        container.classList.add("visible");
     }
 
     if (!currentAct) {
+        fromUntilSpans.forEach((el) => el.classList.remove("visible"))
         const previousTrack = document.getElementById(previousAct?.performer + "-track");
         if (previousTrack?.lastChild) {
             previousTrack?.removeChild(previousTrack?.lastChild)
@@ -63,7 +71,6 @@ function updateCurrentActInfo() {
         allActs.forEach((act) => {
             document.getElementById(act + "-block")?.classList.remove("green-bg");
         })
-        container.classList.remove("visible");
     }
 }
 

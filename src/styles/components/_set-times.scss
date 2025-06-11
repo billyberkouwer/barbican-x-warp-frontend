@@ -213,9 +213,10 @@ address {
     font-size: 0.6rem;
     line-height: 0.5rem;
     display: grid;
-    grid-template-columns: 3fr min-content;
+    grid-template-columns: 5fr min-content;
     position: relative;
     gap: 0.5rem;
+    align-items: center;
 
     @include base.lg {
         font-size: 0.75rem;
@@ -231,10 +232,12 @@ address {
 
     #current-live-act-logo-wrapper {
         visibility: hidden;
-        display: block;
+        display: flex;
         position: relative;
-        height: 100%;
+        height: 90%;
         width: auto;
+        // justify-content: center;
+        // align-items: center;
 
         @include base.lg {
             aspect-ratio: unset !important;

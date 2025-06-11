@@ -133,6 +133,14 @@
     justify-content: space-between;
     padding-right: 1rem;
 
+    .from-until {
+        visibility: hidden;
+
+        &.visible {
+            visibility: visible;
+        }
+    }
+
     &.orange {
         background-color: orange;
     }
