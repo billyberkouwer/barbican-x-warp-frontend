@@ -55,7 +55,7 @@ html {
 
 .banner__container {
     grid-area: a;
-    margin: 0 0.3rem;
+    margin: 0 0.3rem 0.2rem 0.3rem;
 
     @include base.lg {
         margin: unset;

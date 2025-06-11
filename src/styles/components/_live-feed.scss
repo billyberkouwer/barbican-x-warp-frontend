@@ -51,21 +51,24 @@
         display: flex;
         align-items: flex-end;
 
-        &.right {
-            border-right-width: 1px;
+        @include base.lg {
+            &.right {
+                border-right-width: 1px;
+            }
+
+            &.left {
+                border-left-width: 1px;
+            }
+
+            &.top {
+                border-top-width: 1px;
+            }
+
+            &.bottom {
+                border-bottom-width: 1px;
+            }
         }
 
-        &.left {
-            border-left-width: 1px;
-        }
-
-        &.top {
-            border-top-width: 1px;
-        }
-
-        &.bottom {
-            border-bottom-width: 1px;
-        }
     }
 
     .live-stream-label {

@@ -135,6 +135,7 @@
 
     @include base.lg {
         width: fit-content;
+        min-width: 90%;
         padding-right: 5rem;
     }
 
@@ -227,12 +228,16 @@
 }
 
 .map__container {
-    margin: 6% 9%;
-    height: 67%;
-    top: 0;
+    top: 20px;
     left: 0;
-    width: 82%;
+    width: 100%;
+    max-height: 100%;
     position: absolute;
+
+    @include base.lg {
+        top: 0px;
+        padding: 1rem;
+    }
 }
 
 .warp-logo-dark__wrapper {
@@ -282,6 +287,9 @@
     bottom: 0;
     visibility: hidden;
     width: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     @include base.lg {
         top: unset;
@@ -325,8 +333,12 @@
 }
 
 .current-act__container {
-    display: flex;
-    margin-right: 3rem;
+    display: grid;
+    grid-template-columns: fit-content(8ch) 1fr;
+
+    @include base.lg {
+        margin-right: 3rem;
+    }
 
     .performer-description__container {
         position: absolute;
@@ -343,9 +355,7 @@
 
 .text-inverted__container {
     background-color: base.$blue;
-    // width: fit-content;
     position: relative;
-    // filter: blur(0.5px);
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -353,17 +363,27 @@
     font-family: base.$font;
     color: base.$light;
 
+    &.performer-name {
+        width: min-content;
+        max-width: 10rem;
+
+        @include base.lg {
+            max-width: 20rem;
+        }
+    }
+
     .act-description {
         white-space: normal;
         width: auto;
     }
 
     .large-text-inverted {
-        line-height: 1.75rem;
+        line-height: 1.9rem;
         letter-spacing: -0.15rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: -0.2rem;
         max-width: 20rem;
+        word-wrap: break-word;
 
         @include base.md {
             line-height: 2.75rem;
@@ -380,7 +400,6 @@
     }
 
     p {
-
         line-height: 0.75rem;
         letter-spacing: -0.01rem;
         font-size: 0.8rem;
@@ -433,10 +452,6 @@
         line-height: 2.5rem;
         letter-spacing: -0.25rem;
     }
-}
-
-.map__container {
-    border: 1px solid base.$dark;
 }
 
 .color-squares__container {
