@@ -17,12 +17,12 @@ const allActs = ["act_1", "act_2", "act_3"];
 let previousAct: any = null;
 
 const square = document.createElement("div")
-square.classList.add("square", "green")
+square.classList.add("square", "green", "mobile-only-display")
 
 function updateCurrentActInfo() {
     const currentAct = getCurrentAct();
     if (currentAct !== previousAct) {
-        const previousTrack = document.getElementById(currentAct.performer + "-track");
+        const previousTrack = document.getElementById(currentAct?.performer + "-track");
         if (previousTrack?.lastChild) {
             previousTrack?.removeChild(previousTrack?.lastChild)
         }
