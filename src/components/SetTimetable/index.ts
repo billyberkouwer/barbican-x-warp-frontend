@@ -10,8 +10,8 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
     const elements = events.map((event, i) => {
         const start = new Date(EVENT_DATE + event.startTime);
         const end = new Date(EVENT_DATE + event.endTime);
-        const startTimeFormatted = start.getHours() + ":" + (start.getMinutes() === 0 ? "00" : start.getMinutes());
-        const endTimeFormatted = end.getHours() + ":" + (end.getMinutes() === 0 ? "00" : end.getMinutes());
+        const startTimeFormatted = start.toLocaleTimeString("it-IT").substring(0, start.toLocaleTimeString("it-IT").length - 3);
+        const endTimeFormatted = end.toLocaleTimeString("it-IT").substring(0, end.toLocaleTimeString("it-IT").length - 3);
         const loadingBarId = `${location}-${i}-bar`;
         progressBarsData.push({ id: loadingBarId, startTime: start, endTime: end })
 
@@ -46,7 +46,8 @@ function generateTableEntry(location: "conservatory" | "act_1" | "act_2" | "act_
     return (//html
         `
         <tr class="location-table__track">
-            <td colspan="1" class="uppercase event-location">${hasLocation ? location.includes("act") ? "Hall" : location : ""}</td>
+            <td colspan="1" class="uppercase event-location mobile-no-display">${hasLocation ? location.includes("act") ? "Hall" : location : ""}</td>
+            <td class="mobile-only-display event-location">${hasLocation ? ":" : ""}</td>
             <td colspan="100">
                 <table class="nested-table">
                     <tbody>

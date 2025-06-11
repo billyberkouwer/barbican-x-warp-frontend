@@ -5,8 +5,9 @@ TODO
 - current act container - DONE
 - terminal right current act indicator - DONE
 - right terminal element positioning on mobile (logo, event time, logo) - DONE
+- scrollbar styles - DONE
+- change live stream position on tap on mobile - DONE
+- Orange banner when live stream not started - DONE
+- Time formatting - DONE
 
-- scrollbar styles
-- change live stream position on tap on mobile
-- Orange banner when live stream not started
 - At the end of live stream, more glitching

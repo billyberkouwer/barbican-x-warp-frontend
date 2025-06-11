@@ -189,11 +189,20 @@ address {
 
 #acts-table-body {
     display: grid;
-    gap: 0.5rem;
+    gap: 0.2rem;
+
+    @include base.lg {
+        gap: 0.5rem;
+    }
 }
 
 .event-location {
     word-wrap: break-word;
+    margin-bottom: 0.2rem;
+
+    @include base.lg {
+        margin-bottom: 0rem;
+    }
 }
 
 .acts-table {
@@ -206,6 +215,7 @@ address {
     display: grid;
     grid-template-columns: 3fr min-content;
     position: relative;
+    gap: 0.5rem;
 
     @include base.lg {
         font-size: 0.75rem;

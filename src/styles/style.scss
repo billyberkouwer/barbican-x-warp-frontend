@@ -8,8 +8,8 @@
 
     /* width */
     ::-webkit-scrollbar {
-        width: 1px;
-        height: 1px;
+        width: 2px;
+        height: 2px;
     }
 
     /* Track */
@@ -121,7 +121,7 @@ html {
     display: none;
 
     @include base.lg {
-        width: 1.5rem;
+        width: 1rem;
         margin: 0.25rem;
         display: block;
     }

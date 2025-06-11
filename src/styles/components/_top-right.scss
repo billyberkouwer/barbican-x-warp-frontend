@@ -125,13 +125,17 @@
     }
 }
 
-.green-banner__container {
+.live-now-banner__container {
     position: relative;
     display: flex;
     background-color: base.$green;
     align-items: flex-end;
     justify-content: space-between;
     padding-right: 1rem;
+
+    &.orange {
+        background-color: orange;
+    }
 
     @include base.lg {
         width: fit-content;
@@ -330,7 +334,7 @@
             animation: glitch-in 0.36s 2;
         }
 
-        .green-banner__container {
+        .live-now-banner__container {
             animation: glitch-in 0.28s 2;
         }
     }
@@ -346,9 +350,10 @@
 
     .performer-description__container {
         position: absolute;
-        width: 70%;
+        width: 85%;
         bottom: 0;
-        line-height: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 0.7rem;
         display: none;
 
         @include base.lg {
@@ -370,6 +375,7 @@
     &.performer-name {
         width: min-content;
         max-width: 15rem;
+        padding-right: 0.2rem;
 
         @include base.lg {
             max-width: 20rem;
@@ -486,7 +492,7 @@
     height: 0.5rem;
     background-color: red;
     position: relative;
-
+    justify-self: flex-end;
     @include base.lg {
         width: 1rem;
         height: 1rem;

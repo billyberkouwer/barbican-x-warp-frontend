@@ -4,11 +4,29 @@
     display: block;
     position: absolute;
     height: 100%;
-    transform: translate(50%, 50%) scale(200%);
     width: 100%;
+    transform: translate(50%, 50%) scale(200%);
+
+    &.position-1 {
+        transform: translate(-50%, 50%) scale(200%);
+    }
+
+    &.position-2 {
+        transform: translate(50%, -50%) scale(200%);
+    }
+
+    &.position-3 {
+        transform: translate(-50%, -50%) scale(200%);
+    }
 
     @include base.lg {
         transform: unset;
+
+        &.position-1,
+        &.position-2,
+        &.position-3 {
+            transform: unset;
+        }
     }
 }
 

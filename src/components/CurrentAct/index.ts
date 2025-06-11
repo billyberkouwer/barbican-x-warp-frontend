@@ -11,7 +11,7 @@ const location = document.getElementById("current-live-act-location") as HTMLEle
 const startTime = document.getElementById("current-live-act-start-time") as HTMLElement
 const endTime = document.getElementById("current-live-act-end-time") as HTMLElement
 const logo = document.getElementById("current-live-act-logo") as HTMLImageElement;
-
+const liveNowText = document.getElementById("live-now") as HTMLElement;
 const allActs = ["act_1", "act_2", "act_3"];
 
 let previousAct: any = null;
@@ -22,11 +22,13 @@ square.classList.add("square", "green", "mobile-only-display")
 function updateCurrentActInfo() {
     const currentAct = getCurrentAct();
     if (currentAct !== previousAct) {
-        const previousTrack = document.getElementById(currentAct?.performer + "-track");
+        const previousTrack = document.getElementById(previousAct?.performer + "-track");
         if (previousTrack?.lastChild) {
             previousTrack?.removeChild(previousTrack?.lastChild)
         }
         previousAct = currentAct;
+
+
         const start = currentAct.startTime ? new Date(EVENT_DATE + currentAct.startTime) : null
         const end = currentAct.endTime ? new Date(EVENT_DATE + currentAct.endTime) : null;
         const inactiveActs = allActs.filter(act => act !== currentAct.act);
@@ -37,6 +39,7 @@ function updateCurrentActInfo() {
         activeBlock?.classList.add("green-bg");
         const activeTrack = document.getElementById(currentAct.performer + "-track");
         activeTrack?.appendChild(square)
+
         act.textContent = currentAct.act_full ?? "";
         name.textContent = currentAct.performer ?? "";
         actDescription.textContent = currentAct.performanceDescription ?? "";
@@ -46,13 +49,18 @@ function updateCurrentActInfo() {
         endTime.textContent = end ? `${end.getHours()}:${end.getMinutes()}` : "";
         logo.style.visibility = "hidden";
         logo.src = currentAct.image ?? "";
-        console.log(currentAct.image)
         logo.alt = currentAct.performer;
         logo.onload = () => { sizeBandLogo(logo); logo.style.visibility = "visible" }
         container.classList.add("visible");
     }
 
     if (!currentAct) {
+        const previousTrack = document.getElementById(previousAct?.performer + "-track");
+        if (previousTrack?.lastChild) {
+            previousTrack?.removeChild(previousTrack?.lastChild)
+        }
+        previousAct = currentAct;
+
         allActs.forEach((act) => {
             document.getElementById(act + "-block")?.classList.remove("green-bg");
         })
