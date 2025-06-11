@@ -11,7 +11,6 @@ const location = document.getElementById("current-live-act-location") as HTMLEle
 const startTime = document.getElementById("current-live-act-start-time") as HTMLElement
 const endTime = document.getElementById("current-live-act-end-time") as HTMLElement
 const logo = document.getElementById("current-live-act-logo") as HTMLImageElement;
-const liveNowText = document.getElementById("live-now") as HTMLElement;
 const allActs = ["act_1", "act_2", "act_3"];
 
 let previousAct: any = null;
