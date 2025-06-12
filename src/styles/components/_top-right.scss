@@ -92,6 +92,7 @@
     ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    padding-top: 0.2rem;
 
     @include base.lg {
         grid-template-areas:
@@ -100,6 +101,7 @@
         ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        padding-top: unset;
     }
 
     .large-text__container {
