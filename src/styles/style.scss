@@ -43,7 +43,12 @@ body {
     position: relative;
 }
 
-.page__wrapper {
+.bottom__wrapper {
+    position: fixed;
+    bottom: 0;
+}
+
+.top__wrapper, .bottom__wrapper {
     width: 100%;
     display: grid;
     height: inherit;
