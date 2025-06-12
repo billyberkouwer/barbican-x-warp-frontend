@@ -5,6 +5,7 @@ import initTime from "./components/DateTime";
 import initLiveFeed from "./components/LiveFeed";
 import { initRightTerminal } from "./components/SetTimetable";
 import initWeatherData from "./components/WeatherData";
+import { pageSize } from "./helpers";
 import mobileDOMRestructure from "./helpers/mobileDOMRestructure";
 
 updateDataFeed()
@@ -14,5 +15,6 @@ initTime();
 initCurrentAct();
 initRightTerminal();
 mobileDOMRestructure();
+pageSize()
 
 console.log("Web Design: Felix Luke www.felixluke.co.uk | Web Development: Billy Myles-Berkouwer www.billyberkouwer.dev")

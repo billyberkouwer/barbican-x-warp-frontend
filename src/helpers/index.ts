@@ -35,3 +35,14 @@ export function sizeBandLogo(logo: HTMLImageElement) {
         }
     }
 }
+
+function sizePage() {
+    const y = window.innerHeight;
+    const r = document.querySelector(':root') as HTMLElement | null;
+    r?.style.setProperty('--real-viewport-height', y + "px");
+}
+
+export function pageSize() {
+    window.addEventListener("resize", sizePage)
+    window.addEventListener("scroll", sizePage)
+}

@@ -3,6 +3,11 @@
 @use "./bootstrap/bootstrap-grid.scss";
 @use 'sass:math';
 
+:root {
+    --real-page-height: 100vh;
+    --real-page-height: 100svh;
+}
+
 * {
     font-family: base.$font;
 
@@ -34,7 +39,7 @@ html {
 
 .page__wrapper {
     display: grid;
-    height: 100vh;
+    height: var(--real-page-height);
     padding-top: 0.3rem;
 
     @include base.lg {
@@ -47,7 +52,7 @@ html {
     "d"
     "e"
     ;
-    grid-template-rows: min-content minmax(35%, 4fr) minmax(8%, 3fr) minmax(max-content, 4fr) 1fr;
+    grid-template-rows: min-content minmax(30%, 4fr) 4fr minmax(max-content, 8fr) 1fr;
 
 
     @include base.lg {
