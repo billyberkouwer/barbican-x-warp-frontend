@@ -63,16 +63,18 @@ body {
 
 .bottom__wrapper {
     position: fixed;
-    bottom: 8px;
-    height: calc(var(--real-viewport-height) * 0.5);
+    bottom: 0px;
+    height: calc((var(--real-viewport-height) + 8px) * 0.5);
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
         "d"
         "e"
     ;
+    background-color: base.$dark;
+    padding-bottom: 8px;
 
     @include base.lg {
-        height: calc(var(--real-viewport-height) * 0.4);
+        height: calc((var(--real-viewport-height) * 0.4) + 8px);
         grid-template-rows: 1fr;
         grid-template-areas:
             "c d"
@@ -105,7 +107,6 @@ body {
     overflow: hidden;
     position: relative;
 
-
     @include base.lg {
         grid-area: a;
         margin: unset;
@@ -134,7 +135,6 @@ body {
 
 .terminal-left__container {
     grid-area: e;
-    background-color: base.$dark;
     overflow: hidden;
     position: relative;
 
@@ -149,7 +149,6 @@ body {
 
 .terminal-right__wrapper {
     overflow-y: auto;
-    background-color: base.$dark;
     grid-area: d;
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */

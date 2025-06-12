@@ -37,11 +37,10 @@ export function sizeBandLogo(logo: HTMLImageElement) {
 }
 
 function sizePage() {
-    const y = window.top?.innerHeight;
-    console.log(y)
+    const y = window.parent.innerHeight;
+    console.log(window.parent)
     const r = document.querySelector(':root') as HTMLElement | null;
     r?.style.setProperty('--real-viewport-height', y ? y - 8 + "px" : "100vh");
-    console.log(r)
 }
 
 export function pageSize() {
