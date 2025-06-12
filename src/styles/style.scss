@@ -4,8 +4,8 @@
 @use 'sass:math';
 
 :root {
-    --real-page-height: 100vh;
-    --real-page-height: 100svh;
+    --real-viewport-height: 100vh;
+    --real-viewport-height: 100svh;
 }
 
 * {
@@ -39,7 +39,7 @@ html {
 
 .page__wrapper {
     display: grid;
-    height: var(--real-page-height);
+    height: var(--real-viewport-height);
     padding-top: 0.3rem;
 
     @include base.lg {

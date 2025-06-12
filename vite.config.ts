@@ -10,6 +10,9 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, './src/styles'),
     },
   },
+  server: {
+    host: true
+  },
   assetsInclude: ["/src/components/SVGs/**.svg"],
   css: {
     preprocessorOptions: {
