@@ -64,7 +64,7 @@ body {
 .bottom__wrapper {
     position: fixed;
     bottom: 0px;
-    height: calc((var(--real-viewport-height) + 8px) * 0.5);
+    height: calc((var(--real-viewport-height) * 0.5) + 8px);
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
         "d"
@@ -85,7 +85,7 @@ body {
 .top__wrapper {
     position: fixed;
     top: 0;
-    height: calc(var(--real-viewport-height) * 0.5);
+    height: calc((var(--real-viewport-height) * 0.5) - 8px);
     grid-template-rows: min-content 2fr 1fr;
     grid-template-areas: "a"
         "b"
@@ -93,7 +93,7 @@ body {
     ;
 
     @include base.lg {
-        height: calc(var(--real-viewport-height) * 0.6);
+        height: calc((var(--real-viewport-height) * 0.6) - 8px);
         grid-template-rows: 1fr;
         grid-template-areas:
             "a b"
