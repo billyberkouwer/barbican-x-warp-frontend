@@ -37,6 +37,7 @@ html {
     background-color: base.$light;
     height: var(--real-viewport-height);
     transition: height 0.1s;
+    overflow: hidden;
 }
 
 body {
