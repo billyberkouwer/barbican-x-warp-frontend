@@ -65,13 +65,21 @@ body {
     position: fixed;
     bottom: 0px;
     height: calc((var(--real-viewport-height) * 0.5) + 8px);
-    grid-template-rows: 5fr 1fr;
+    grid-template-rows: max-content 1fr;
     grid-template-areas:
         "d"
         "e"
     ;
     background-color: base.$dark;
     padding-bottom: 8px;
+
+    @media (min-height: 536px) {
+        height: calc((var(--real-viewport-height) * 0.45) + 8px);
+    }
+
+    @media (min-height: 756px) {
+        height: calc((var(--real-viewport-height) * 0.4) + 8px);
+    }
 
     @include base.lg {
         height: calc((var(--real-viewport-height) * 0.4) + 8px);
@@ -91,6 +99,16 @@ body {
         "b"
         "c"
     ;
+
+    @media (min-height: 536px) {
+        grid-template-rows: min-content 2fr 1.5fr;
+        height: calc((var(--real-viewport-height) * 0.55) + 8px);
+    }
+
+    @media (min-height: 756px) {
+        grid-template-rows: min-content 2fr 1.75fr;
+        height: calc((var(--real-viewport-height) * 0.6) + 8px);
+    }
 
     @include base.lg {
         height: calc((var(--real-viewport-height) * 0.6) - 8px);
