@@ -44,6 +44,6 @@ function sizePage() {
 }
 
 export function pageSize() {
-    window.addEventListener("resize", sizePage)
-    // window.addEventListener("scroll", sizePage)
+    // sizePage()
+    // window.addEventListener("resize", sizePage)
 }
