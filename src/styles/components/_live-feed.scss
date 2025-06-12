@@ -62,12 +62,25 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
+    .next-video-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: base.$green;
+        font-size: 0.8rem;
+        line-height: 0.4rem;
+        margin: 0.1rem;
+    }
+
     .grid-screen-area__container {
         border-style: solid;
         border-color: base.$light;
         border-width: 0px;
         display: flex;
         align-items: flex-end;
+        position: relative;
+
+
 
         @include base.lg {
             &.right {
