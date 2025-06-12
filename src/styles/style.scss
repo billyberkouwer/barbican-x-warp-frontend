@@ -48,7 +48,7 @@ body {
     bottom: 0;
     width: 100%;
     display: grid;
-    height: 100%;
+    height: inherit;
     transition: height 0.1s;
     padding-top: 0.3rem;
 
