@@ -35,12 +35,12 @@
 
 html {
     background-color: base.$light;
+    height: var(--real-viewport-height);
 }
 
 body {
+    height: inherit;
     position: relative;
-    height: var(--real-viewport-height);
-
 }
 
 .page__wrapper {
