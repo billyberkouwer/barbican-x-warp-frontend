@@ -36,6 +36,7 @@
 html {
     background-color: base.$light;
     height: var(--real-viewport-height);
+    transition: height 0.1s;
 }
 
 body {
@@ -43,39 +44,54 @@ body {
     position: relative;
 }
 
+.top__wrapper,
 .bottom__wrapper {
-    position: fixed;
-    bottom: 0;
-}
-
-.top__wrapper, .bottom__wrapper {
     width: 100%;
     display: grid;
-    height: inherit;
     transition: height 0.1s;
     padding-top: 0.3rem;
 
     @include base.lg {
         padding: unset;
+        grid-template-columns: 50% 50%;
     }
+}
 
-    grid-template-areas: "a"
-    "b"
-    "c"
-    "d"
-    "e"
+.bottom__wrapper {
+    position: fixed;
+    bottom: 0;
+    height: 50%;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas:
+        "d"
+        "e"
     ;
-    grid-template-rows: min-content minmax(30%, 4fr) 4fr minmax(max-content, 8fr) 1fr;
-
 
     @include base.lg {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: minmax(45%, 3fr) minmax(max-content, 2fr);
+        height: 40%;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            "a b"
             "c d"
         ;
+    }
+}
 
+.top__wrapper {
+    position: fixed;
+    top: 0;
+    height: 50%;
+    grid-template-rows: min-content 2fr 1fr;
+    grid-template-areas: "a"
+        "b"
+        "c"
+    ;
+
+    @include base.lg {
+        height: 60%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "a b"
+        ;
     }
 }
 
