@@ -39,7 +39,6 @@ html {
     transition: height 0.1s;
     overflow: hidden;
     position: relative;
-    top: 8px;
 }
 
 body {
@@ -47,7 +46,6 @@ body {
     position: relative;
     min-height: unset;
     position: relative;
-    top: 8px;
 }
 
 .top__wrapper,
@@ -64,7 +62,7 @@ body {
 
 .bottom__wrapper {
     position: fixed;
-    bottom: 0;
+    bottom: 8px;
     height: calc(var(--real-viewport-height) * 0.5);
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
@@ -90,7 +88,6 @@ body {
         "b"
         "c"
     ;
-    top: 8px;
 
     @include base.lg {
         height: calc(var(--real-viewport-height) * 0.6);
