@@ -36,16 +36,12 @@
 html {
     background-color: base.$light;
     height: var(--real-viewport-height);
-    max-width: 100%;
     transition: height 0.1s;
     overflow: hidden;
-    position: relative;
 }
 
 body {
     height: var(--real-viewport-height);
-    position: relative;
-    min-height: unset;
     position: relative;
 }
 
@@ -63,18 +59,16 @@ body {
 
 .bottom__wrapper {
     position: fixed;
-    bottom: 0px;
-    height: calc((var(--real-viewport-height) * 0.5) + 8px);
+    bottom: 0;
+    height: 50%;
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
         "d"
         "e"
     ;
-    background-color: base.$dark;
-    padding-bottom: 8px;
 
     @include base.lg {
-        height: calc((var(--real-viewport-height) * 0.4) + 8px);
+        height: 40%;
         grid-template-rows: 1fr;
         grid-template-areas:
             "c d"
@@ -85,7 +79,7 @@ body {
 .top__wrapper {
     position: fixed;
     top: 0;
-    height: calc((var(--real-viewport-height) * 0.5) - 8px);
+    height: 50%;
     grid-template-rows: min-content 2fr 1fr;
     grid-template-areas: "a"
         "b"
@@ -93,7 +87,7 @@ body {
     ;
 
     @include base.lg {
-        height: calc((var(--real-viewport-height) * 0.6) - 8px);
+        height: 60%;
         grid-template-rows: 1fr;
         grid-template-areas:
             "a b"
@@ -106,6 +100,7 @@ body {
     margin: 0 0.3rem;
     overflow: hidden;
     position: relative;
+
 
     @include base.lg {
         grid-area: a;
@@ -135,6 +130,7 @@ body {
 
 .terminal-left__container {
     grid-area: e;
+    background-color: base.$dark;
     overflow: hidden;
     position: relative;
 
@@ -149,6 +145,7 @@ body {
 
 .terminal-right__wrapper {
     overflow-y: auto;
+    background-color: base.$dark;
     grid-area: d;
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
