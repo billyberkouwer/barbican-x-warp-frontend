@@ -206,6 +206,7 @@
 
 .event-time-stamps__container {
     position: relative;
+    z-index: 1;
 
     .paragraph-text {
         top: -0.5rem;
@@ -220,7 +221,7 @@
         display: none;
 
         @include base.lg {
-            width: 1.5rem;
+            // width: 1.5rem;
             z-index: 1;
             margin: 0.25rem;
             display: block;
@@ -246,8 +247,10 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 0;
 
     img {
+        position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover;
