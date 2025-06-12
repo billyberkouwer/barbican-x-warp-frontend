@@ -38,8 +38,12 @@ html {
 }
 
 .page__wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: grid;
     height: var(--real-viewport-height);
+    transition: height 0.1s;
     padding-top: 0.3rem;
 
     @include base.lg {
