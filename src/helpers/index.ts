@@ -19,19 +19,28 @@ export function getEventProgress(startTime: Date, endTime: Date) {
 }
 
 const wrapper = document.getElementById("current-live-act-logo-wrapper");
+const table = document.getElementById("acts-table-body")
 
 export function sizeBandLogo(logo: HTMLImageElement) {
-    const { y } = { y: wrapper?.clientHeight }
+    const { y } = { y: table?.clientHeight }
     const aspectRatio = `${logo.naturalWidth} / ${logo.naturalHeight}`;
     if (wrapper) {
         if (window.innerWidth < MOBILE_BREAKPOINT) {
             wrapper.style.aspectRatio = `${logo.naturalHeight} / ${logo.naturalWidth}`;
             logo.style.aspectRatio = aspectRatio;
-            logo.style.width = y + "px";
+            wrapper.style.width = y + "px";
+            logo.style.maxWidth = y + "px";
+            logo.style.height = y / 2 + "px";
+            wrapper.style.width = y / 2 + "px";
+            // logo.style.height = 50 + "px";
+            console.log(y)
         } else {
             wrapper.style.aspectRatio = "unset"
             logo.style.aspectRatio = "unset"
-            logo.style.width = "100%"
+            wrapper.style.width = "unset";
+            logo.style.maxWidth = "unset";
+            logo.style.height = "3rem";
+            wrapper.style.width = "unset";
         }
     }
 }

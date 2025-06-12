@@ -1,5 +1,10 @@
-- Change camera names - feed 1, feed 2, feed 3
-- Pack in terminal slightly more and pre
-- Make list of missing logos
-- Terminal shrink (max-content), ideally map section enlarged slightly if poss
-- Account for scrollbar width to fix warp nav alignment
+- Change camera names - feed 1, feed 2, etc - DONE
+- Make list of missing logos - DONE
+- Pack in terminal slightly more - DONE
+- Terminal shrink (max-content), ideally map section enlarged slightly if poss - DONE
+- Account for scrollbar width to fix warp nav alignment (iframe on website needs to be set to 100% width, not 100vw) - DONE
+- Nav padding - DONE
+
+
+MISSING LOGOS
+- Feekatet

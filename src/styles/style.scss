@@ -102,12 +102,12 @@ body {
 
     @media (min-height: 536px) {
         grid-template-rows: min-content 2fr 1.5fr;
-        height: calc((var(--real-viewport-height) * 0.55) + 8px);
+        height: calc((var(--real-viewport-height) * 0.53) + 8px);
     }
 
     @media (min-height: 756px) {
         grid-template-rows: min-content 2fr 1.75fr;
-        height: calc((var(--real-viewport-height) * 0.6) + 8px);
+        height: calc((var(--real-viewport-height) * 0.582) + 8px);
     }
 
     @include base.lg {
