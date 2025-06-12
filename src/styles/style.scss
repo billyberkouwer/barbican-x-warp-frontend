@@ -34,8 +34,9 @@
 }
 
 html {
-    background-color: base.$light;
+    background-color: base.$dark;
     height: var(--real-viewport-height);
+    max-width: 100%;
     transition: height 0.1s;
     overflow: hidden;
     position: relative;
