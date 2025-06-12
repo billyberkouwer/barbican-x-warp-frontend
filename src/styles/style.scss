@@ -39,6 +39,8 @@ html {
 
 body {
     position: relative;
+    height: var(--real-viewport-height);
+
 }
 
 .page__wrapper {
@@ -46,7 +48,7 @@ body {
     bottom: 0;
     width: 100%;
     display: grid;
-    height: var(--real-viewport-height);
+    height: 100%;
     transition: height 0.1s;
     padding-top: 0.3rem;
 
