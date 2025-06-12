@@ -9,7 +9,7 @@
       "location": "CONSERVATORY",
       "performer": "kwes. presents Kinds (premiere)",
       "startTime": "12:00:00",
-      "endTime": "17:00:00"
+      "endTime": "10:00:00"
     }
   ],
   "cinema": [
@@ -22,7 +22,7 @@
       "performer": "Warp Vision: Selected Music Video & Experimental Shorts : Hosted by Deeper Than Movies",
       "location": "CINEMA",
       "startTime": "14:30:00",
-      "endTime": "17:00:00"
+      "endTime": "10:00:00"
     }
   ],
   "act_1": [
@@ -42,7 +42,7 @@
       "act_full": "Setup (Act I)",
       "act": "act_1",
       "location": "HALL",
-      "startTime": "17:25:00",
+      "startTime": "10:25:00",
       "endTime": "18:00:00",
       "artistBio": "A British electronic and post-rock band formed in the early 1990s by Mark Clifford (guitar, programming), Daren Seymour (bass), Justin Fletcher (drums, programming), and Sarah Peacock (vocals, guitar). Their work became known for fusing guitar-based shoegaze with the production techniques of ambient techno and electronica. Breaking a thirteen-year hiatus, Seefeel released Everything Squared to critical acclaim in 2024, continuing to plow deeper and deeper still.",
       "image": "/assets/seefeel.svg",
@@ -53,7 +53,7 @@
       "act": "act_1",
       "act_full": "Setup (Act I)",
       "location": "HALL",
-      "startTime": "17:25:00",
+      "startTime": "10:25:00",
       "endTime": "18:00:00",
       "artistBio": "graduate and tutor of the Rhythmic Music Conservatory alongside friends and collaborators who make up a vital experimental scene in Copenhagen. Clarissa Connelly has become one of the hottest-tipped new singer/songwriters in the wake of her debut album for Warp, World of Work. An epic, apocalyptic record, World of Work draws upon folk and progressive rock, dragging sacred text through her portal to the modern world. Premiering new repertoire, she will be joined here by a fourpiece band of live drums, recorder and guitar. Connelly herself playing guitar, piano and synthesiser. An undeniable new talent, Connelly is a conduit for timeless songs that feel more channelled than written.",
       "image": "/assets/clarissa-connelly.svg",
