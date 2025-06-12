@@ -132,6 +132,7 @@
     align-items: flex-end;
     justify-content: space-between;
     padding-right: 1rem;
+    overflow: hidden;
 
     .from-until {
         visibility: hidden;
@@ -351,6 +352,11 @@
 .current-act__container {
     display: grid;
     grid-template-columns: fit-content(8ch) 1fr;
+    display: none;
+
+    &.display {
+        display: grid;
+    }
 
     @include base.lg {
         margin-right: 3rem;
@@ -363,6 +369,7 @@
         font-size: 0.8rem;
         line-height: 0.7rem;
         display: none;
+        overflow-y: hidden;
 
         @include base.lg {
             display: block;

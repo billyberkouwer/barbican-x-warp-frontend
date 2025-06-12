@@ -13,6 +13,7 @@ const endTime = document.getElementById("current-live-act-end-time") as HTMLElem
 const logo = document.getElementById("current-live-act-logo") as HTMLImageElement;
 const allActs = ["act_1", "act_2", "act_3"];
 const fromUntilSpans = Array.from(document.querySelectorAll(".from-until"))
+const currentActContainer = document.querySelector(".current-act__container")
 
 let previousAct: any = null;
 
@@ -52,16 +53,19 @@ function updateCurrentActInfo() {
         actDescription.textContent = currentAct.performanceDescription ?? "";
         performerDescription.textContent = currentAct.artistBio ?? "";
         location.textContent = currentAct.location ?? "";
-        startTime.textContent = start ? `${start.getHours()}:${start.getMinutes()}` : "";
-        endTime.textContent = end ? `${end.getHours()}:${end.getMinutes()}` : "";
+        startTime.textContent = start?.toLocaleTimeString("it-IT").substring(0, start?.toLocaleTimeString("it-IT").length - 3) ?? "";
+        endTime.textContent = end?.toLocaleTimeString("it-IT").substring(0, end?.toLocaleTimeString("it-IT").length - 3) ?? "";
         logo.style.visibility = "hidden";
         logo.src = currentAct.image ?? "";
         logo.alt = currentAct.performer;
         logo.onload = () => { sizeBandLogo(logo); logo.style.visibility = "visible" }
+
+        currentActContainer?.classList.add("display")
     }
 
     if (!currentAct) {
-        fromUntilSpans.forEach((el) => el.classList.remove("visible"))
+        fromUntilSpans.forEach((el) => el.classList.remove("visible"));
+        currentActContainer?.classList.remove("display")
         const previousTrack = document.getElementById(previousAct?.performer + "-track");
         if (previousTrack?.lastChild) {
             previousTrack?.removeChild(previousTrack?.lastChild)
