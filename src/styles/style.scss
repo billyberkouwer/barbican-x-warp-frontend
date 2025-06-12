@@ -37,6 +37,10 @@ html {
     background-color: base.$light;
 }
 
+body {
+    position: relative;
+}
+
 .page__wrapper {
     position: absolute;
     bottom: 0;
