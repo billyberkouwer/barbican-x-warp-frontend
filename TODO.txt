@@ -1,13 +1,5 @@
-TODO
-----------------------------------------
-- Cut off letters in live stream locations - DONE
-- map svg element - DONE
-- current act container - DONE
-- terminal right current act indicator - DONE
-- right terminal element positioning on mobile (logo, event time, logo) - DONE
-- scrollbar styles - DONE
-- change live stream position on tap on mobile - DONE
-- Orange banner when live stream not started - DONE
-- Time formatting - DONE
-
-- At the end of live stream, more glitching
+- Change camera names - feed 1, feed 2, feed 3
+- Pack in terminal slightly more and pre
+- Make list of missing logos
+- Terminal shrink (max-content), ideally map section enlarged slightly if poss
+- Account for scrollbar width to fix warp nav alignment

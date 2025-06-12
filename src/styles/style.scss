@@ -38,11 +38,16 @@ html {
     height: var(--real-viewport-height);
     transition: height 0.1s;
     overflow: hidden;
+    position: relative;
+    top: 8px;
 }
 
 body {
-    height: inherit;
+    height: var(--real-viewport-height);
     position: relative;
+    min-height: unset;
+    position: relative;
+    top: 8px;
 }
 
 .top__wrapper,
@@ -60,7 +65,7 @@ body {
 .bottom__wrapper {
     position: fixed;
     bottom: 0;
-    height: 50%;
+    height: calc(var(--real-viewport-height) * 0.5);
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
         "d"
@@ -68,7 +73,7 @@ body {
     ;
 
     @include base.lg {
-        height: 40%;
+        height: calc(var(--real-viewport-height) * 0.4);
         grid-template-rows: 1fr;
         grid-template-areas:
             "c d"
@@ -79,15 +84,16 @@ body {
 .top__wrapper {
     position: fixed;
     top: 0;
-    height: 50%;
+    height: calc(var(--real-viewport-height) * 0.5);
     grid-template-rows: min-content 2fr 1fr;
     grid-template-areas: "a"
         "b"
         "c"
     ;
+    top: 8px;
 
     @include base.lg {
-        height: 60%;
+        height: calc(var(--real-viewport-height) * 0.6);
         grid-template-rows: 1fr;
         grid-template-areas:
             "a b"
