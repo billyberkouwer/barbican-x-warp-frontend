@@ -37,27 +37,27 @@ function updateCurrentActInfo() {
         previousAct = currentAct;
 
 
-        const start = currentAct.startTime ? new Date(EVENT_DATE + currentAct.startTime) : null
-        const end = currentAct.endTime ? new Date(EVENT_DATE + currentAct.endTime) : null;
-        const inactiveActs = allActs.filter(act => act !== currentAct.act);
+        const start = currentAct?.startTime ? new Date(EVENT_DATE + currentAct.startTime) : null
+        const end = currentAct?.endTime ? new Date(EVENT_DATE + currentAct.endTime) : null;
+        const inactiveActs = allActs.filter(act => act !== currentAct?.act);
         inactiveActs.forEach((act) => {
             document.getElementById(act + "-block")?.classList.remove("green-bg");
         })
-        const activeBlock = document.getElementById(currentAct.act + "-block")
+        const activeBlock = document.getElementById(currentAct?.act + "-block")
         activeBlock?.classList.add("green-bg");
-        const activeTrack = document.getElementById(currentAct.performer + "-track");
+        const activeTrack = document.getElementById(currentAct?.performer + "-track");
         activeTrack?.appendChild(square)
 
-        act.textContent = currentAct.act_full ?? "";
-        name.textContent = currentAct.performer ?? "";
-        actDescription.textContent = currentAct.performanceDescription ?? "";
-        performerDescription.textContent = currentAct.artistBio ?? "";
-        location.textContent = currentAct.location ?? "";
+        act.textContent = currentAct?.act_full ?? "";
+        name.textContent = currentAct?.performer ?? "";
+        actDescription.textContent = currentAct?.performanceDescription ?? "";
+        performerDescription.textContent = currentAct?.artistBio ?? "";
+        location.textContent = currentAct?.location ?? "";
         startTime.textContent = start?.toLocaleTimeString("it-IT").substring(0, start?.toLocaleTimeString("it-IT").length - 3) ?? "";
         endTime.textContent = end?.toLocaleTimeString("it-IT").substring(0, end?.toLocaleTimeString("it-IT").length - 3) ?? "";
         logo.style.visibility = "hidden";
-        logo.src = currentAct.image ?? "";
-        logo.alt = currentAct.performer;
+        logo.src = currentAct?.image ?? "";
+        logo.alt = currentAct?.performer;
         logo.onload = () => { sizeBandLogo(logo); logo.style.visibility = "visible" }
 
         currentActContainer?.classList.add("display")

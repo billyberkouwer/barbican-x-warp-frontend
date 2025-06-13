@@ -18,7 +18,7 @@
       "act_full": null,
       "image": null,
       "artistBio": null,
-      "performanceDescription": "digging deep into the Warp archives to screen a curated selection of iconic and rare music videos spanning the label’s history, this collection features iconic work from Chris Cunningham, The Daniels, Andrew Norman Wilson, Jarvis Cocker, Alex Rutherford, and Hiro Murai and many more— all screened from the original master tapes. Come see how Warp turned music videos into an art form, on the big screen as they deserve to be seen.",
+      "performanceDescription": "digging deep into the Warp archives to screen a curated selection of iconic and rare music videos spanning the label’s history, this collection features iconic work from Chris Cunningham, The Daniels, Andrew Norman Wilson, Jarvis Cocker, Alex Rutherford, and Hiro Murai and many more— all screened from the original master tapes.",
       "performer": "Warp Vision: Selected Music Video & Experimental Shorts : Hosted by Deeper Than Movies",
       "location": "CINEMA",
       "startTime": "14:30:00",
@@ -33,7 +33,7 @@
       "location": "HALL",
       "startTime": "17:30:00",
       "endTime": "17:35:00",
-      "artistBio": "Freeka Tet is a French-born, New York City-based digital artist and creative mercenary working in the realm of experimental art. His practice combines objects, prosthetics, animatronics, hacking, coding, electronics, audio & video plunderphonics, bricolage, and performance-based work. Taking inspiration from internet culture, memes, trolls, and irrational social human behavior, Tet reinterprets the elements he comes into contact with, blurring creative expression with technical execution.",
+      "artistBio": "Freeka Tet is a French-born, New York City-based digital artist and creative mercenary working in the realm of experimental art. His practice combines objects, prosthetics, animatronics, hacking, coding, electronics, audio & video plunderphonics, bricolage, and performance-based work.",
       "image": null,
       "performanceDescription": null
     },
@@ -42,9 +42,9 @@
       "act_full": "Setup (Act I)",
       "act": "act_1",
       "location": "HALL",
-      "startTime": "16:25:00",
-      "endTime": "18:00:00",
-      "artistBio": "A British electronic and post-rock band formed in the early 1990s by Mark Clifford (guitar, programming), Daren Seymour (bass), Justin Fletcher (drums, programming), and Sarah Peacock (vocals, guitar). Their work became known for fusing guitar-based shoegaze with the production techniques of ambient techno and electronica. Breaking a thirteen-year hiatus, Seefeel released Everything Squared to critical acclaim in 2024, continuing to plow deeper and deeper still.",
+      "startTime": "17:35:00",
+      "endTime": "18:15:00",
+      "artistBio": "A British electronic and post-rock band formed in the early 1990s by Mark Clifford (guitar, programming), Daren Seymour (bass), Justin Fletcher (drums, programming), and Sarah Peacock (vocals, guitar). Breaking a thirteen-year hiatus, Seefeel released Everything Squared to critical acclaim in 2024, continuing to plow deeper and deeper still.",
       "image": "/assets/seefeel.svg",
       "performanceDescription": "In this special show, the band will premiere new music and prove why they have earned their place in the canon of British experimental music. "
     },
@@ -53,9 +53,9 @@
       "act": "act_1",
       "act_full": "Setup (Act I)",
       "location": "HALL",
-      "startTime": "17:25:00",
-      "endTime": "18:00:00",
-      "artistBio": "graduate and tutor of the Rhythmic Music Conservatory alongside friends and collaborators who make up a vital experimental scene in Copenhagen. Clarissa Connelly has become one of the hottest-tipped new singer/songwriters in the wake of her debut album for Warp, World of Work. An epic, apocalyptic record, World of Work draws upon folk and progressive rock, dragging sacred text through her portal to the modern world. Premiering new repertoire, she will be joined here by a fourpiece band of live drums, recorder and guitar. Connelly herself playing guitar, piano and synthesiser. An undeniable new talent, Connelly is a conduit for timeless songs that feel more channelled than written.",
+      "startTime": "18:17:00",
+      "endTime": "18:57:00",
+      "artistBio": "An undeniable new talent, Clarissa Connelly is a conduit for timeless songs that feel more channelled than written. Premiering new repertoire, she will be joined here by a fourpiece band of live drums, recorder and guitar. Connelly herself playing guitar, piano and synthesiser.",
       "image": "/assets/clarissa-connelly.svg",
       "performanceDescription": null
     }
@@ -66,9 +66,9 @@
       "act": "act_2",
       "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "19:15:00",
-      "endTime": "19:40:00",
-      "artistBio": "a British contemporary artist. His found object art and video pieces, incorporate themes of nostalgia and anxiety, and draw on elements of pop culture, spanning several works and exhibitions. In particular, he is known for Fiorucci Made Me Hardcore (1999) and Industrial Light and Magic (2008), for which he won the 2008 Turner Prize. His work has been widely exhibited internationally, including solo exhibitions at Kölnischer Kunstverein, Cologne, in 2008 and at Le Consortium, Dijon, in 2007. His performances have been presented in New York City at the Museum of Modern Art, Abrons Arts Center; at the Institute of Contemporary Arts, London, both in 2009; and at the Solomon R. Guggenheim Museum, New York City, in 2008. His works are held in the collections of the Tate and the Centre Pompidou. ",
+      "startTime": "19:30:00",
+      "endTime": "20:05:00",
+      "artistBio": "a British contemporary artist. His found object art and video pieces incorporate themes of nostalgia and anxiety, and draw on elements of pop culture, spanning several works and exhibitions. His performances have been presented in New York City at the Museum of Modern Art, Abrons Arts Center; at the Institute of Contemporary Arts, London, both in 2009; and at the Solomon R. Guggenheim Museum, New York City, in 2008.",
       "image": "/assets/mark-leckey.svg",
       "performanceDescription": "In this brand new premiere, Leckey evokes incantations on the mic, while music, film and performance mesh on stage"
     },
@@ -77,20 +77,20 @@
       "act": "act_2",
       "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "20:15:00",
-      "endTime": "20:50:00",
+      "startTime": "20:05:00",
+      "endTime": "20:40:00",
       "artistBio": "aka Jasper Marsalis - an artist and musician who explores the intersections of popular music and avant-garde performance; working across painting, sculpture, sound, code and text. Not the first musician to carry the surname Marsalis, Jasper made a name for himself by the moniker Slauson Malone (now Slauson Malone I) on ambitious releases that span myriad styles.",
       "image": "/assets/slauson-malone-1.svg",
-      "performanceDescription": "Live at Barbican, Marsalis plays guitar, vocal and original programming, alongside cellist Nicky Wetherell. The duo share a rare, unspoken shorthand - layering dissonant sounds on top of one another to create a dense and dizzying suite of sonic collages. Slauson Malone I presents as a singer/songwriter in the classic mold, but something is not right here. He’s off balance. In perpetual tension, the audience begs for narrative. The show charges the room with tension blurring the real and fake: theatre and concert. Marsalis presents as a musician, but there’s more happening. "
+      "performanceDescription": "Live at Barbican, Marsalis plays guitar, vocal and original programming, alongside cellist Nicky Wetherell. The duo share a rare, unspoken shorthand - layering dissonant sounds on top of one another to create a dense and dizzying suite of sonic collages" 
     },
     {
       "performer": "Battles",
       "act": "act_2",
       "act_full": "Confrontation (Act II)",
       "location": "HALL",
-      "startTime": "21:21:00",
-      "endTime": "21:45:00",
-      "artistBio": "an American experimental rock group, founded in 2002 in New York City by guitarist and keyboardist Ian Williams (formerly of Don Caballero and Storm & Stress) & drummer John Stanier (formerly of Helmet, Tomahawk and The Mark of Cain). The band is regarded as one of the most innovative rock bands of this century, with critics praising their unique sound. In 2007, Pitchfork wrote “Battles have done more to extend the idea of a flesh-and-blood band enhanced by computer technology than anyone since the late, lamented Disco Inferno.” In 2025 we find the band with renewed purpose, recording a new album and playing harder than ever before.",
+      "startTime": "20:40:00",
+      "endTime": "21:15:00",
+      "artistBio": "an American experimental rock group, founded in 2002 in New York City by guitarist and keyboardist Ian Williams (formerly of Don Caballero and Storm & Stress) & drummer John Stanier (formerly of Helmet, Tomahawk and The Mark of Cain). The band is regarded as one of the most innovative rock bands of this century. In 2025 we find the band with renewed purpose, recording a new album and playing harder than ever before.",
       "image": "/assets/battles.svg",
       "performanceDescription": null
     }
@@ -101,8 +101,8 @@
       "act": "act_3",
       "act_full": "Resolution (Act III)",
       "location": "HALL",
-      "startTime": "20:15:00",
-      "endTime": "21:30:00",
+      "startTime": "21:50:00",
+      "endTime": "10:00:00",
       "artistBio": null,
       "image": "/assets/bullyache.svg",
       "performanceDescription": null
@@ -112,9 +112,9 @@
       "act": "act_3",
       "act_full": "Resolution (Act III)",
       "location": "HALL",
-      "startTime": "21:30:00",
-      "endTime": "22:15:00",
-      "artistBio": "aka Joshua Leary is an English electronic music producer & DJ from Ellesmere Port. Founder of the long-standing club and label Trance Party, they have redefined the landscape of underground clubs in the UK, EU & US by programming across different scenes: foregrounding once maligned genre alongside a network of influential producers and DJs from a range of backgrounds. In his own practice, Leary synthesises textures of trance break-downs and ambient music, with the dynamics of modern hip hop production. Undercutting his music is a power and dissonance evocative of EBM, Autechre, Jungle and Drone, but these are not things Leary talks about.",
+      "startTime": "22:00:00",
+      "endTime": "22:40:00",
+      "artistBio": "aka Joshua Leary is an English electronic music producer & DJ from Ellesmere Port. Leary synthesises textures of trance break-downs and ambient music, with the dynamics of modern hip hop production. Undercutting his music is a power and dissonance evocative of EBM, Autechre, Jungle and Drone, but these are not things Leary talks about.",
       "image": "/assets/evian-christ.svg",
       "performanceDescription": "For this unique show, Leary is re-tooling a live show with longtime collaborator Emannuel Baird, setting new focus points for strobe and parallel beams to illuminate clouds of haze above the auditorium. It is a show which denies photography and demands a body."
     }

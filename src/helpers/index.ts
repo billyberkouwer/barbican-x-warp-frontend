@@ -24,7 +24,7 @@ const table = document.getElementById("acts-table-body")
 export function sizeBandLogo(logo: HTMLImageElement) {
     const { y } = { y: table?.clientHeight }
     const aspectRatio = `${logo.naturalWidth} / ${logo.naturalHeight}`;
-    if (wrapper) {
+    if (wrapper && y) {
         if (window.innerWidth < MOBILE_BREAKPOINT) {
             wrapper.style.aspectRatio = `${logo.naturalHeight} / ${logo.naturalWidth}`;
             logo.style.aspectRatio = aspectRatio;
@@ -33,7 +33,6 @@ export function sizeBandLogo(logo: HTMLImageElement) {
             logo.style.height = y / 2 + "px";
             wrapper.style.width = y / 2 + "px";
             // logo.style.height = 50 + "px";
-            console.log(y)
         } else {
             wrapper.style.aspectRatio = "unset"
             logo.style.aspectRatio = "unset"

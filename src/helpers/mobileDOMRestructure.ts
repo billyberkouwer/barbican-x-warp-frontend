@@ -29,7 +29,7 @@ const logoResizeObserver = new ResizeObserver(() => { currentActLogo ? sizeBandL
 
 export default function mobileDOMRestructure() {
     restructureDOMEElements()
-    if (currentActLogoWrapper) {
+    if (logoMobileLocation) {
         logoResizeObserver.observe(logoMobileLocation)
     }
     window.addEventListener("resize", restructureDOMEElements)
