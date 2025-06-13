@@ -4,7 +4,6 @@
     display: block;
     position: absolute;
     overflow-y: auto;
-    font-size: 0.75rem;
     line-height: 0.75rem;
     letter-spacing: -0.025rem;
     scroll-snap-type: both mandatory;
@@ -24,13 +23,12 @@
 
     td {
         font-size: 0.6rem;
+        line-height: 0.5rem;
         vertical-align: top;
         width: min-content;
         position: relative;
 
-        @include base.lg {
-            font-size: 0.75rem;
-        }
+        @include base.terminal-text;
     }
 
     .time-stop-data-feed {

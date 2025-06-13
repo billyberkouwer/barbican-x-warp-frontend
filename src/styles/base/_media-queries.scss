@@ -42,3 +42,50 @@
         @content;
     }
 }
+
+@mixin xxxxl {
+    @media (min-width: #{$screen-xxxxl-min}) {
+        @content;
+    }
+}
+
+@mixin h-xl {
+    @media (min-height: #{$screen-height-xl-min}) {
+        @content;
+    }
+}
+
+@mixin h-lg {
+    @media (min-height: #{$screen-height-lg-min}) {
+        @content;
+    }
+}
+
+@mixin terminal-text {
+
+
+    @include lg {
+        font-size: 0.55rem;
+        line-height: 0.5rem;
+    }
+
+    @include xl {
+        font-size: 0.75rem;
+        line-height: 0.65rem;
+    }
+
+    @include xl {
+        font-size: 0.75rem;
+        line-height: 0.65rem;
+    }
+
+    @include h-lg {
+        font-size: 1rem;
+        line-height: 0.9rem;
+    }
+
+    @include h-xl {
+        font-size: 1.25rem;
+        line-height: 1.1rem;
+    }
+}

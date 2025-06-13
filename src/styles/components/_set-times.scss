@@ -12,10 +12,7 @@ td {
     line-height: 0.5rem;
     font-size: 0.6rem;
 
-    @include base.lg {
-        line-height: 0.75rem;
-        font-size: 0.75rem;
-    }
+    @include base.terminal-text;
 }
 
 .terminal-right__container {
@@ -25,11 +22,11 @@ td {
     line-height: 0.75rem;
     letter-spacing: -0.025rem;
     width: 100%;
-
+    
     .margin {
         margin-bottom: 0.25rem;
 
-        @include base.lg {
+        @include base.xxl {
             margin-bottom: 0.75rem;
 
         }
@@ -99,10 +96,8 @@ td {
     font-size: 0.6rem;
     line-height: 0.5rem;
 
-    @include base.lg {
-        font-size: 0.7rem;
-        line-height: 0.55rem;
-    }
+        @include base.terminal-text;
+
 }
 
 .weather {
@@ -122,6 +117,16 @@ td {
     vertical-align: top;
     font-size: 1.25rem;
     line-height: 1rem;
+
+    @include base.h-lg {
+        font-size: 1.6rem;
+        line-height: 1.2rem;
+    }
+
+    @include base.h-xl {
+        font-size: 2rem;
+        line-height: 1.7rem;
+    }
 }
 
 #date-time-header {
@@ -191,7 +196,7 @@ address {
     display: grid;
     gap: 0.2rem;
 
-    @include base.lg {
+    @include base.xl {
         gap: 0.4rem;
     }
 }
@@ -217,10 +222,10 @@ address {
     align-items: flex-start;
 
     @include base.lg {
-        font-size: 0.7rem;
-        line-height: 0.6rem;
         grid-template-columns: 1fr;
     }
+
+    @include base.terminal-text;
 
     tbody {
         width: 100%;
@@ -340,6 +345,11 @@ address {
         @include base.lg {
             font-size: 1.5rem;
             line-height: 1rem;
+        }
+
+        @include base.h-xl {
+            font-size: 2rem;
+            line-height: 1.5rem;
         }
     }
 }
