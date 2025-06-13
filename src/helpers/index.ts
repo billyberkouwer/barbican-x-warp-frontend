@@ -27,19 +27,26 @@ export function sizeBandLogo(logo: HTMLImageElement) {
     if (wrapper && y) {
         if (window.innerWidth < MOBILE_BREAKPOINT) {
             wrapper.style.aspectRatio = `${logo.naturalHeight} / ${logo.naturalWidth}`;
-            logo.style.aspectRatio = aspectRatio;
-            wrapper.style.width = y + "px";
+            wrapper.style.width = "auto";
+            wrapper.style.height = y + "px";
+
             logo.style.maxWidth = y + "px";
-            logo.style.height = y / 2 + "px";
-            wrapper.style.width = y / 2 + "px";
+            logo.style.width = y + "px";
+            logo.style.height = "auto";
+            logo.style.aspectRatio = aspectRatio;
+
+            // logo.style.height = y / 2 + "px";
+            // wrapper.style.height = y / 2 + "px";
             // logo.style.height = 50 + "px";
         } else {
             wrapper.style.aspectRatio = "unset"
+            wrapper.style.width = "unset";
+            wrapper.style.height = "unset";
+
             logo.style.aspectRatio = "unset"
-            wrapper.style.width = "unset";
             logo.style.maxWidth = "unset";
+            logo.style.width = "unset";
             logo.style.height = "3rem";
-            wrapper.style.width = "unset";
         }
     }
 }

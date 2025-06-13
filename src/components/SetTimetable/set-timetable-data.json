@@ -34,8 +34,8 @@
       "startTime": "17:30:00",
       "endTime": "17:35:00",
       "artistBio": "Freeka Tet is a French-born, New York City-based digital artist and creative mercenary working in the realm of experimental art. His practice combines objects, prosthetics, animatronics, hacking, coding, electronics, audio & video plunderphonics, bricolage, and performance-based work.",
-      "image": null,
-      "performanceDescription": null
+      "image": "/assets/freeka-logo.svg",
+      "performanceDescription": "Taking inspiration from internet culture, memes, trolls, and irrational social human behavior, Tet reinterprets the elements he comes into contact with, blurring creative expression with technical execution."
     },
     {
       "performer": "Seefeel",
@@ -43,7 +43,7 @@
       "act": "act_1",
       "location": "HALL",
       "startTime": "17:35:00",
-      "endTime": "18:15:00",
+      "endTime": "18:10:00",
       "artistBio": "A British electronic and post-rock band formed in the early 1990s by Mark Clifford (guitar, programming), Daren Seymour (bass), Justin Fletcher (drums, programming), and Sarah Peacock (vocals, guitar). Breaking a thirteen-year hiatus, Seefeel released Everything Squared to critical acclaim in 2024, continuing to plow deeper and deeper still.",
       "image": "/assets/seefeel.svg",
       "performanceDescription": "In this special show, the band will premiere new music and prove why they have earned their place in the canon of British experimental music. "
@@ -55,9 +55,9 @@
       "location": "HALL",
       "startTime": "18:17:00",
       "endTime": "18:57:00",
-      "artistBio": "An undeniable new talent, Clarissa Connelly is a conduit for timeless songs that feel more channelled than written. Premiering new repertoire, she will be joined here by a fourpiece band of live drums, recorder and guitar. Connelly herself playing guitar, piano and synthesiser.",
+      "artistBio": "Clarissa Connelly has become one of the hottest-tipped new singer/songwriters in the wake of her debut album for Warp, World of Work. An epic, apocalyptic record, World of Work draws upon folk and progressive rock, dragging sacred text through her portal to the modern world.",
       "image": "/assets/clarissa-connelly.svg",
-      "performanceDescription": null
+      "performanceDescription": "Premiering new repertoire, she will be joined here by a fourpiece band of live drums, recorder and guitar. Connelly herself playing guitar, piano and synthesiser."
     }
   ],
   "act_2": [
@@ -81,7 +81,7 @@
       "endTime": "20:40:00",
       "artistBio": "aka Jasper Marsalis - an artist and musician who explores the intersections of popular music and avant-garde performance; working across painting, sculpture, sound, code and text. Not the first musician to carry the surname Marsalis, Jasper made a name for himself by the moniker Slauson Malone (now Slauson Malone I) on ambitious releases that span myriad styles.",
       "image": "/assets/slauson-malone-1.svg",
-      "performanceDescription": "Live at Barbican, Marsalis plays guitar, vocal and original programming, alongside cellist Nicky Wetherell. The duo share a rare, unspoken shorthand - layering dissonant sounds on top of one another to create a dense and dizzying suite of sonic collages" 
+      "performanceDescription": "Live at Barbican, Marsalis plays guitar, vocal and original programming, alongside cellist Nicky Wetherell. The duo share a rare, unspoken shorthand - layering dissonant sounds on top of one another to create a dense and dizzying suite of sonic collages"
     },
     {
       "performer": "Battles",
@@ -90,9 +90,9 @@
       "location": "HALL",
       "startTime": "20:40:00",
       "endTime": "21:15:00",
-      "artistBio": "an American experimental rock group, founded in 2002 in New York City by guitarist and keyboardist Ian Williams (formerly of Don Caballero and Storm & Stress) & drummer John Stanier (formerly of Helmet, Tomahawk and The Mark of Cain). The band is regarded as one of the most innovative rock bands of this century. In 2025 we find the band with renewed purpose, recording a new album and playing harder than ever before.",
+      "artistBio": "an American experimental rock group, founded in 2002 in New York City by guitarist and keyboardist Ian Williams (formerly of Don Caballero and Storm & Stress) & drummer John Stanier (formerly of Helmet, Tomahawk and The Mark of Cain). The band is regarded as one of the most innovative rock bands of this century.",
       "image": "/assets/battles.svg",
-      "performanceDescription": null
+      "performanceDescription": "In 2025 we find the band with renewed purpose, recording a new album and playing harder than ever before."
     }
   ],
   "act_3": [
@@ -103,9 +103,9 @@
       "location": "HALL",
       "startTime": "21:50:00",
       "endTime": "22:00:00",
-      "artistBio": null,
+      "artistBio": "BULLYACHE (Courtney Tylor Deyn and Jacob Samuel) make interdisciplinary, music and dance performance works",
       "image": "/assets/bullyache.svg",
-      "performanceDescription": null
+      "performanceDescription": "BULLYACHE (Courtney Tylor Deyn and Jacob Samuel) make interdisciplinary, music and dance performance works"
     },
     {
       "performer": "Evian Christ",
