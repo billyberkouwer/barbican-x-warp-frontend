@@ -8,6 +8,10 @@ import initWeatherData from "./components/WeatherData";
 import { pageSize } from "./helpers";
 import mobileDOMRestructure from "./helpers/mobileDOMRestructure";
 
+import.meta.env.MODE === "development" ?
+    console.log("I disabled localhost permissions on the server so the stream won't work locally!")
+    : null
+
 updateDataFeed()
 initLiveFeed();
 initWeatherData();
