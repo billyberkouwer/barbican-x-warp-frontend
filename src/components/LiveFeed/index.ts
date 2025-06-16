@@ -6,8 +6,9 @@ let currentMobileVideoDisplay = 0;
 const liveNowText = document.getElementById("live-now") as HTMLSpanElement;
 const liveNowBanner = document.querySelector(".live-now-banner__container")
 
+const socket = io(SERVER_ORIGIN, { extraHeaders: { "ngrok-skip-browser-warning": "69420" } });
+
 export default async function initLiveFeed() {
-    const socket = io(SERVER_ORIGIN, { extraHeaders: { "ngrok-skip-browser-warning": "69420" } });
     let playbackId = DEFAULT_PLAYBACK_ID;
 
     const playerOne = document.querySelector("#mux-player") as HTMLVideoElement | undefined;
@@ -30,6 +31,7 @@ export default async function initLiveFeed() {
             liveNowText.innerHTML = "Live Now";
             liveNowBanner?.classList.remove("orange")
             playerOne.setAttribute("playback-id", playbackId);
+            console.log(playbackId)
             playerOneCover?.classList.remove("visible")
         } else if (!isStreamActive && playerOne) {
             liveNowText.innerHTML = "Offline";
@@ -39,17 +41,24 @@ export default async function initLiveFeed() {
         }
     }
 
-    playerOne?.addEventListener("canplay", () => playerOne?.play())
+    playerOne?.addEventListener("canplay", () => {
+        playerOne?.play(); liveNowText.innerHTML = "Live Now";
+        liveNowBanner?.classList.remove("orange")
+        playerOne.setAttribute("playback-id", playbackId);
+        console.log(playbackId)
+        playerOneCover?.classList.remove("visible")
+    })
 
     socket.on("id", (e) => {
         playerOne?.setAttribute("metadata-viewer-user-id", e)
     })
 
-    socket.on("connect", () => console.log("Logged In."))
+    socket.on("connect", () => console.log(socket.connected))
 
     socket.on("streamData", (e) => {
+        // console.log(e)
         playbackId = e.playbackId;
-        initialiseStream(e.canPlay)
+        initialiseStream(true)
     })
 
     document.addEventListener("click", () => {

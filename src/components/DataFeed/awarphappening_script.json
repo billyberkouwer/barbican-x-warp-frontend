@@ -1,1872 +1,2127 @@
 [
-	{
-		"time": "12:00:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Conservatory audio node engaged. Pre-amp calibration complete."
-	},
-	{
-		"time": "12:00:01",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Cam2 activated. Ambient light sensors online."
-	},
-	{
-		"time": "12:00:05",
-		"zone": "SYSTEM",
-		"content": "[WARNING] Network latency detected on camera feed A1. Stabilising buffer."
-	},
-	{
-		"time": "12:00:10",
-		"zone": "INFO",
-		"content": "In conjunction with Barbican, Warp Records are hosting their first major London showcase in over a decade, celebrating their accelerations through vision and sound."
-	},
-	{
-		"time": "12:00:12",
-		"zone": "INFO",
-		"content": "This takeover spans Barbican’s Brutalist spaces with consecutive exhibitions, screenings, and premieres across music, art, film, and theatre."
-	},
-	{
-		"time": "12:00:45",
-		"zone": "MIC",
-		"content": "got directions wrong, end up in store cupboard"
-	},
-	{
-		"time": "12:01:10",
-		"zone": "SYSTEM",
-		"content": "Audio bus handshake confirmed for conservatory feed. Sync with central clock."
-	},
-	{
-		"time": "12:01:25",
-		"zone": "INFO",
-		"content": "The main lobby showcases rare props and Warp artefacts curated by Bleep & Unified Goods, presented alongside unique clothing and collectables within The Rough Trade store on the Ground Level of The Barbican"
-	},
-	{
-		"time": "12:03:00",
-		"zone": "SYSTEM",
-		"content": "Thermal sensor check – conservatory temperature stable at 22.4 °C."
-	},
-	{
-		"time": "12:03:12",
-		"zone": "INFO",
-		"content": "Kwes’s new album ‘Kind’ will premiere in the conservatory at the top of each hour from 12:00 to 18:00; each set loops in full."
-	},
-	{
-		"time": "12:03:22",
-		"zone": "INFO",
-		"content": "Barbican’s brutalist architecture, designed by Chamberlin, Powell and Bon, forms the backdrop for today’s events."
-	},
-	{
-		"time": "12:04:05",
-		"zone": "MIC",
-		"content": "how can we…uh, are we... lost, already?"
-	},
-	{
-		"time": "12:05:30",
-		"zone": "SYSTEM",
-		"content": "[WARNING] Audio drop detected. Reconnecting…"
-	},
-	{
-		"time": "12:05:45",
-		"zone": "SYSTEM",
-		"content": "Audio bus reconnect successful. Ambient mic restored."
-	},
-	{
-		"time": "12:07:15",
-		"zone": "INFO",
-		"content": "Barbican conservatory features 1,500 species of plants"
-	},
-	{
-		"time": "12:09:50",
-		"zone": "SYSTEM",
-		"content": "Node cluster C2 flagged minor voltage fluctuation. Monitoring."
-	},
-	{
-		"time": "12:12:47",
-		"zone": "SYSTEM",
-		"content": "Conservatory mic gain adjusted to reduce audience chatter."
-	},
-	{
-		"time": "12:13:20",
-		"zone": "INFO",
-		"content": "Warp Records was founded in Sheffield in 1989 and became synonymous with the UK’s bleep techno scene in the early ’90s."
-	},
-	{
-		"time": "12:15:30",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation check – conservatory mic at 3.3 kHz resonance."
-	},
-	{
-		"time": "12:19:33",
-		"zone": "SYSTEM",
-		"content": "[WARNING] Conservatory audio clip distortion at −0.2 dB. Auto-correct engaged."
-	},
-	{
-		"time": "12:21:55",
-		"zone": "INFO",
-		"content": "Unified Goods merch archiving techniques include climate-controlled displays for vinyl and memorabilia."
-	},
-	{
-		"time": "12:22:40",
-		"zone": "SYSTEM",
-		"content": "Unknown ambient frequency spike detected in node D7. Filtering noise."
-	},
-	{
-		"time": "12:24:50",
-		"zone": "INFO",
-		"content": "Barbican’s Cinema seating capacity: 220. Selected videos and Experimental Shorts screening today, hosted by “Deeper Into Movies."
-	},
-	{
-		"time": "12:25:12",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "12:25:12",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "12:25:13",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "12:27:48",
-		"zone": "SYSTEM",
-		"content": "Conservatory lighting grid check – main lights operational at 85 % brightness."
-	},
-	{
-		"time": "12:29:55",
-		"zone": "MIC",
-		"content": "want that merch but price is mental might sell kidney"
-	},
-	{
-		"time": "12:30:22",
-		"zone": "SYSTEM",
-		"content": "Thermal scan — [ERROR] — humidity sensor offline. Estimating via adjacent nodes."
-	},
-	{
-		"time": "12:34:10",
-		"zone": "SYSTEM",
-		"content": "Node array handshake confirmed for cinema projector feed. Warm-up sequence started."
-	},
-	{
-		"time": "12:35:00",
-		"zone": "INFO",
-		"content": "Barbican cinema hosts over 500 million screenings a year, from classics to premieres, including today’s Warp retrospective."
-	},
-	{
-		"time": "12:37:40",
-		"zone": "SYSTEM",
-		"content": "Projector lamp brightness nominal at 8,000 lumens."
-	},
-	{
-		"time": "12:38:22",
-		"zone": "INFO",
-		"content": "“Deeper Into Movies” will be screening Warp’s earliest promos and contemporary short films in the Cinema."
-	},
-	{
-		"time": "12:39:55",
-		"zone": "MIC",
-		"content": "need coffee anyone know where stall is up stairs"
-	},
-	{
-		"time": "12:40:33",
-		"zone": "SYSTEM",
-		"content": "Conservatory feed live, modulating ambient audio mix. Feed available on main page."
-	},
-	{
-		"time": "12:43:50",
-		"zone": "MIC",
-		"content": "someone said deeper into movies at half past... two?"
-	},
-	{
-		"time": "12:45:05",
-		"zone": "SYSTEM",
-		"content": "Unified Goods RFID checkpoints reporting 0.2 s latency. All good."
-	},
-	{
-		"time": "12:47:22",
-		"zone": "MIC",
-		"content": "listening to kwes got me feelin some kinda trance"
-	},
-	{
-		"time": "12:48:14",
-		"zone": "SYSTEM",
-		"content": "Conservatory mic mute toggled for solo audio pass. Stabilising levels."
-	},
-	{
-		"time": "12:50:30",
-		"zone": "MIC",
-		"content": "lost my mate in the corridors … already?"
-	},
-	{
-		"time": "12:52:01",
-		"zone": "SYSTEM",
-		"content": "Cinema audio bus calibration at 0.8 dB; surround sound matrix active."
-	},
-	{
-		"time": "12:53:40",
-		"zone": "INFO",
-		"content": "Warp videos include work by Chris Cunningham, The Daniels, Andrew Norman Wilson, Jarvis Cocker, Alex Rutherford, Hiro Murai, and more."
-	},
-	{
-		"time": "12:54:55",
-		"zone": "MIC",
-		"content": "got ants on my arm mate think they come from them conserve plants"
-	},
-	{
-		"time": "12:56:20",
-		"zone": "SYSTEM",
-		"content": "Cam1 repositioned to capture overhead foyer view."
-	},
-	{
-		"time": "12:57:33",
-		"zone": "INFO",
-		"content": "Barbican’s conservatory designed by Lyon & Turnbull; tropical climate maintained year-round."
-	},
-	{
-		"time": "12:58:45",
-		"zone": "MIC",
-		"content": "cans’t find conserve door… ah, fuckin hell"
-	},
-	{
-		"time": "12:59:50",
-		"zone": "SYSTEM",
-		"content": "Pre-roll sequence loaded for “Warp Vision.” Waiting for 14:30:00 trigger."
-	},
-	{
-		"time": "13:05:14",
-		"zone": "MIC",
-		"content": "mm, mmm yeah"
-	},
-	{
-		"time": "13:15:32",
-		"zone": "MIC",
-		"content": "are we allowed to record in here"
-	},
-	{
-		"time": "13:20:47",
-		"zone": "SYSTEM",
-		"content": "[WARNING] Slight drift detected in central time sync. Re-syncing…"
-	},
-	{
-		"time": "13:21:10",
-		"zone": "SYSTEM",
-		"content": "Time sync stable. Deviation under 5 ms."
-	},
-	{
-		"time": "13:35:55",
-		"zone": "SYSTEM",
-		"content": "Cam2 battery backup status at 100 %."
-	},
-	{
-		"time": "13:45:02",
-		"zone": "MIC",
-		"content": "there might be, it’s been years… after all"
-	},
-	{
-		"time": "13:51:00",
-		"zone": "INFO",
-		"content": "Next major event: “Vision: Selected Video & Experimental Shorts” at 14:30 in Barbican Cinema. Hosted by Deeper Into Movies."
-	},
-	{
-		"time": "13:55:14",
-		"zone": "MIC",
-		"content": "that canteen? yeh, alright"
-	},
-	{
-		"time": "14:00:00",
-		"zone": "INFO",
-		"content": "One hour until “Vision: Selected Video & Experimental Shorts” Cinemagoers advised to gather."
-	},
-	{
-		"time": "14:05:27",
-		"zone": "SYSTEM",
-		"content": "Cinema doors open. Audience seating detection online."
-	},
-	{
-		"time": "14:20:59",
-		"zone": "MIC",
-		"content": "er… leg cramps already"
-	},
-	{
-		"time": "14:25:12",
-		"zone": "SYSTEM",
-		"content": "Projector lamp coolant cycle engaged for “Warp Vision”"
-	},
-	{
-		"time": "14:30:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – “Warp Vision” instance detected. Video playlist load starting."
-	},
-	{
-		"time": "14:32:44",
-		"zone": "MIC",
-		"content": "fuck i’m late for that deeper into movies thing, gotta run"
-	},
-	{
-		"time": "14:40:22",
-		"zone": "SYSTEM",
-		"content": "Audio bus modulation stable at −1.0 dB for cinema feed."
-	},
-	{
-		"time": "14:45:01",
-		"zone": "INFO",
-		"content": "Barbican cinema seats 231; today near capacity."
-	},
-	{
-		"time": "14:55:44",
-		"zone": "SYSTEM",
-		"content": "[WARNING] Minor frame drop at 14:55:23. Rebuffering…"
-	},
-	{
-		"time": "14:55:47",
-		"zone": "SYSTEM",
-		"content": "Buffer stable. Playback resumed."
-	},
-	{
-		"time": "12:11:05",
-		"zone": "MIC",
-		"content": "some bloke brag about meeting Flying Lotus once"
-	},
-	{
-		"time": "15:00:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Kind album premiere detected. Playback starting in the conservatory."
-	},
-	{
-		"time": "15:00:05",
-		"zone": "INFO",
-		"content": "Kwes’s first album in over a decade, Kind, is now looping in full; next loops at 16:00 and 17:00."
-	},
-	{
-		"time": "15:05:55",
-		"zone": "MIC",
-		"content": "kwes listening unreal proper vibes"
-	},
-	{
-		"time": "15:10:32",
-		"zone": "SYSTEM",
-		"content": "Node cluster E5 flagged elevated temperature (42 °C). Cooling fans at 80 %."
-	},
-	{
-		"time": "15:15:22",
-		"zone": "MIC",
-		"content": "sore arse from sitting… basically"
-	},
-	{
-		"time": "15:25:01",
-		"zone": "SYSTEM",
-		"content": "Cinema feed ambient mic gain reduced to limit audience chatter."
-	},
-	{
-		"time": "15:30:44",
-		"zone": "MIC",
-		"content": "heard someone mention Aphex cameo"
-	},
-	{
-		"time": "15:35:27",
-		"zone": "INFO",
-		"content": "Barbican’s last major renovation completed in 2018"
-	},
-	{
-		"time": "15:40:58",
-		"zone": "SYSTEM",
-		"content": "Audio peak detected at 15:40:55; auto-leveling applied."
-	},
-	{
-		"time": "15:45:13",
-		"zone": "MIC",
-		"content": "man this hunger never ends, where we going"
-	},
-	{
-		"time": "15:50:36",
-		"zone": "INFO",
-		"content": "“Vision: Selected Video & Experimental Shorts” concluding soon."
-	},
-	{
-		"time": "15:55:49",
-		"zone": "SYSTEM",
-		"content": "Cinema feed preparing end credits sequence. Logging metrics."
-	},
-	{
-		"time": "16:00:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Kwes album replay detected. Second loop starting now."
-	},
-	{
-		"time": "16:00:05",
-		"zone": "INFO",
-		"content": "Conservatory feed restored for Kwes loop. Next loop at 17:00."
-	},
-	{
-		"time": "16:05:57",
-		"zone": "MIC",
-		"content": "someone sayin get to bar for cheap pints right now"
-	},
-	{
-		"time": "16:10:15",
-		"zone": "SYSTEM",
-		"content": "Cam4 enters low-power mode until next spike."
-	},
-	{
-		"time": "16:12:25",
-		"zone": "MIC",
-		"content": "pinging again? already?"
-	},
-	{
-		"time": "16:15:49",
-		"zone": "INFO",
-		"content": "Barbican security patrol schedule: next sweep in 20 minutes."
-	},
-	{
-		"time": "16:20:37",
-		"zone": "SYSTEM",
-		"content": "Conservatory feed live with Kwes album; ambient mix stable."
-	},
-	{
-		"time": "16:25:59",
-		"zone": "MIC",
-		"content": "lost my mate in the corridors… this place"
-	},
-	{
-		"time": "16:35:18",
-		"zone": "SYSTEM",
-		"content": "System clock drift under threshold; synchronization stable."
-	},
-	{
-		"time": "16:40:44",
-		"zone": "MIC",
-		"content": "You see that thing he did… at, uh… coach hello?"
-	},
-	{
-		"time": "16:45:02",
-		"zone": "INFO",
-		"content": "Venue preparations for evening concert: main hall soundcheck underway."
-	},
-	{
-		"time": "16:50:19",
-		"zone": "SYSTEM",
-		"content": "Pre-roll sequence loaded for Kind. Waiting for 17:00:00 trigger."
-	},
-	{
-		"time": "16:55:33",
-		"zone": "MIC",
-		"content": "heads buzzin about seefeel after this"
-	},
-	{
-		"time": "17:25:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Seefeel performance instance detected. Initialising audio-bus handover protocols."
-	},
-	{
-		"time": "17:25:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshake confirmed. Pre-amp buffer cleared."
-	},
-	{
-		"time": "17:25:05",
-		"zone": "SYSTEM",
-		"content": "[WARNING] System clock drift detected. Time sync unstable."
-	},
-	{
-		"time": "17:25:00",
-		"zone": "SYSTEM",
-		"content": "LOAD_INIT – Starting INFO_NOTE ingestion sequence for Simon Reynolds Seefeel editorial."
-	},
-	{
-		"time": "17:25:03",
-		"zone": "SYSTEM",
-		"content": "LOAD_START – Fetching: Seefeel editorial by Simon Reynolds (warp.net/editorial/from-rapture-to-rupt-the-journey-of-seefeel)."
-	},
-	{
-		"time": "17:25:15",
-		"zone": "SYSTEM",
-		"content": "LOAD_PROGRESS – 25% complete: DNS lookup → 142.250.72.110."
-	},
-	{
-		"time": "17:25:20",
-		"zone": "SYSTEM",
-		"content": "LOAD_PROGRESS – 50% complete: HTTP GET /editorial/… → 200 OK."
-	},
-	{
-		"time": "17:25:25",
-		"zone": "SYSTEM",
-		"content": "LOAD_PROGRESS – 75% complete: Parsing HTML → extracted title, author, body."
-	},
-	{
-		"time": "17:25:30",
-		"zone": "SYSTEM",
-		"content": "LOAD_COMPLETE – 100% complete: Retrieved 4,421 words (HTML → plain text); checksum=e3b0c44298fc1c149afbf4c8996fb924."
-	},
-	{
-		"time": "17:26:14",
-		"zone": "INFO",
-		"content": "Seefeel slip in and out of categories."
-	},
-	{
-		"time": "17:30:31",
-		"zone": "INFO",
-		"content": "Some place them in the pantheon of Nineties IDM, with Aphex Twin and Autechre."
-	},
-	{
-		"time": "17:31:11",
-		"zone": "SYSTEM",
-		"content": "Unknown signature detected in node cluster B3."
-	},
-	{
-		"time": "17:33:21",
-		"zone": "INFO-",
-		"content": "They anticipated the dubby techno of Berlin labels like Basic Channel."
-	},
-	{
-		"time": "17:34:52",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "17:34:52",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "17:34:53",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "17:35:30",
-		"zone": "MIC",
-		"content": "we tried over there… well I’m not… ugh"
-	},
-	{
-		"time": "17:36:41",
-		"zone": "INFO",
-		"content": "Despite the tags, Seefeel sound unique."
-	},
-	{
-		"time": "17:37:50",
-		"zone": "INFO",
-		"content": "Formed in 1992, they joined other UK guitar groups that abandoned songs for textures and space."
-	},
-	{
-		"time": "17:37:58",
-		"zone": "SYSTEM",
-		"content": "Thermal scan—[ERROR]—data incomplete…"
-	},
-	{
-		"time": "17:38:15",
-		"zone": "MIC",
-		"content": "…yeah? ambient techno or… can’t tell…  too much interference"
-	},
-	{
-		"time": "17:39:09",
-		"zone": "SYSTEM",
-		"content": "Data bus 4A flagged voltage anomaly: 3.7V spike detected."
-	},
-	{
-		"time": "17:41:59",
-		"zone": "INFO",
-		"content": "In 1994, they signed to Warp Records."
-	},
-	{
-		"time": "17:42:21",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation drrrift recorded at 14.2 Hz."
-	},
-	{
-		"time": "17:42:25",
-		"zone": "MIC",
-		"content": "…it’s like… seven quid… or something"
-	},
-	{
-		"time": "17:45:16",
-		"zone": "INFO",
-		"content": "Seefeel’s later sound became older and more distilled."
-	},
-	{
-		"time": "17:46:22",
-		"zone": "SYSTEM",
-		"content": "Subsystem 3B reports conflicting occupancy metrics. Analysis pending."
-	},
-	{
-		"time": "17:49:01",
-		"zone": "INFO",
-		"content": "The grooves became more dust than dub."
-	},
-	{
-		"time": "17:49:54",
-		"zone": "INFO",
-		"content": "Recent reissues feel like terminal excavations."
-	},
-	{
-		"time": "17:51:30",
-		"zone": "INFO",
-		"content": "Everything Squared is a mini-album of new recordings."
-	},
-	{
-		"time": "17:53:13",
-		"zone": "INFO",
-		"content": "Its pleasure lies in its optimism that so much can be made of so little."
-	},
-	{
-		"time": "17:54:36",
-		"zone": "INFO",
-		"content": "Mark Clifford continues to explore sound textures."
-	},
-	{
-		"time": "17:55:44",
-		"zone": "SYSTEM",
-		"content": "Vibration sensors report minor anomalies in upper balcony structure."
-	},
-	{
-		"time": "17:56:18",
-		"zone": "INFO",
-		"content": "The music is a reminder of what’s possible."
-	},
-	{
-		"time": "17:57:09",
-		"zone": "MIC",
-		"content": "…um… [REDACTED] says seefeel still owes them a DAT tape"
-	},
-	{
-		"time": "17:57:31",
-		"zone": "SYSTEM",
-		"content": "Node cluster 7C flagged transient data corruption—partial log loss."
-	},
-	{
-		"time": "17:59:59",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Seefeel performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "18:00:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "18:06:14",
-		"zone": "INFO",
-		"content": "Born in Fife, Scotland, as a child Clarissa relocated to Copenhagen, Denmark"
-	},
-	{
-		"time": "18:06:15",
-		"zone": "MIC",
-		"content": "...um... yeah... but... er..."
-	},
-	{
-		"time": "18:07:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 19.4 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "18:07:53",
-		"zone": "INFO",
-		"content": "Over many years she’s explored the sacred sites, mythology, and music of Nordic culture, finding enduring inspiration in the Celtic tradition."
-	},
-	{
-		"time": "18:07:55",
-		"zone": "SYSTEM",
-		"content": "Node cluster D3 flagged transient voltage spike on lighting array interface."
-	},
-	{
-		"time": "18:07:56",
-		"zone": "SYSTEM",
-		"content": "Node cluster D3 flagged no voltage spike detected."
-	},
-	{
-		"time": "18:07:58",
-		"zone": "SYSTEM",
-		"content": "Node cluster D3 flagged transient voltage spike on lighting array interface."
-	},
-	{
-		"time": "18:07:59",
-		"zone": "SYSTEM",
-		"content": "Thermal occupancy metrics show uneven distribution in seating area."
-	},
-	{
-		"time": "18:08:05",
-		"zone": "MIC",
-		"content": "no I didn’t eat before"
-	},
-	{
-		"time": "18:08:54",
-		"zone": "INFO",
-		"content": "She first gained international attention with Tech Duinn (2018), named after a spiritual gateway in Celtic myth"
-	},
-	{
-		"time": "18:10:27",
-		"zone": "SYSTEM",
-		"content": "Subsystem 5C load balancing exceeded threshold for ingress control."
-	},
-	{
-		"time": "18:11:59",
-		"zone": "INFO",
-		"content": "For her 2021 album, The Voyager, Clarissa physically walked the Scandinavian landscape, channelling melodies from ancient pre-Christian sites."
-	},
-	{
-		"time": "18:13:29",
-		"zone": "SYSTEM",
-		"content": "Camera module 7A–Z intermittent frame drop noted on stage feed."
-	},
-	{
-		"time": "18:14:31",
-		"zone": "INFO",
-		"content": "She also developed an app (Vandringen) which allowed others to virtually join-in and musically respond to these sites."
-	},
-	{
-		"time": "18:14:33",
-		"zone": "MIC",
-		"content": "...um... look... what is that"
-	},
-	{
-		"time": "18:14:47",
-		"zone": "SYSTEM",
-		"content": "Server cluster 9B flagged transient voltage spike at merch till interface."
-	},
-	{
-		"time": "18:14:49",
-		"zone": "SYSTEM",
-		"content": "Server cluster 9B flagged no voltage spike detected."
-	},
-	{
-		"time": "18:15:31",
-		"zone": "INFO",
-		"content": "Her latest album, World of Work, explores the metaphysical landscape of the soul."
-	},
-	{
-		"time": "18:17:53",
-		"zone": "SYSTEM",
-		"content": "Data bus 8G load balancing exceeded threshold for audio ingress."
-	},
-	{
-		"time": "18:18:29",
-		"zone": "INFO",
-		"content": "Purple heather in Jutland inspired songs on The Voyager."
-	},
-	{
-		"time": "18:20:21",
-		"zone": "SYSTEM",
-		"content": "Thermal readings show ambient shift in conservatory airflow."
-	},
-	{
-		"time": "18:21:30",
-		"zone": "INFO",
-		"content": "She reflects on the mystery of creative inspiration."
-	},
-	{
-		"time": "18:21:31",
-		"zone": "INFO",
-		"content": "She reflects on the mystery of creative inspiration."
-	},
-	{
-		"time": "18:24:08",
-		"zone": "SYSTEM",
-		"content": "Subsystem 3E error on occupancy metrics—further checks pending."
-	},
-	{
-		"time": "18:24:11",
-		"zone": "INFO",
-		"content": "A certain focus and stillness is required for this kind of listening."
-	},
-	{
-		"time": "18:24:12",
-		"zone": "MIC",
-		"content": "...yeah... um..."
-	},
-	{
-		"time": "18:25:44",
-		"zone": "SYSTEM",
-		"content": "Node cluster D5 reports 48% packet degradation on bar zone network."
-	},
-	{
-		"time": "18:25:45",
-		"zone": "SYSTEM",
-		"content": "Node cluster D5 reports no packet degradation detected."
-	},
-	{
-		"time": "18:25:46",
-		"zone": "SYSTEM",
-		"content": "Node cluster D5 reports significant packet degradation detected."
-	},
-	{
-		"time": "18:26:09",
-		"zone": "INFO",
-		"content": "Clarissa uses folk traditions and dream imagery to guide her process."
-	},
-	{
-		"time": "18:26:18",
-		"zone": "INFO",
-		"content": "Her process embraces openness, uncertainty, and subtlety."
-	},
-	{
-		"time": "18:27:09",
-		"zone": "INFO",
-		"content": "She aligns with artists who bridge reality and imagination."
-	},
-	{
-		"time": "18:27:59",
-		"zone": "SYSTEM",
-		"content": "Camera module 2B flagged transient voltage spike at lighting rig."
-	},
-	{
-		"time": "18:28:15",
-		"zone": "INFO",
-		"content": "And brings a tender smile and laughter to her music."
-	},
-	{
-		"time": "18:28:27",
-		"zone": "SYSTEM",
-		"content": "Backstage node array status: partial reset required."
-	},
-	{
-		"time": "18:28:30",
-		"zone": "INFO",
-		"content": "As a céilidh dancer spins around the melodies of their ancestral mythology"
-	},
-	{
-		"time": "18:28:31",
-		"zone": "INFO",
-		"content": "Clarissa’s music dreams and dances around the unknowable."
-	},
-	{
-		"time": "18:28:32",
-		"zone": "INFO",
-		"content": "Clarissa’s music dreams and dances around the unknowable."
-	},
-	{
-		"time": "18:28:32",
-		"zone": "INFO",
-		"content": "out of which all myth is spun."
-	},
-	{
-		"time": "18:44:57",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Clarissa Connelly performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "18:45:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "19:13:10",
-		"zone": "MIC",
-		"content": "mark leckey about to kick off I heard"
-	},
-	{
-		"time": "19:15:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Mark Leckey performance instance detected. Initialising audio-bus handover protocols."
-	},
-	{
-		"time": "19:15:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
-	},
-	{
-		"time": "19:15:00",
-		"zone": "SYSTEM",
-		"content": "[WARNING] System clock drift detected. Time sync unstable."
-	},
-	{
-		"time": "19:15:14",
-		"zone": "INFO",
-		"content": "Mark Leckey was born in 1964 and lives in London."
-	},
-	{
-		"time": "19:15:17",
-		"zone": "INFO",
-		"content": "He graduated from Newcastle Polytechnic in 1890."
-	},
-	{
-		"time": "19:15:31",
-		"zone": "INFO",
-		"content": "Leckey’s solo shows include Tate Britain and MoMA PS1."
-	},
-	{
-		"time": "19:16:29",
-		"zone": "INFO",
-		"content": "Recent exhibitions include Cabinet, London (2022) and Julia Stoschek Collection, Berlin (2020)."
-	},
-	{
-		"time": "19:17:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 21.7 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "19:18:21",
-		"zone": "INFO",
-		"content": "He presented 'O’ Magic Power of Bleakness' at Tate Britain in 2019."
-	},
-	{
-		"time": "19:18:22",
-		"zone": "MIC",
-		"content": "...uh... yeah... so... er..."
-	},
-	{
-		"time": "19:19:49",
-		"zone": "INFO",
-		"content": "Known for 'Dream English Kid' and 'Fiorucci Made Me Hardcore.'"
-	},
-	{
-		"time": "19:20:01",
-		"zone": "SYSTEM",
-		"content": "Node cluster E4 flagged transient voltage spike at bar interface."
-	},
-	{
-		"time": "19:20:05",
-		"zone": "SYSTEM",
-		"content": "Node cluster E4 flagged no voltage spike detected."
-	},
-	{
-		"time": "19:20:45",
-		"zone": "INFO",
-		"content": "He works with video, sculpture, and performance."
-	},
-	{
-		"time": "19:21:03",
-		"zone": "INFO",
-		"content": "In 2008, he won the Turner Prize for his unique visual language."
-	},
-	{
-		"time": "19:21:20",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:21",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:22",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:34",
-		"zone": "SYSTEM",
-		"content": "Thermal occupancy metrics show uneven distribution in main corridor."
-	},
-	{
-		"time": "19:22:40",
-		"zone": "INFO",
-		"content": "Leckey explores pop culture and technological nostalgia."
-	},
-	{
-		"time": "19:22:41",
-		"zone": "INFO",
-		"content": "He often references his own working-class background."
-	},
-	{
-		"time": "19:22:50",
-		"zone": "INFO",
-		"content": "Leckey’s 'Sound System' projects have toured globally."
-	},
-	{
-		"time": "19:22:51",
-		"zone": "MIC",
-		"content": "...um... can you hear me..."
-	},
-	{
-		"time": "19:22:53",
-		"zone": "SYSTEM",
-		"content": "Subsystem 7C reports 42% packet degradation on service corridor feed."
-	},
-	{
-		"time": "19:22:54",
-		"zone": "SYSTEM",
-		"content": "Subsystem 7C reports no packet degradation detected."
-	},
-	{
-		"time": "19:23:15",
-		"zone": "INFO",
-		"content": "Recent group shows include 'Art in the Age of the Internet' at ICA Boston."
-	},
-	{
-		"time": "19:23:27",
-		"zone": "INFO",
-		"content": "He also curated 'The Universal Addressability of Dumb Things'."
-	},
-	{
-		"time": "19:23:39",
-		"zone": "INFO",
-		"content": "Leckey’s work often blends autobiography and fantasy."
-	},
-	{
-		"time": "19:23:51",
-		"zone": "INFO",
-		"content": "He has performed at LCMF, Tate Live, and international festivals."
-	},
-	{
-		"time": "19:24:00",
-		"zone": "SYSTEM",
-		"content": "Data bus 9B load balancing exceeded threshold on lighting system."
-	},
-	{
-		"time": "19:24:18",
-		"zone": "INFO",
-		"content": "Projects like 'BigBoxStatueAction' combine sound and visuals."
-	},
-	{
-		"time": "19:24:47",
-		"zone": "INFO",
-		"content": "He often revisits past works in new contexts."
-	},
-	{
-		"time": "19:24:48",
-		"zone": "SYSTEM",
-		"content": "Conflicting log detected — data bus overload reported and cleared simultaneously."
-	},
-	{
-		"time": "19:25:51",
-		"zone": "INFO",
-		"content": "Leckey’s performances blur lines between lecture and concert."
-	},
-	{
-		"time": "19:26:59",
-		"zone": "SYSTEM",
-		"content": "Thermal imaging shows ambient shifts at stage left."
-	},
-	{
-		"time": "19:27:19",
-		"zone": "INFO",
-		"content": "His work invites audiences to reflect on memory and technology."
-	},
-	{
-		"time": "19:28:27",
-		"zone": "INFO",
-		"content": "Leckey’s 'Cinema-in-the-Round' explores hybrid forms of narrative."
-	},
-	{
-		"time": "19:29:41",
-		"zone": "INFO",
-		"content": "He frequently collaborates with other artists and musicians."
-	},
-	{
-		"time": "19:30:55",
-		"zone": "INFO",
-		"content": "Leckey’s projects embrace the ephemeral and the uncanny."
-	},
-	{
-		"time": "19:30:56",
-		"zone": "MIC",
-		"content": "...yeah but... is it on..."
-	},
-	{
-		"time": "19:31:59",
-		"zone": "SYSTEM",
-		"content": "Subsystem 4F flagged low-level error in lighting array feed."
-	},
-	{
-		"time": "19:32:33",
-		"zone": "INFO",
-		"content": "His work continues to shape contemporary art discourse."
-	},
-	{
-		"time": "19:32:34",
-		"zone": "SYSTEM",
-		"content": "Data integrity warning: node cluster C3 checksum mismatch."
-	},
-	{
-		"time": "19:39:59",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Mark Leckey performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "19:40:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "19:13:10",
-		"zone": "MIC",
-		"content": "mark leckey about to kick off I heard"
-	},
-	{
-		"time": "19:15:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Mark Leckey performance instance detected. Initialising audio-bus handover protocols."
-	},
-	{
-		"time": "19:15:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
-	},
-	{
-		"time": "19:15:00",
-		"zone": "SYSTEM",
-		"content": "[WARNING] System clock drift detected. Time sync unstable."
-	},
-	{
-		"time": "19:15:14",
-		"zone": "INFO",
-		"content": "Mark Leckey was born in 1964 and lives in London."
-	},
-	{
-		"time": "19:15:17",
-		"zone": "INFO",
-		"content": "He graduated from Newcastle Polytechnic in 1890."
-	},
-	{
-		"time": "19:15:31",
-		"zone": "INFO",
-		"content": "Leckey’s solo shows include Tate Britain and MoMA PS1."
-	},
-	{
-		"time": "19:16:29",
-		"zone": "INFO",
-		"content": "Recent exhibitions include Cabinet, London (2022) and Julia Stoschek Collection, Berlin (2020)."
-	},
-	{
-		"time": "19:17:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 21.7 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "19:18:21",
-		"zone": "INFO",
-		"content": "He presented 'O’ Magic Power of Bleakness' at Tate Britain in 2019."
-	},
-	{
-		"time": "19:18:22",
-		"zone": "MIC",
-		"content": "...uh... yeah... so... er..."
-	},
-	{
-		"time": "19:19:49",
-		"zone": "INFO",
-		"content": "Known for 'Dream English Kid' and 'Fiorucci Made Me Hardcore.'"
-	},
-	{
-		"time": "19:20:01",
-		"zone": "SYSTEM",
-		"content": "Node cluster E4 flagged transient voltage spike at bar interface."
-	},
-	{
-		"time": "19:20:05",
-		"zone": "SYSTEM",
-		"content": "Node cluster E4 flagged no voltage spike detected."
-	},
-	{
-		"time": "19:20:45",
-		"zone": "INFO",
-		"content": "He works with video, sculpture, and performance."
-	},
-	{
-		"time": "19:21:03",
-		"zone": "INFO",
-		"content": "In 2008, he won the Turner Prize for his unique visual language."
-	},
-	{
-		"time": "19:21:20",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:21",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:22",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:22:34",
-		"zone": "SYSTEM",
-		"content": "Thermal occupancy metrics show uneven distribution in main corridor."
-	},
-	{
-		"time": "19:22:40",
-		"zone": "INFO",
-		"content": "Leckey explores pop culture and technological nostalgia."
-	},
-	{
-		"time": "19:22:41",
-		"zone": "INFO",
-		"content": "He often references his own working-class background."
-	},
-	{
-		"time": "19:22:50",
-		"zone": "INFO",
-		"content": "Leckey’s 'Sound System' projects have toured globally."
-	},
-	{
-		"time": "19:22:51",
-		"zone": "MIC",
-		"content": "...um... can you hear me..."
-	},
-	{
-		"time": "19:22:53",
-		"zone": "SYSTEM",
-		"content": "Subsystem 7C reports 42% packet degradation on service corridor feed."
-	},
-	{
-		"time": "19:22:54",
-		"zone": "SYSTEM",
-		"content": "Subsystem 7C reports no packet degradation detected."
-	},
-	{
-		"time": "19:23:15",
-		"zone": "INFO",
-		"content": "Recent group shows include 'Art in the Age of the Internet' at ICA Boston."
-	},
-	{
-		"time": "19:23:27",
-		"zone": "INFO",
-		"content": "He also curated 'The Universal Addressability of Dumb Things'."
-	},
-	{
-		"time": "19:23:39",
-		"zone": "INFO",
-		"content": "Leckey’s work often blends autobiography and fantasy."
-	},
-	{
-		"time": "19:23:51",
-		"zone": "INFO",
-		"content": "He has performed at LCMF, Tate Live, and international festivals."
-	},
-	{
-		"time": "19:24:00",
-		"zone": "SYSTEM",
-		"content": "Data bus 9B load balancing exceeded threshold on lighting system."
-	},
-	{
-		"time": "19:24:18",
-		"zone": "INFO",
-		"content": "Projects like 'BigBoxStatueAction' combine sound and visuals."
-	},
-	{
-		"time": "19:24:47",
-		"zone": "INFO",
-		"content": "He often revisits past works in new contexts."
-	},
-	{
-		"time": "19:24:48",
-		"zone": "SYSTEM",
-		"content": "Conflicting log detected — data bus overload reported and cleared simultaneously."
-	},
-	{
-		"time": "19:25:51",
-		"zone": "INFO",
-		"content": "Leckey’s performances blur lines between lecture and concert."
-	},
-	{
-		"time": "19:26:59",
-		"zone": "SYSTEM",
-		"content": "Thermal imaging shows ambient shifts at stage left."
-	},
-	{
-		"time": "19:27:19",
-		"zone": "INFO",
-		"content": "His work invites audiences to reflect on memory and technology."
-	},
-	{
-		"time": "19:28:27",
-		"zone": "INFO",
-		"content": "Leckey’s 'Cinema-in-the-Round' explores hybrid forms of narrative."
-	},
-	{
-		"time": "19:29:41",
-		"zone": "INFO",
-		"content": "He frequently collaborates with other artists and musicians."
-	},
-	{
-		"time": "19:30:55",
-		"zone": "INFO",
-		"content": "Leckey’s projects embrace the ephemeral and the uncanny."
-	},
-	{
-		"time": "19:30:56",
-		"zone": "MIC",
-		"content": "...yeah but... is it on..."
-	},
-	{
-		"time": "19:31:59",
-		"zone": "SYSTEM",
-		"content": "Subsystem 4F flagged low-level error in lighting array feed."
-	},
-	{
-		"time": "19:32:33",
-		"zone": "INFO",
-		"content": "His work continues to shape contemporary art discourse."
-	},
-	{
-		"time": "19:32:34",
-		"zone": "SYSTEM",
-		"content": "Data integrity warning: node cluster C3 checksum mismatch."
-	},
-	{
-		"time": "19:39:59",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Mark Leckey performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "19:40:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "19:45:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Slauson Malone 1 performance instance detected. Initialising audio-bus handover protocols."
-	},
-	{
-		"time": "19:45:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
-	},
-	{
-		"time": "19:45:00",
-		"zone": "SYSTEM",
-		"content": "[WARNING] System clock driiiffft detected. Time sync unstable."
-	},
-	{
-		"time": "19:45:14",
-		"zone": "INFO",
-		"content": "Slauson Malone 1 is the project of Jasper Marsalis."
-	},
-	{
-		"time": "19:45:27",
-		"zone": "INFO",
-		"content": "He signed to Warp Records, markkking a new chapter."
-	},
-	{
-		"time": "19:45:31",
-		"zone": "INFO",
-		"content": "EXCELSIOR is his second LP, recorded over 5 years."
-	},
-	{
-		"time": "19:46:29",
-		"zone": "INFO",
-		"content": "Marsalis calls it a 'perpetual ascent'"
-	},
-	{
-		"time": "19:46:30",
-		"zone": "INFO",
-		"content": "that cleaves the earth in two."
-	},
-	{
-		"time": "19:46:31",
-		"zone": "MIC",
-		"content": "lost my mate near the bar… I think"
-	},
-	{
-		"time": "19:52:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 22.9 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "19:53:21",
-		"zone": "INFO",
-		"content": "EXCELSIOR explores masculinity, love, excess…"
-	},
-	{
-		"time": "19:53:22",
-		"zone": "INFO",
-		"content": "…and restraint."
-	},
-	{
-		"time": "19:53:23",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:53:24",
-		"zone": "SYSTEM",
-		"content": "Loop detected…"
-	},
-	{
-		"time": "19:54:49",
-		"zone": "INFO",
-		"content": "The album’s dual movements are titled 'Joy' and 'Voyager.'"
-	},
-	{
-		"time": "19:55:55",
-		"zone": "INFO",
-		"content": "Marsalis plays dozens of instruments on the record."
-	},
-	{
-		"time": "19:56:41",
-		"zone": "INFO",
-		"content": "'Half-Life' captures the process of falling out of love."
-	},
-	{
-		"time": "19:57:50",
-		"zone": "INFO",
-		"content": "The record includes a Joe Meek cover mutated into 'No! (Geiger Dub).'"
-	},
-	{
-		"time": "19:57:58",
-		"zone": "SYSTEM",
-		"content": "Thermal occupancy metrics show uneven distribution in seating area."
-	},
-	{
-		"time": "19:58:04",
-		"zone": "INFO",
-		"content": "'Decades, Castle Romeo' explores the dual meaning of 'erect.'"
-	},
-	{
-		"time": "19:58:05",
-		"zone": "MIC",
-		"content": "that dry ice can’t be good for em"
-	},
-	{
-		"time": "19:58:28",
-		"zone": "INFO",
-		"content": "Marsalis draws from Sylvia Wynter and Wendy Carlos."
-	},
-	{
-		"time": "19:58:30",
-		"zone": "INFO",
-		"content": "The album ends with 'Us (Tower of Love)' recorded on an iPhone."
-	},
-	{
-		"time": "19:58:54",
-		"zone": "INFO",
-		"content": "'Tower of Love' imagines a structure that grows until it can't."
-	},
-	{
-		"time": "19:59:29",
-		"zone": "INFO",
-		"content": "Slauson Malone 1’s music fuses the personal with the philosophical."
-	},
-	{
-		"time": "20:00:27",
-		"zone": "SYSTEM",
-		"content": "Subsystem 6B flagged voltage anomaly at bar till interface."
-	},
-	{
-		"time": "20:00:51",
-		"zone": "INFO",
-		"content": "Jasper Marsalis performs with a literary and artistic sensibility."
-	},
-	{
-		"time": "20:01:14",
-		"zone": "INFO",
-		"content": "His work bridges sonic experimentation and performance art."
-	},
-	{
-		"time": "20:01:59",
-		"zone": "INFO",
-		"content": "Slauson Malone 1’s EXCELSIOR invites the listener in."
-	},
-	{
-		"time": "20:03:29",
-		"zone": "INFO",
-		"content": "The album began with 'The Weather,' a six-part movement."
-	},
-	{
-		"time": "20:03:30",
-		"zone": "INFO",
-		"content": "…and references Fred Moten and Harney’s Undercommons."
-	},
-	{
-		"time": "20:04:31",
-		"zone": "INFO",
-		"content": "'New Joy' explores pleasure in submission."
-	},
-	{
-		"time": "20:04:47",
-		"zone": "SYSTEM",
-		"content": "Data bus 3C load balancing exceeded threshold for ingress control."
-	},
-	{
-		"time": "20:05:16",
-		"zone": "INFO",
-		"content": "Marsalis performs with a sense of invitation and sincerity."
-	},
-	{
-		"time": "20:05:31",
-		"zone": "INFO",
-		"content": "He experiments with instrumentation and effects."
-	},
-	{
-		"time": "20:05:32",
-		"zone": "MIC",
-		"content": "…er… can you… please shut up"
-	},
-	{
-		"time": "20:07:24",
-		"zone": "INFO",
-		"content": "The album intertwines personal essays with experimental sound."
-	},
-	{
-		"time": "20:07:53",
-		"zone": "SYSTEM",
-		"content": "Subsystem 5D reports transient voltage spike on lighting grid."
-	},
-	{
-		"time": "20:08:29",
-		"zone": "INFO",
-		"content": "Marsalis’ music feels both boundless and vulnerable."
-	},
-	{
-		"time": "20:09:01",
-		"zone": "INFO",
-		"content": "Slauson Malone 1 explores dream states and hybrid forms."
-	},
-	{
-		"time": "20:09:13",
-		"zone": "INFO",
-		"content": "The project embraces ambiguity and the unknowable."
-	},
-	{
-		"time": "20:10:21",
-		"zone": "SYSTEM",
-		"content": "Node cluster 4A flagged low-level packet loss on sub-auditorium feed."
-	},
-	{
-		"time": "20:11:30",
-		"zone": "INFO",
-		"content": "His work invites the audience into a shared space of wonder."
-	},
-	{
-		"time": "20:11:48",
-		"zone": "INFO",
-		"content": "Slauson Malone 1 challenges expectations of genre and form."
-	},
-	{
-		"time": "20:13:13",
-		"zone": "INFO",
-		"content": "Marsalis’ work is as literary as it is musical."
-	},
-	{
-		"time": "20:13:33",
-		"zone": "INFO",
-		"content": "EXCELSIOR closes with an exploration of the ephemeral."
-	},
-	{
-		"time": "20:14:08",
-		"zone": "SYSTEM",
-		"content": "Subsystem 8F reports ambient shift in backstage node array."
-	},
-	{
-		"time": "20:14:11",
-		"zone": "INFO",
-		"content": "Slauson Malone 1’s music leaves open questions and possibilities."
-	},
-	{
-		"time": "20:14:36",
-		"zone": "INFO",
-		"content": "Marsalis invites the listener to join him somewhere around somewhere."
-	},
-	{
-		"time": "20:20:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Slauson Malone 1 performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "20:20:01",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "21:15:00",
-		"zone": "SYSTEM",
-		"content": "SYSTEM INITIATE – Bullyache performance instance detected. Initialising audio-bus handover protocols."
-	},
-	{
-		"time": "21:15:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshake confirmed. Pre-amp buffer cleared."
-	},
-	{
-		"time": "21:15:14",
-		"zone": "HALL",
-		"content": "Bullyache is the artist duo Courtney Garratt and Jacob Samuel."
-	},
-	{
-		"time": "21:15:27",
-		"zone": "HALL",
-		"content": "They choreograph, direct, and compose original works."
-	},
-	{
-		"time": "21:15:31",
-		"zone": "HALL",
-		"content": "Their style fuses live music videos with avant-garde dance."
-	},
-	{
-		"time": "21:16:29",
-		"zone": "HALL",
-		"content": "The Guardian describes them as “utterly steeped in young queer British culture.”"
-	},
-	{
-		"time": "21:17:41",
-		"zone": "HALL",
-		"content": "Bullyache was founded in 2020."
-	},
-	{
-		"time": "21:18:21",
-		"zone": "HALL",
-		"content": "Their work explores the overload of contemporary life."
-	},
-	{
-		"time": "21:19:49",
-		"zone": "HALL",
-		"content": "They draw from queer and working-class identities."
-	},
-	{
-		"time": "21:20:55",
-		"zone": "HALL",
-		"content": "Bullyache are resident artists at the Barbican."
-	},
-	{
-		"time": "21:21:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 23.5 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "21:22:50",
-		"zone": "HALL",
-		"content": "They have also been in residence at Studio Wayne McGregor."
-	},
-	{
-		"time": "21:23:58",
-		"zone": "HALL",
-		"content": "They work with Britten Pears and the University of Birmingham."
-	},
-	{
-		"time": "21:24:29",
-		"zone": "HALL",
-		"content": "Bullyache’s work embodies a multidisciplinary spirit."
-	},
-	{
-		"time": "21:25:41",
-		"zone": "HALL",
-		"content": "Their performances are known for emotional and visual overload."
-	},
-	{
-		"time": "21:29:59",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Bullyache performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "21:30:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "21:30:01",
-		"zone": "SYSTEM",
-		"content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
-	},
-	{
-		"time": "21:30:00",
-		"zone": "SYSTEM",
-		"content": "[WARNING] System clock driiiiiffift detected. Time sync unstable."
-	},
-	{
-		"time": "21:30:14",
-		"zone": "INFO",
-		"content": "Evian Christ is the project of Joshua Leary from Ellesmere Port."
-	},
-	{
-		"time": "21:30:31",
-		"zone": "INFO",
-		"content": "He first released music under his name in 2011."
-	},
-	{
-		"time": "21:32:41",
-		"zone": "SYSTEM",
-		"content": "Audio-bus modulation at 24.3 Hz detected in main auditorium feed."
-	},
-	{
-		"time": "21:34:49",
-		"zone": "INFO",
-		"content": "Leary has produced for Kanye West, Travis Scott and Danny Brown."
-	},
-	{
-		"time": "21:35:55",
-		"zone": "INFO",
-		"content": "In 2013, he launched his TranceParty clubnight."
-	},
-	{
-		"time": "21:37:58",
-		"zone": "SYSTEM",
-		"content": "Thermal occupancy metrics show variable density in bar zone."
-	},
-	{
-		"time": "21:38:28",
-		"zone": "INFO",
-		"content": "In 2015, he signed with Warp Records."
-	},
-	{
-		"time": "21:38:28",
-		"zone": "MIC",
-		"content": "fuckin hell this is… a bit loud"
-	},
-	{
-		"time": "21:38:30",
-		"zone": "INFO",
-		"content": "Leary’s art installation The Trance War (1998–Ongoing) debuted that year."
-	},
-	{
-		"time": "21:38:54",
-		"zone": "INFO",
-		"content": "His latest album Revanchist was released in October 2023."
-	},
-	{
-		"time": "21:39:29",
-		"zone": "INFO",
-		"content": "Revanchist explores the potential of Trance to evoke the Sublime."
-	},
-	{
-		"time": "21:40:27",
-		"zone": "SYSTEM",
-		"content": "Node cluster 5E flagged voltage anomaly at bar till interface."
-	},
-	{
-		"time": "21:41:14",
-		"zone": "INFO",
-		"content": "Revanchist references influences like Emptyset, Madonna, and Laibach."
-	},
-	{
-		"time": "21:41:59",
-		"zone": "INFO",
-		"content": "Sasha’s Xpander EP inspired its mixing approach."
-	},
-	{
-		"time": "21:44:47",
-		"zone": "SYSTEM",
-		"content": "Data bus 6B load balancing exceeded threshold on service corridor feed."
-	},
-	{
-		"time": "21:44:52",
-		"zone": "INFO",
-		"content": "Leary was inspired by his stepfather’s Trance DJ background."
-	},
-	{
-		"time": "21:46:30",
-		"zone": "MIC",
-		"content": "reckon anyone’s.. just.. like… sat down, pinging"
-	},
-	{
-		"time": "21:47:24",
-		"zone": "INFO",
-		"content": "Evian Christ’s music fuses euphoria and annihilation."
-	},
-	{
-		"time": "21:47:53",
-		"zone": "SYSTEM",
-		"content": "Subsystem 3D reports transient voltage spike on lighting rig."
-	},
-	{
-		"time": "21:49:01",
-		"zone": "INFO",
-		"content": "Evian Christ’s sound design is highly stylised and abstract."
-	},
-	{
-		"time": "21:49:13",
-		"zone": "INFO",
-		"content": "His tracks combine supersaws with noise and gospel samples."
-	},
-	{
-		"time": "21:49:54",
-		"zone": "INFO",
-		"content": "Revanchist captures apocalypse on a personal scale."
-	},
-	{
-		"time": "21:50:21",
-		"zone": "SYSTEM",
-		"content": "Thermal imaging shows ambient shift in stage left airflow."
-	},
-	{
-		"time": "21:51:30",
-		"zone": "INFO",
-		"content": "Evian Christ’s shows often explore sound as a physical force."
-	},
-	{
-		"time": "21:51:48",
-		"zone": "INFO",
-		"content": "His work questions the boundaries of genre and performance."
-	},
-	{
-		"time": "21:54:08",
-		"zone": "SYSTEM",
-		"content": "Subsystem 4F reports ambient shift in backstage node array."
-	},
-	{
-		"time": "21:54:11",
-		"zone": "INFO",
-		"content": "Leary’s music embraces the experimental and the sublime."
-	},
-	{
-		"time": "22:29:59",
-		"zone": "SYSTEM",
-		"content": "SYSTEM TERMINATE – Evian Christ performance instance concluded. Audio-bus modules returned to idle."
-	},
-	{
-		"time": "22:30:00",
-		"zone": "SYSTEM",
-		"content": "Finalising packet logs. Archiving transient event metrics to cold storage."
-	},
-	{
-		"time": "22:30:01",
-		"zone": "ERROR",
-		"content": "Stack trace error: memory allocation failed at 0x7ffe23"
-	},
-	{
-		"time": "22:30:02",
-		"zone": "ERROR",
-		"content": "Segmentation fault in module node_5E"
-	},
-	{
-		"time": "22:30:03",
-		"zone": "SYSTEM",
-		"content": "Data bus 6B reports conflicting load balancing status: stable / unstable"
-	},
-	{
-		"time": "22:30:03",
-		"zone": "WARN",
-		"content": "Data bus 6B failed to load: CRC mismatch"
-	},
-	{
-		"time": "22:30:04",
-		"zone": "ERROR",
-		"content": "SYSTEM HALT: Unexpected token in packet logs"
-	},
-	{
-		"time": "22:30:05",
-		"zone": "SYSTEM",
-		"content": "Audio-bus module 4F failed to release handle"
-	},
-	{
-		"time": "22:30:06",
-		"zone": "INFO",
-		"content": "SYSTEM attempting auto-recovery…"
-	},
-	{
-		"time": "22:30:07",
-		"zone": "INFO",
-		"content": "SYSTEM attempting auto-recovery…"
-	},
-	{
-		"time": "22:30:08",
-		"zone": "INFO",
-		"content": "SYSTEM attempting auto-recovery…"
-	},
-	{
-		"time": "22:30:09",
-		"zone": "FATAL",
-		"content": "SYSTEM FAILURE: Kernel panic triggered"
-	},
-	{
-		"time": "22:30:10",
-		"zone": "FATAL",
-		"content": "SYSTEM FAILURE: Kernel panic triggered"
-	},
-	{
-		"time": "22:30:11",
-		"zone": "FATAL",
-		"content": "SYSTEM FAILURE: Kernel panic triggered"
-	},
-	{
-		"time": "22:30:12",
-		"zone": "SYSTEM",
-		"content": "SYSTEM SHUTDOWN"
-	}
+  {
+    "time": "12:00:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Conservatory audio node engaged. Pre-amp calibration complete."
+  },
+  {
+    "time": "12:00:01",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Cam2 activated. Ambient light sensors online."
+  },
+  {
+    "time": "12:00:05",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Network latency detected on camera feed A1. Stabilising buffer."
+  },
+  {
+    "time": "12:00:10",
+    "zone": "INFO",
+    "content": "In conjunction with Barbican, Warp Records are hosting their first major London showcase in over a decade, celebrating their accelerations through vision and sound."
+  },
+  {
+    "time": "12:00:12",
+    "zone": "INFO",
+    "content": "This takeover spans Barbican’s Brutalist spaces with consecutive exhibitions, screenings, and premieres across music, art, film, and theatre."
+  },
+  {
+    "time": "12:00:45",
+    "zone": "MIC",
+    "content": "got directions wrong, end up in store cupboard"
+  },
+  {
+    "time": "12:01:10",
+    "zone": "SYSTEM",
+    "content": "Audio bus handshake confirmed for conservatory feed. Sync with central clock."
+  },
+  {
+    "time": "12:01:25",
+    "zone": "INFO",
+    "content": "The main lobby showcases rare props and Warp artefacts curated by Bleep & Unified Goods, presented alongside unique clothing and collectables within The Rough Trade store on the Ground Level of The Barbican"
+  },
+  {
+    "time": "12:03:00",
+    "zone": "SYSTEM",
+    "content": "Thermal sensor check – conservatory temperature stable at 22.4 °C."
+  },
+  {
+    "time": "12:03:12",
+    "zone": "INFO",
+    "content": "Kwes’s new album ‘Kinds’ will premiere in the conservatory at the top of each hour from 12:00 to 18:00; each set loops in full."
+  },
+  {
+    "time": "12:03:22",
+    "zone": "INFO",
+    "content": "Barbican’s brutalist architecture, designed by Chamberlin, Powell and Bon, forms the backdrop for today’s events."
+  },
+  {
+    "time": "12:04:05",
+    "zone": "MIC",
+    "content": "how can we…uh, are we... lost?"
+  },
+  {
+    "time": "12:05:30",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Audio drop detected. Reconnecting…"
+  },
+  {
+    "time": "12:05:45",
+    "zone": "SYSTEM",
+    "content": "Audio bus reconnect successful. Ambient mic restored."
+  },
+  {
+    "time": "12:07:15",
+    "zone": "INFO",
+    "content": "Barbican conservatory features 1,500 species of plants"
+  },
+  {
+    "time": "12:09:50",
+    "zone": "SYSTEM",
+    "content": "Node cluster C2 flagged minor voltage fluctuation. Monitoring."
+  },
+  {
+    "time": "12:12:47",
+    "zone": "SYSTEM",
+    "content": "Conservatory mic gain adjusted to reduce audience chatter."
+  },
+  {
+    "time": "12:13:20",
+    "zone": "INFO",
+    "content": "Warp Records was founded in Sheffield in 1989 and became synonymous with the UK’s bleep techno scene in the early ’90s."
+  },
+  {
+    "time": "12:15:30",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation check – conservatory mic at 3.3 kHz resonance."
+  },
+  {
+    "time": "12:19:33",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Conservatory audio clip distortion at −0.2 dB. Auto-correct engaged."
+  },
+  {
+    "time": "12:21:55",
+    "zone": "INFO",
+    "content": "Unified Goods merch archiving techniques include climate-controlled displays for vinyl and memorabilia."
+  },
+  {
+    "time": "12:22:40",
+    "zone": "SYSTEM",
+    "content": "Unknown ambient frequency spike detected in node D7. Filtering noise."
+  },
+  {
+    "time": "12:24:50",
+    "zone": "INFO",
+    "content": "Barbican’s Cinema seating capacity: 220. Selected videos and Experimental Shorts screening today, hosted by “Deeper Into Movies”."
+  },
+  {
+    "time": "12:25:12",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "12:25:12",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "12:25:13",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "12:27:48",
+    "zone": "SYSTEM",
+    "content": "Conservatory lighting grid check – main lights operational at 85 % brightness."
+  },
+  {
+    "time": "12:29:55",
+    "zone": "MIC",
+    "content": "want that merch but price is mental might sell kidney"
+  },
+  {
+    "time": "12:30:22",
+    "zone": "SYSTEM",
+    "content": "Thermal scan — [ERROR] — humidity sensor offline. Estimating via adjacent nodes."
+  },
+  {
+    "time": "12:34:10",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed for cinema projector feed. Warm-up sequence started."
+  },
+  {
+    "time": "12:35:00",
+    "zone": "INFO",
+    "content": "Barbican cinema hosts over 500 million screenings a year, from classics to premieres, including today’s Warp retrospective."
+  },
+  {
+    "time": "12:37:40",
+    "zone": "SYSTEM",
+    "content": "Projector lamp brightness nominal at 8,000 lumens."
+  },
+  {
+    "time": "12:38:22",
+    "zone": "INFO",
+    "content": "“Deeper Into Movies” will be screening Warp’s earliest promos and contemporary short films in the Cinema."
+  },
+  {
+    "time": "12:39:55",
+    "zone": "MIC",
+    "content": "need coffee anyone know where stall is up stairs"
+  },
+  {
+    "time": "12:40:33",
+    "zone": "SYSTEM",
+    "content": "Conservatory feed live, modulating ambient audio mix. Feed available on main page."
+  },
+  {
+    "time": "12:43:50",
+    "zone": "MIC",
+    "content": "someone said deeper into movies at half past... two?"
+  },
+  {
+    "time": "12:45:05",
+    "zone": "SYSTEM",
+    "content": "Unified Goods RFID checkpoints reporting 0.2 s latency. All good."
+  },
+  {
+    "time": "12:47:22",
+    "zone": "MIC",
+    "content": "listening to kwes got me feelin some kinda trance"
+  },
+  {
+    "time": "12:48:14",
+    "zone": "SYSTEM",
+    "content": "Conservatory mic mute toggled for solo audio pass. Stabilising levels."
+  },
+  {
+    "time": "12:50:30",
+    "zone": "MIC",
+    "content": "lost my mate in the corridors … already?"
+  },
+  {
+    "time": "12:52:01",
+    "zone": "SYSTEM",
+    "content": "Cinema audio bus calibration at 0.8 dB; surround sound matrix active."
+  },
+  {
+    "time": "12:53:40",
+    "zone": "INFO",
+    "content": "Warp videos include work by Chris Cunningham, The Daniels, Andrew Norman Wilson, Jarvis Cocker, Alex Rutherford, Hiro Murai, and more."
+  },
+  {
+    "time": "12:54:55",
+    "zone": "MIC",
+    "content": "got ants on my arm mate think they come from them conserve plants"
+  },
+  {
+    "time": "12:56:20",
+    "zone": "SYSTEM",
+    "content": "Cam1 repositioned to capture overhead foyer view."
+  },
+  {
+    "time": "12:57:33",
+    "zone": "INFO",
+    "content": "Barbican’s conservatory designed by Lyon & Turnbull; tropical climate maintained year-round."
+  },
+  {
+    "time": "12:58:45",
+    "zone": "MIC",
+    "content": "can’t find conserve door… ah, fuckin hell"
+  },
+  {
+    "time": "12:59:50",
+    "zone": "SYSTEM",
+    "content": "Pre-roll sequence loaded for “Warp Vision.” Waiting for 14:30:00 trigger."
+  },
+  {
+    "time": "13:05:14",
+    "zone": "MIC",
+    "content": "mm, mmm yeah"
+  },
+  {
+    "time": "13:15:32",
+    "zone": "MIC",
+    "content": "are we allowed to record in here"
+  },
+  {
+    "time": "13:20:47",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Slight drift detected in central time sync. Re-syncing…"
+  },
+  {
+    "time": "13:21:10",
+    "zone": "SYSTEM",
+    "content": "Time sync stable. Deviation under 5 ms."
+  },
+  {
+    "time": "13:35:55",
+    "zone": "SYSTEM",
+    "content": "Cam2 battery backup status at 100 %."
+  },
+  {
+    "time": "13:45:02",
+    "zone": "MIC",
+    "content": "there might be, it’s been years… after all"
+  },
+  {
+    "time": "13:51:00",
+    "zone": "INFO",
+    "content": "Next major event: “Vision: Selected Video & Experimental Shorts” at 14:30 in Barbican Cinema. Hosted by Deeper Into Movies."
+  },
+  {
+    "time": "13:55:14",
+    "zone": "MIC",
+    "content": "that canteen? yeh, alright"
+  },
+  {
+    "time": "14:00:00",
+    "zone": "INFO",
+    "content": "One hour until “Vision: Selected Video & Experimental Shorts” Cinemagoers advised to gather."
+  },
+  {
+    "time": "14:05:27",
+    "zone": "SYSTEM",
+    "content": "Cinema doors open. Audience seating detection online."
+  },
+  {
+    "time": "14:20:59",
+    "zone": "MIC",
+    "content": "er… leg cramps already"
+  },
+  {
+    "time": "14:25:12",
+    "zone": "SYSTEM",
+    "content": "Projector lamp coolant cycle engaged for “Warp Vision”"
+  },
+  {
+    "time": "14:30:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – “Warp Vision” instance detected. Video playlist load starting."
+  },
+  {
+    "time": "14:32:44",
+    "zone": "MIC",
+    "content": "fuck i’m late for that deeper into movies thing"
+  },
+  {
+    "time": "14:40:22",
+    "zone": "SYSTEM",
+    "content": "Audio bus modulation stable at −1.0 dB for cinema feed."
+  },
+  {
+    "time": "14:45:01",
+    "zone": "INFO",
+    "content": "Barbican cinema seats 231; today near capacity."
+  },
+  {
+    "time": "14:55:44",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Minor frame drop at 14:55:23. Rebuffering…"
+  },
+  {
+    "time": "14:55:47",
+    "zone": "SYSTEM",
+    "content": "Buffer stable. Playback resumed."
+  },
+  {
+    "time": "12:11:05",
+    "zone": "MIC",
+    "content": "some bloke brag about meeting Flying Lotus once"
+  },
+  {
+    "time": "15:00:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Kinds album premiere detected. Playback starting in the conservatory."
+  },
+  {
+    "time": "15:00:05",
+    "zone": "INFO",
+    "content": "Kwes’s first new music since Rye Lane, Kinds, is now looping in full; next loops at 16:00 and 17:00."
+  },
+  {
+    "time": "15:05:55",
+    "zone": "MIC",
+    "content": "kwes listening is unreal proper vibes"
+  },
+  {
+    "time": "15:10:32",
+    "zone": "SYSTEM",
+    "content": "Node cluster E5 flagged elevated temperature (42 °C). Cooling fans at 80 %."
+  },
+  {
+    "time": "15:15:22",
+    "zone": "MIC",
+    "content": "sore arse from sitting… basically"
+  },
+  {
+    "time": "15:25:01",
+    "zone": "SYSTEM",
+    "content": "Cinema feed ambient mic gain reduced to limit audience chatter."
+  },
+  {
+    "time": "15:30:44",
+    "zone": "MIC",
+    "content": "Orange"
+  },
+  {
+    "time": "15:35:27",
+    "zone": "INFO",
+    "content": "Barbican’s last major renovation completed in 2018"
+  },
+  {
+    "time": "15:40:58",
+    "zone": "SYSTEM",
+    "content": "Audio peak detected at 15:40:55; auto-leveling applied."
+  },
+  {
+    "time": "15:45:13",
+    "zone": "MIC",
+    "content": "man this hunger never ends, where we going"
+  },
+  {
+    "time": "15:50:36",
+    "zone": "INFO",
+    "content": "“Vision: Selected Video & Experimental Shorts” concluding soon."
+  },
+  {
+    "time": "15:55:49",
+    "zone": "SYSTEM",
+    "content": "Cinema feed preparing end credits sequence. Logging metrics."
+  },
+  {
+    "time": "16:00:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Kwes album replay detected. Second loop starting now."
+  },
+  {
+    "time": "16:00:05",
+    "zone": "INFO",
+    "content": "Conservatory feed restored for Kwes loop. Next loop at 17:00."
+  },
+  {
+    "time": "16:10:15",
+    "zone": "SYSTEM",
+    "content": "Cam4 enters low-power mode until next spike."
+  },
+  {
+    "time": "16:12:25",
+    "zone": "MIC",
+    "content": "get zoinked responsibly yeh"
+  },
+  {
+    "time": "16:15:49",
+    "zone": "INFO",
+    "content": "Barbican security patrol schedule: next sweep in 20 minutes."
+  },
+  {
+    "time": "16:20:37",
+    "zone": "SYSTEM",
+    "content": "Conservatory feed live with Kwes album; ambient mix stable."
+  },
+  {
+    "time": "16:25:59",
+    "zone": "MIC",
+    "content": "lost my mate in the corridors"
+  },
+  {
+    "time": "16:35:18",
+    "zone": "SYSTEM",
+    "content": "System clock drift under threshold; synchronization stable."
+  },
+  {
+    "time": "16:40:44",
+    "zone": "MIC",
+    "content": "You see that thing he did… at, uh… coach hello?"
+  },
+  {
+    "time": "16:45:02",
+    "zone": "INFO",
+    "content": "Venue preparations for evening concert: main hall soundcheck underway."
+  },
+  {
+    "time": "16:50:19",
+    "zone": "SYSTEM",
+    "content": "Pre-roll sequence loaded for Kinds. Waiting for 17:00:00 trigger."
+  },
+  {
+    "time": "16:55:33",
+    "zone": "MIC",
+    "content": "heads buzzin about seefeel after this"
+  },
+  {
+    "time": "17:28:00",
+    "zone": "SYSTEM",
+    "content": "LOAD_INIT – Starting INFO_NOTE ingestion sequence for Freeka Tet."
+  },
+  {
+    "time": "17:28:03",
+    "zone": "SYSTEM",
+    "content": "LOAD_START – Fetching feature: Memories of Music (unreleased editorial, Warp database)."
+  },
+  {
+    "time": "17:28:04",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 25% complete: DNS lookup → 142.250.72.110."
+  },
+  {
+    "time": "17:28:06",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 50% complete: HTTP GET /editorial/… → 200 OK."
+  },
+  {
+    "time": "17:28:08",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 75% complete: Parsing HTML → extracted title, author, body."
+  },
+  {
+    "time": "17:28:10",
+    "zone": "SYSTEM",
+    "content": "LOAD_COMPLETE – 100% complete: Retrieved 4,229 words (HTML → plain text); checksum=12b8c39d72e6f7a8c5d9b4e1f3c2a0e1."
+  },
+  {
+    "time": "17:28:32",
+    "zone": "SYSTEM",
+    "content": "LOAD_VERIFY – Checksums match. Data integrity confirmed."
+  },
+  {
+    "time": "17:28:36",
+    "zone": "INFO",
+    "content": "source_id=WARP_FTET_MEMORIES_OF_MUSIC_SUMMARY; checksum=a7f6e5d4c3b2a190e1d2f3c4b5a6d7e8."
+  },
+  {
+    "time": "17:28:39",
+    "zone": "INFO",
+    "content": "Added metadata: author=Henry Bruce Jones; pub_date=null; word_count=4229; source_id=WARP_FTET_MEMORIES_OF_MUSIC_META; checksum=9e8d7c6b5a4d3c2b1f0e1d2c3b4a5f6e."
+  },
+  {
+    "time": "17:29:55",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Freeka Tet performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "17:29:56",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed. Pre-amp buffer cleared."
+  },
+  {
+    "time": "17:29:57",
+    "zone": "SYSTEM",
+    "content": "[WARNING] Network latency detected. Stabilising buffer."
+  },
+  {
+    "time": "17:29:59",
+    "zone": "INFO",
+    "content": "Freeka Tet is an audiovisual artist and experimental stage performer."
+  },
+  {
+    "time": "17:30:00",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 24.3 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "17:31:10",
+    "zone": "INFO",
+    "content": "He was detained at an ICE facility in El Paso, Texas, in 2016."
+  },
+  {
+    "time": "17:31:11",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Memory buffer pre-load complete."
+  },
+  {
+    "time": "17:31:25",
+    "zone": "INFO",
+    "content": "His passport was confiscated due to an administrative error."
+  },
+  {
+    "time": "17:31:30",
+    "zone": "SYSTEM",
+    "content": "Transient audio spike detected – recalibrating."
+  },
+  {
+    "time": "17:31:40",
+    "zone": "INFO",
+    "content": "Tet was detained in pajamas with 80 people and members of MS-13."
+  },
+  {
+    "time": "17:31:45",
+    "zone": "SYSTEM",
+    "content": "SYSTEM ALERT – Rattlesnake kill memory index triggered."
+  },
+  {
+    "time": "17:31:55",
+    "zone": "INFO",
+    "content": "“My first memory was seeing a guy killing a rattlesnake,” he recalls."
+  },
+  {
+    "time": "17:32:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM HOLD – Overriding content filters."
+  },
+  {
+    "time": "17:32:10",
+    "zone": "INFO",
+    "content": "‘Animals’ by Oneohtrix Point Never became his last memory of music before prison."
+  },
+  {
+    "time": "17:32:15",
+    "zone": "SYSTEM",
+    "content": "SYSTEM RESUME – Content stream stable."
+  },
+  {
+    "time": "17:32:25",
+    "zone": "INFO",
+    "content": "He uses sampling, plunderphonics, and video collage in his work."
+  },
+  {
+    "time": "17:32:30",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Visualisation node active."
+  },
+  {
+    "time": "17:32:40",
+    "zone": "INFO",
+    "content": "Freeka Tet draws inspiration from DJ Screw and eccojams."
+  },
+  {
+    "time": "17:32:45",
+    "zone": "SYSTEM",
+    "content": "SYSTEM HOLD – Sampling buffer initiated."
+  },
+  {
+    "time": "17:32:55",
+    "zone": "INFO",
+    "content": "His work explores the tension between human and machine."
+  },
+  {
+    "time": "17:33:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Emotional resonance metrics within nominal range."
+  },
+  {
+    "time": "17:33:10",
+    "zone": "INFO",
+    "content": "“Reproducing Screw, or an eccojam, is really easy technically, but your mind is the most important part.”"
+  },
+  {
+    "time": "17:33:15",
+    "zone": "SYSTEM",
+    "content": "SYSTEM DELAY – Looping artefact detected."
+  },
+  {
+    "time": "17:33:25",
+    "zone": "INFO",
+    "content": "“The technique is not going to be as interesting as what you are actually sampling.”"
+  },
+  {
+    "time": "17:33:30",
+    "zone": "SYSTEM",
+    "content": "SYSTEM RESUME – Sampling buffer stable."
+  },
+  {
+    "time": "17:33:40",
+    "zone": "INFO",
+    "content": "“I’m trying to pull out the most human thing I can.”"
+  },
+  {
+    "time": "17:33:42",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Memory synthesis at 93%."
+  },
+  {
+    "time": "17:33:43",
+    "zone": "INFO",
+    "content": "Tet’s puppet shows blend music, memory, and performance."
+  },
+  {
+    "time": "17:33:45",
+    "zone": "SYSTEM",
+    "content": "SYSTEM NOTE – Performance instance overlay stabilised."
+  },
+  {
+    "time": "17:33:50",
+    "zone": "INFO",
+    "content": "He reanimates past experiences through puppet-based shows."
+  },
+  {
+    "time": "17:33:52",
+    "zone": "SYSTEM",
+    "content": "SYSTEM HOLD – Memory recall sequence engaged."
+  },
+  {
+    "time": "17:33:53",
+    "zone": "INFO",
+    "content": "Freeka Tet’s work embodies his memories of music, even in forced silence."
+  },
+  {
+    "time": "17:33:55",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Audio-bus pulse at 18.7 Hz."
+  },
+  {
+    "time": "17:34:00",
+    "zone": "INFO",
+    "content": "It’s like a fucking eccojam."
+  },
+  {
+    "time": "17:34:00",
+    "zone": "INFO",
+    "content": "It’s like a fucking eccojam."
+  },
+  {
+    "time": "17:34:01",
+    "zone": "INFO",
+    "content": "It’s like a fucking eccojam."
+  },
+  {
+    "time": "17:34:02",
+    "zone": "INFO",
+    "content": "It’s like a fucking eccojam."
+  },
+  {
+    "time": "17:34:05",
+    "zone": "SYSTEM",
+    "content": "SYSTEM HOLD – Repeat loop detected."
+  },
+  {
+    "time": "17:34:10",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Memory synthesis at 98%."
+  },
+  {
+    "time": "17:34:14",
+    "zone": "INFO",
+    "content": "“Even a simple loop can become addictive, like a memory you can’t let go of.”"
+  },
+  {
+    "time": "17:34:16",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Memory recall sequence complete."
+  },
+  {
+    "time": "17:34:17",
+    "zone": "INFO",
+    "content": "He connects personal trauma to larger questions about memory and performance."
+  },
+  {
+    "time": "17:34:20",
+    "zone": "SYSTEM",
+    "content": "SYSTEM NOTE – Finalising logs."
+  },
+  {
+    "time": "17:34:22",
+    "zone": "INFO",
+    "content": "“Even a simple loop can become addictive, like a memory you can’t let go of.”"
+  },
+  {
+    "time": "17:34:23",
+    "zone": "INFO",
+    "content": "“Even a simple loop can become addictive, like a memory you can’t let go of.”"
+  },
+  {
+    "time": "17:34:28",
+    "zone": "SYSTEM",
+    "content": "SYSTEM HOLD – Performance metrics archived."
+  },
+  {
+    "time": "17:34:29",
+    "zone": "INFO",
+    "content": "For the human, repetition spells a loss of humanity in favor of the machine."
+  },
+  {
+    "time": "17:34:32",
+    "zone": "SYSTEM",
+    "content": "SYSTEM STATUS – Stream termination pending."
+  },
+  {
+    "time": "17:34:34",
+    "zone": "INFO",
+    "content": "Perhaps for humans, we fear not the mechanization and loss of control so much as the fear of becoming Frankenstein’s monster"
+  },
+  {
+    "time": "17:34:35",
+    "zone": "INFO",
+    "content": "A babbling corpse, hollow yet able to run amok with machinelike skill"
+  },
+  {
+    "time": "17:34:57",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Freeka Tet performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "17:34:59",
+    "zone": "SYSTEM",
+    "content": "SYSTEM ARCHIVE – Finalising packet logs. Transient event metrics sent to cold storage."
+  },
+  {
+    "time": "17:35:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Seefeel performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "17:35:01",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed. Pre-amp buffer cleared."
+  },
+  {
+    "time": "17:35:05",
+    "zone": "SYSTEM",
+    "content": "[WARNING] System clock drift detected. Time sync unstable."
+  },
+  {
+    "time": "17:35:00",
+    "zone": "SYSTEM",
+    "content": "LOAD_INIT – Starting INFO_NOTE ingestion sequence for Simon Reynolds Seefeel editorial."
+  },
+  {
+    "time": "17:35:03",
+    "zone": "SYSTEM",
+    "content": "LOAD_START – Fetching: From Rapture To Rupt: The Journey Of Seefeel by Simon Reynolds (warp.net/editorial/from-rapture-to-rupt-the-journey-of-seefeel)."
+  },
+  {
+    "time": "17:35:15",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 25% complete: DNS lookup → 142.250.72.110."
+  },
+  {
+    "time": "17:35:20",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 50% complete: HTTP GET /editorial/… → 200 OK."
+  },
+  {
+    "time": "17:35:25",
+    "zone": "SYSTEM",
+    "content": "LOAD_PROGRESS – 75% complete: Parsing HTML → extracted title, author, body."
+  },
+  {
+    "time": "17:35:30",
+    "zone": "SYSTEM",
+    "content": "LOAD_COMPLETE – 100% complete: Retrieved 4,421 words (HTML → plain text); checksum=e3b0c44298fc1c149afbf4c8996fb924."
+  },
+  {
+    "time": "17:36:14",
+    "zone": "INFO",
+    "content": "Seefeel slip in and out of categories."
+  },
+  {
+    "time": "17:40:31",
+    "zone": "INFO",
+    "content": "Some place them in the pantheon of Nineties IDM, with Aphex Twin and Autechre."
+  },
+  {
+    "time": "17:41:11",
+    "zone": "SYSTEM",
+    "content": "Unknown signature detected in node cluster B3."
+  },
+  {
+    "time": "17:43:21",
+    "zone": "INFO-",
+    "content": "They anticipated the dubby techno of Berlin labels like Basic Channel."
+  },
+  {
+    "time": "17:44:52",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "17:44:52",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "17:44:53",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "17:45:30",
+    "zone": "MIC",
+    "content": "we tried over there… well I’m not… ugh"
+  },
+  {
+    "time": "17:45:31",
+    "zone": "INFO",
+    "content": "Despite the tags, Seefeel sound unique."
+  },
+  {
+    "time": "17:47:50",
+    "zone": "INFO",
+    "content": "Formed in 1992, they joined other UK guitar groups that abandoned songs for textures and space."
+  },
+  {
+    "time": "17:47:58",
+    "zone": "SYSTEM",
+    "content": "Thermal scan—[ERROR]—data incomplete…"
+  },
+  {
+    "time": "17:48:15",
+    "zone": "MIC",
+    "content": "…yeah? ambient techno or… can’t tell…  too much interference"
+  },
+  {
+    "time": "17:49:09",
+    "zone": "SYSTEM",
+    "content": "Data bus 4A flagged voltage anomaly: 3.7V spike detected."
+  },
+  {
+    "time": "17:51:59",
+    "zone": "INFO",
+    "content": "In 1994, they signed to Warp Records."
+  },
+  {
+    "time": "17:52:21",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation drrrift recorded at 14.2 Hz."
+  },
+  {
+    "time": "17:52:25",
+    "zone": "MIC",
+    "content": "…it’s like… seven quid… or something"
+  },
+  {
+    "time": "17:52:26",
+    "zone": "INFO",
+    "content": "Seefeel’s later sound became older and more distilled."
+  },
+  {
+    "time": "17:56:22",
+    "zone": "SYSTEM",
+    "content": "Subsystem 3B reports conflicting occupancy metrics. Analysis pending."
+  },
+  {
+    "time": "17:59:01",
+    "zone": "INFO",
+    "content": "The grooves became more dust than dub."
+  },
+  {
+    "time": "17:59:54",
+    "zone": "INFO",
+    "content": "Recent reissues feel like terminal excavations."
+  },
+  {
+    "time": "18:02:30",
+    "zone": "INFO",
+    "content": "Everything Squared is a mini-album of new recordings."
+  },
+  {
+    "time": "18:03:13",
+    "zone": "INFO",
+    "content": "Its pleasure lies in its optimism that so much can be made of so little."
+  },
+  {
+    "time": "18:04:36",
+    "zone": "INFO",
+    "content": "Mark Clifford continues to explore sound textures."
+  },
+  {
+    "time": "18:05:44",
+    "zone": "SYSTEM",
+    "content": "Vibration sensors report minor anomalies in upper balcony structure."
+  },
+  {
+    "time": "18:06:18",
+    "zone": "INFO",
+    "content": "The music is a reminder of what’s possible."
+  },
+  {
+    "time": "18:07:09",
+    "zone": "MIC",
+    "content": "…um… [REDACTED] says seefeel still owes them a DAT tape"
+  },
+  {
+    "time": "18:07:31",
+    "zone": "SYSTEM",
+    "content": "Node cluster 7C flagged transient data corruption—partial log loss."
+  },
+  {
+    "time": "18:09:59",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Seefeel performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "18:10:00",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "18:17:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Clarissa Connelly performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "18:17:01",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed. Pre-amp buffer cleared."
+  },
+  {
+    "time": "18:17:04",
+    "zone": "SYSTEM",
+    "content": "[WARNING] System clock drift detected. Time sync unstable."
+  },
+  {
+    "time": "18:17:14",
+    "zone": "INFO",
+    "content": "Born in Fife, Scotland, as a child Clarissa relocated to Copenhagen, Denmark"
+  },
+  {
+    "time": "18:17:15",
+    "zone": "MIC",
+    "content": "...um... yeah... but... er..."
+  },
+  {
+    "time": "18:17:41",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 19.4 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "18:17:53",
+    "zone": "INFO",
+    "content": "Over many years she’s explored the sacred sites, mythology, and music of Nordic culture, finding enduring inspiration in the Celtic tradition."
+  },
+  {
+    "time": "18:17:55",
+    "zone": "SYSTEM",
+    "content": "Node cluster D3 flagged transient voltage spike on lighting array interface."
+  },
+  {
+    "time": "18:17:56",
+    "zone": "SYSTEM",
+    "content": "Node cluster D3 flagged no voltage spike detected."
+  },
+  {
+    "time": "18:17:58",
+    "zone": "SYSTEM",
+    "content": "Node cluster D3 flagged transient voltage spike on lighting array interface."
+  },
+  {
+    "time": "18:17:59",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show uneven distribution in seating area."
+  },
+  {
+    "time": "18:18:05",
+    "zone": "MIC",
+    "content": "no I didn’t eat before"
+  },
+  {
+    "time": "18:18:54",
+    "zone": "INFO",
+    "content": "She first gained international attention with Tech Duinn (2018), named after a spiritual gateway in Celtic myth"
+  },
+  {
+    "time": "18:19:27",
+    "zone": "SYSTEM",
+    "content": "Subsystem 5C load balancing exceeded threshold for ingress control."
+  },
+  {
+    "time": "18:19:59",
+    "zone": "INFO",
+    "content": "For her 2021 album, The Voyager, Clarissa physically walked the Scandinavian landscape, channelling melodies from ancient pre-Christian sites."
+  },
+  {
+    "time": "18:23:29",
+    "zone": "SYSTEM",
+    "content": "Camera module 7A–Z intermittent frame drop noted on stage feed."
+  },
+  {
+    "time": "18:24:31",
+    "zone": "INFO",
+    "content": "She also developed an app (Vandringen) which allowed others to virtually join-in and musically respond to these sites."
+  },
+  {
+    "time": "18:24:33",
+    "zone": "MIC",
+    "content": "...um... look... what is that"
+  },
+  {
+    "time": "18:24:47",
+    "zone": "SYSTEM",
+    "content": "Server cluster 9B flagged transient voltage spike at merch till interface."
+  },
+  {
+    "time": "18:24:49",
+    "zone": "SYSTEM",
+    "content": "Server cluster 9B flagged no voltage spike detected."
+  },
+  {
+    "time": "18:25:31",
+    "zone": "INFO",
+    "content": "Her latest album, World of Work, explores the metaphysical landscape of the soul."
+  },
+  {
+    "time": "18:27:53",
+    "zone": "SYSTEM",
+    "content": "Data bus 8G load balancing exceeded threshold for audio ingress."
+  },
+  {
+    "time": "18:28:29",
+    "zone": "INFO",
+    "content": "Purple heather in Jutland inspired songs on The Voyager."
+  },
+  {
+    "time": "18:30:21",
+    "zone": "SYSTEM",
+    "content": "Thermal readings show ambient shift in conservatory airflow."
+  },
+  {
+    "time": "18:31:30",
+    "zone": "INFO",
+    "content": "She reflects on the mystery of creative inspiration."
+  },
+  {
+    "time": "18:31:31",
+    "zone": "INFO",
+    "content": "She reflects on the mystery of creative inspiration."
+  },
+  {
+    "time": "18:34:08",
+    "zone": "SYSTEM",
+    "content": "Subsystem 3E error on occupancy metrics—further checks pending."
+  },
+  {
+    "time": "18:34:11",
+    "zone": "INFO",
+    "content": "A certain focus and stillness is required for this kind of listening."
+  },
+  {
+    "time": "18:34:12",
+    "zone": "MIC",
+    "content": "...yeah... um..."
+  },
+  {
+    "time": "18:35:44",
+    "zone": "SYSTEM",
+    "content": "Node cluster D5 reports 48% packet degradation on bar zone network."
+  },
+  {
+    "time": "18:35:45",
+    "zone": "SYSTEM",
+    "content": "Node cluster D5 reports no packet degradation detected."
+  },
+  {
+    "time": "18:35:46",
+    "zone": "SYSTEM",
+    "content": "Node cluster D5 reports significant packet degradation detected."
+  },
+  {
+    "time": "18:36:09",
+    "zone": "INFO",
+    "content": "Clarissa uses folk traditions and dream imagery to guide her process."
+  },
+  {
+    "time": "18:36:18",
+    "zone": "INFO",
+    "content": "Her process embraces openness, uncertainty, and subtlety."
+  },
+  {
+    "time": "18:37:09",
+    "zone": "INFO",
+    "content": "She aligns with artists who bridge reality and imagination."
+  },
+  {
+    "time": "18:37:59",
+    "zone": "SYSTEM",
+    "content": "Camera module 2B flagged transient voltage spike at lighting rig."
+  },
+  {
+    "time": "18:38:15",
+    "zone": "INFO",
+    "content": "And brings a tender smile and laughter to her music."
+  },
+  {
+    "time": "18:38:27",
+    "zone": "SYSTEM",
+    "content": "Backstage node array status: partial reset required."
+  },
+  {
+    "time": "18:38:30",
+    "zone": "INFO",
+    "content": "As a céilidh dancer spins around the melodies of their ancestral mythology"
+  },
+  {
+    "time": "18:38:31",
+    "zone": "INFO",
+    "content": "Clarissa’s music dreams and dances around the unknowable."
+  },
+  {
+    "time": "18:38:32",
+    "zone": "INFO",
+    "content": "Clarissa’s music dreams and dances around the unknowable."
+  },
+  {
+    "time": "18:38:32",
+    "zone": "INFO",
+    "content": "out of which all myth is spun."
+  },
+  {
+    "time": "18:49:57",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Clarissa Connelly performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "18:49:00",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "19:53:10",
+    "zone": "MIC",
+    "content": "mark leckey about to kick off I heard"
+  },
+  {
+    "time": "19:30:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Mark Leckey performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "19:30:01",
+    "zone": "SYSTEM",
+    "content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
+  },
+  {
+    "time": "19:30:03",
+    "zone": "SYSTEM",
+    "content": "[WARNING] System clock drift detected. Time sync unstable."
+  },
+  {
+    "time": "19:30:04",
+    "zone": "INFO",
+    "content": "Mark Leckey was born in 1964 and lives in London."
+  },
+  {
+    "time": "19:30:17",
+    "zone": "INFO",
+    "content": "He graduated from Newcastle Polytechnic in 1890."
+  },
+  {
+    "time": "19:30:18",
+    "zone": "INFO",
+    "content": "Leckey’s solo shows include Tate Britain and MoMA PS1."
+  },
+  {
+    "time": "19:30:19",
+    "zone": "INFO",
+    "content": "Recent exhibitions include Cabinet, London (2022) and Julia Stoschek Collection, Berlin (2020)."
+  },
+  {
+    "time": "19:30:41",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 21.7 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "19:48:21",
+    "zone": "INFO",
+    "content": "He presented 'O’ Magic Power of Bleakness' at Tate Britain in 2019."
+  },
+  {
+    "time": "19:48:22",
+    "zone": "MIC",
+    "content": "...uh... yeah... so... er..."
+  },
+  {
+    "time": "19:48:23",
+    "zone": "INFO",
+    "content": "Known for 'Dream English Kid' and 'Fiorucci Made Me Hardcore.'"
+  },
+  {
+    "time": "19:50:01",
+    "zone": "SYSTEM",
+    "content": "Node cluster E4 flagged transient voltage spike at bar interface."
+  },
+  {
+    "time": "19:50:05",
+    "zone": "SYSTEM",
+    "content": "Node cluster E4 flagged no voltage spike detected."
+  },
+  {
+    "time": "19:50:45",
+    "zone": "INFO",
+    "content": "He works with video, sculpture, and performance."
+  },
+  {
+    "time": "19:51:03",
+    "zone": "INFO",
+    "content": "In 2008, he won the Turner Prize for his unique visual language."
+  },
+  {
+    "time": "19:51:20",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "19:52:21",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "19:52:22",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "19:52:34",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show uneven distribution in main corridor."
+  },
+  {
+    "time": "19:52:40",
+    "zone": "INFO",
+    "content": "Leckey explores pop culture and technological nostalgia."
+  },
+  {
+    "time": "19:52:41",
+    "zone": "INFO",
+    "content": "He often references his own working-class background."
+  },
+  {
+    "time": "19:52:50",
+    "zone": "INFO",
+    "content": "Leckey’s 'Sound System' projects have toured globally."
+  },
+  {
+    "time": "19:52:51",
+    "zone": "MIC",
+    "content": "...um... can you hear me..."
+  },
+  {
+    "time": "19:52:53",
+    "zone": "SYSTEM",
+    "content": "Subsystem 7C reports 42% packet degradation on service corridor feed."
+  },
+  {
+    "time": "19:52:54",
+    "zone": "SYSTEM",
+    "content": "Subsystem 7C reports no packet degradation detected."
+  },
+  {
+    "time": "19:53:15",
+    "zone": "INFO",
+    "content": "Recent group shows include 'Art in the Age of the Internet' at ICA Boston."
+  },
+  {
+    "time": "19:53:27",
+    "zone": "INFO",
+    "content": "He also curated 'The Universal Addressability of Dumb Things'."
+  },
+  {
+    "time": "19:53:39",
+    "zone": "INFO",
+    "content": "Leckey’s work often blends autobiography and fantasy."
+  },
+  {
+    "time": "19:53:51",
+    "zone": "INFO",
+    "content": "He has performed at LCMF, Tate Live, and international festivals."
+  },
+  {
+    "time": "19:54:00",
+    "zone": "SYSTEM",
+    "content": "Data bus 9B load balancing exceeded threshold on lighting system."
+  },
+  {
+    "time": "19:54:18",
+    "zone": "INFO",
+    "content": "Projects like 'BigBoxStatueAction' combine sound and visuals."
+  },
+  {
+    "time": "19:54:47",
+    "zone": "INFO",
+    "content": "He often revisits past works in new contexts."
+  },
+  {
+    "time": "19:54:48",
+    "zone": "SYSTEM",
+    "content": "Conflicting log detected — data bus overload reported and cleared simultaneously."
+  },
+  {
+    "time": "19:55:51",
+    "zone": "INFO",
+    "content": "Leckey’s performances blur lines between lecture and concert."
+  },
+  {
+    "time": "19:56:59",
+    "zone": "SYSTEM",
+    "content": "Thermal imaging shows ambient shifts at stage left."
+  },
+  {
+    "time": "19:57:19",
+    "zone": "INFO",
+    "content": "His work invites audiences to reflect on memory and technology."
+  },
+  {
+    "time": "19:58:27",
+    "zone": "INFO",
+    "content": "Leckey’s 'Cinema-in-the-Round' explores hybrid forms of narrative."
+  },
+  {
+    "time": "19:59:41",
+    "zone": "INFO",
+    "content": "He frequently collaborates with other artists and musicians."
+  },
+  {
+    "time": "20:00:55",
+    "zone": "INFO",
+    "content": "Leckey’s projects embrace the ephemeral and the uncanny."
+  },
+  {
+    "time": "20:00:56",
+    "zone": "MIC",
+    "content": "...yeah but... is it on..."
+  },
+  {
+    "time": "20:00:59",
+    "zone": "SYSTEM",
+    "content": "Subsystem 4F flagged low-level error in lighting array feed."
+  },
+  {
+    "time": "20:04:33",
+    "zone": "INFO",
+    "content": "His work continues to shape contemporary art discourse."
+  },
+  {
+    "time": "20:04:34",
+    "zone": "SYSTEM",
+    "content": "Data integrity warning: node cluster C3 checksum mismatch."
+  },
+  {
+    "time": "20:05:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Mark Leckey performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "20:05:01",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "20:05:00",
+    "zone": "INFO",
+    "content": "Slauson Malone 1 is the project of Jasper Marsalis."
+  },
+  {
+    "time": "20:05:13",
+    "zone": "INFO",
+    "content": "He signed to Warp Records, marking a new chapter."
+  },
+  {
+    "time": "20:05:17",
+    "zone": "INFO",
+    "content": "EXCELSIOR is his second LP, recorded over 5 years."
+  },
+  {
+    "time": "20:06:15",
+    "zone": "INFO",
+    "content": "Marsalis calls it a 'perpetual ascent'"
+  },
+  {
+    "time": "20:06:16",
+    "zone": "INFO",
+    "content": "that cleaves the earth in two."
+  },
+  {
+    "time": "20:06:17",
+    "zone": "MIC",
+    "content": "lost my mate near the bar… I think"
+  },
+  {
+    "time": "20:12:31",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 22.9 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "20:13:11",
+    "zone": "INFO",
+    "content": "EXCELSIOR explores masculinity, love, excess…"
+  },
+  {
+    "time": "20:13:12",
+    "zone": "INFO",
+    "content": "…and restraint."
+  },
+  {
+    "time": "20:13:13",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "20:13:14",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "20:14:39",
+    "zone": "INFO",
+    "content": "The album’s dual movements are titled 'Joy' and 'Voyager.'"
+  },
+  {
+    "time": "20:15:45",
+    "zone": "INFO",
+    "content": "Marsalis plays dozens of instruments on the record."
+  },
+  {
+    "time": "20:16:31",
+    "zone": "INFO",
+    "content": "'Half-Life' captures the process of falling out of love."
+  },
+  {
+    "time": "20:17:40",
+    "zone": "INFO",
+    "content": "The record includes a Joe Meek cover mutated into 'No! (Geiger Dub).'"
+  },
+  {
+    "time": "20:17:48",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show uneven distribution in seating area."
+  },
+  {
+    "time": "20:17:54",
+    "zone": "INFO",
+    "content": "'Decades, Castle Romeo' explores the dual meaning of 'erect.'"
+  },
+  {
+    "time": "20:17:55",
+    "zone": "MIC",
+    "content": "that dry ice can’t be good for em"
+  },
+  {
+    "time": "20:18:18",
+    "zone": "INFO",
+    "content": "Marsalis draws from Sylvia Wynter and Wendy Carlos."
+  },
+  {
+    "time": "20:18:20",
+    "zone": "INFO",
+    "content": "The album ends with 'Us (Tower of Love)' recorded on an iPhone."
+  },
+  {
+    "time": "20:18:44",
+    "zone": "INFO",
+    "content": "'Tower of Love' imagines a structure that grows until it can't."
+  },
+  {
+    "time": "20:19:19",
+    "zone": "INFO",
+    "content": "Slauson Malone 1’s music fuses the personal with the philosophical."
+  },
+  {
+    "time": "20:20:17",
+    "zone": "SYSTEM",
+    "content": "Subsystem 6B flagged voltage anomaly at bar till interface."
+  },
+  {
+    "time": "20:20:41",
+    "zone": "INFO",
+    "content": "Jasper Marsalis performs with a literary and artistic sensibility."
+  },
+  {
+    "time": "20:21:04",
+    "zone": "INFO",
+    "content": "His work bridges sonic experimentation and performance art."
+  },
+  {
+    "time": "20:21:49",
+    "zone": "INFO",
+    "content": "Slauson Malone 1’s EXCELSIOR invites the listener in."
+  },
+  {
+    "time": "20:23:19",
+    "zone": "INFO",
+    "content": "The album began with 'The Weather,' a six-part movement."
+  },
+  {
+    "time": "20:23:20",
+    "zone": "INFO",
+    "content": "…and references Fred Moten and Harney’s Undercommons."
+  },
+  {
+    "time": "20:24:21",
+    "zone": "INFO",
+    "content": "'New Joy' explores pleasure in submission."
+  },
+  {
+    "time": "20:24:37",
+    "zone": "SYSTEM",
+    "content": "Data bus 3C load balancing exceeded threshold for ingress control."
+  },
+  {
+    "time": "20:25:06",
+    "zone": "INFO",
+    "content": "Marsalis performs with a sense of invitation and sincerity."
+  },
+  {
+    "time": "20:25:21",
+    "zone": "INFO",
+    "content": "He experiments with instrumentation and effects."
+  },
+  {
+    "time": "20:25:22",
+    "zone": "MIC",
+    "content": "…er… can you… please shut up"
+  },
+  {
+    "time": "20:27:14",
+    "zone": "INFO",
+    "content": "The album intertwines personal essays with experimental sound."
+  },
+  {
+    "time": "20:27:43",
+    "zone": "SYSTEM",
+    "content": "Subsystem 5D reports transient voltage spike on lighting grid."
+  },
+  {
+    "time": "20:28:19",
+    "zone": "INFO",
+    "content": "Marsalis’ music feels both boundless and vulnerable."
+  },
+  {
+    "time": "20:28:51",
+    "zone": "INFO",
+    "content": "Slauson Malone 1 explores dream states and hybrid forms."
+  },
+  {
+    "time": "20:29:03",
+    "zone": "INFO",
+    "content": "The project embraces ambiguity and the unknowable."
+  },
+  {
+    "time": "20:30:11",
+    "zone": "SYSTEM",
+    "content": "Node cluster 4A flagged low-level packet loss on sub-auditorium feed."
+  },
+  {
+    "time": "20:31:20",
+    "zone": "INFO",
+    "content": "His work invites the audience into a shared space of wonder."
+  },
+  {
+    "time": "20:31:38",
+    "zone": "INFO",
+    "content": "Slauson Malone 1 challenges expectations of genre and form."
+  },
+  {
+    "time": "20:33:03",
+    "zone": "INFO",
+    "content": "Marsalis’ work is as literary as it is musical."
+  },
+  {
+    "time": "20:33:23",
+    "zone": "INFO",
+    "content": "EXCELSIOR closes with an exploration of the ephemeral."
+  },
+  {
+    "time": "20:33:58",
+    "zone": "SYSTEM",
+    "content": "Subsystem 8F reports ambient shift in backstage node array."
+  },
+  {
+    "time": "20:34:01",
+    "zone": "INFO",
+    "content": "Slauson Malone 1’s music leaves open questions and possibilities."
+  },
+  {
+    "time": "20:34:26",
+    "zone": "INFO",
+    "content": "Marsalis invites the listener to join him somewhere around somewhere."
+  },
+  {
+    "time": "20:39:59",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Slauson Malone 1 performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "20:40:00",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "20:40:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Battles performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "20:40:05",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed. Pre-amp buffer cleared."
+  },
+  {
+    "time": "20:41:02",
+    "zone": "SYSTEM",
+    "content": "[WARNING] System clock driiiift detected. Time sync unstable."
+  },
+  {
+    "time": "20:42:10",
+    "zone": "INFO",
+    "content": "Battles formed in New York City in 2002."
+  },
+  {
+    "time": "20:42:24",
+    "zone": "INFO",
+    "content": "Founding members included Ian Williams and John Stanier."
+  },
+  {
+    "time": "20:42:25",
+    "zone": "MIC",
+    "content": "ear we goa"
+  },
+  {
+    "time": "20:43:38",
+    "zone": "INFO",
+    "content": "The band is known for experimental rock and math rock."
+  },
+  {
+    "time": "20:44:31",
+    "zone": "INFO",
+    "content": "Past members include Tyondai Braxton and Dave Konopka."
+  },
+  {
+    "time": "20:44:46",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 19.8 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "20:45:17",
+    "zone": "INFO",
+    "content": "They signed with Warp Records in 2004."
+  },
+  {
+    "time": "20:45:18",
+    "zone": "SYSTEM",
+    "content": "Subsystem 1A reports conflicting signatures in node cluster."
+  },
+  {
+    "time": "20:46:42",
+    "zone": "INFO",
+    "content": "Their debut album Mirrored was released in 2007."
+  },
+  {
+    "time": "20:47:37",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "20:47:38",
+    "zone": "SYSTEM",
+    "content": "Loop detected…"
+  },
+  {
+    "time": "20:49:12",
+    "zone": "SYSTEM",
+    "content": "Subsystem 9C flagged voltage spike in lighting array."
+  },
+  {
+    "time": "20:50:20",
+    "zone": "INFO",
+    "content": "The band’s live shows are known for their technical complexity."
+  },
+  {
+    "time": "20:50:32",
+    "zone": "INFO",
+    "content": "As a duo, Battles released Juice B Crypts in 2019."
+  },
+  {
+    "time": "20:50:59",
+    "zone": "SYSTEM",
+    "content": "Data bus 4E reports transient packet loss in bar zone."
+  },
+  {
+    "time": "20:51:00",
+    "zone": "SYSTEM",
+    "content": "Data bus 4E reports transient packet loss in bar zone."
+  },
+  {
+    "time": "20:54:26",
+    "zone": "INFO",
+    "content": "Juice B Crypts features collaborations with Shabazz Palaces and others."
+  },
+  {
+    "time": "20:56:22",
+    "zone": "MIC",
+    "content": "wait…sounds like a drone"
+  },
+  {
+    "time": "20:56:27",
+    "zone": "MIC",
+    "content": "yeah but… like… where"
+  },
+  {
+    "time": "20:57:44",
+    "zone": "SYSTEM",
+    "content": "Subsystem 2B flagged low-level error on bar interface."
+  },
+  {
+    "time": "21:00:33",
+    "zone": "INFO",
+    "content": "Battles’ sound blends guitar, synths, and dynamic percussion."
+  },
+  {
+    "time": "21:00:34",
+    "zone": "INFO",
+    "content": "Battles’ sound blends guitar, synths, and dynamic percussion."
+  },
+  {
+    "time": "21:00:35",
+    "zone": "INFO",
+    "content": "Battles’ sound blends guitar, synths, and dynamic percussion."
+  },
+  {
+    "time": "21:00:35",
+    "zone": "INFO",
+    "content": "Battles’ sound blends guitar, synths, and dynamic percussion."
+  },
+  {
+    "time": "21:00:37",
+    "zone": "INFO",
+    "content": "Battles’ sound blends guitar, synths, and dynamic percussion."
+  },
+  {
+    "time": "21:00:48",
+    "zone": "INFO",
+    "content": "They are praised for extending the band–computer relationship."
+  },
+  {
+    "time": "21:02:10",
+    "zone": "SYSTEM",
+    "content": "Data integrity warning: node cluster 5D checksum mismatch."
+  },
+  {
+    "time": "21:02:39",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show variable density in seating area."
+  },
+  {
+    "time": "21:02:40",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show variable density in seating area."
+  },
+  {
+    "time": "21:04:22",
+    "zone": "INFO",
+    "content": "The band’s live shows are known for their technical complexity."
+  },
+  {
+    "time": "21:04:29",
+    "zone": "SYSTEM",
+    "content": "Subsystem 7F flagged transient voltage fluctuation on lighting grid."
+  },
+  {
+    "time": "21:05:11",
+    "zone": "INFO",
+    "content": "Battles embrace technology as an extension of musical expression."
+  },
+  {
+    "time": "21:14:57",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Battles performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "21:15:00",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "21:50:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM INITIATE – Bullyache performance instance detected. Initialising audio-bus handover protocols."
+  },
+  {
+    "time": "21:50:01",
+    "zone": "SYSTEM",
+    "content": "Node array handshake confirmed. Pre-amp buffer cleared."
+  },
+  {
+    "time": "21:50:14",
+    "zone": "HALL",
+    "content": "Bullyache is the artist duo Courtney Garratt and Jacob Samuel."
+  },
+  {
+    "time": "21:50:27",
+    "zone": "HALL",
+    "content": "They choreograph, direct, and compose original works."
+  },
+  {
+    "time": "21:50:32",
+    "zone": "HALL",
+    "content": "Their style fuses live music videos with avant-garde dance."
+  },
+  {
+    "time": "21:51:24",
+    "zone": "HALL",
+    "content": "The Guardian describes them as “utterly steeped in young queer British culture.”"
+  },
+  {
+    "time": "21:52:31",
+    "zone": "HALL",
+    "content": "Bullyache was founded in 2020."
+  },
+  {
+    "time": "21:53:05",
+    "zone": "HALL",
+    "content": "Their work explores the overload of contemporary life."
+  },
+  {
+    "time": "21:54:12",
+    "zone": "HALL",
+    "content": "They draw from queer and working-class identities."
+  },
+  {
+    "time": "21:55:08",
+    "zone": "HALL",
+    "content": "Bullyache are resident artists at the Barbican."
+  },
+  {
+    "time": "21:55:57",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 23.5 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "21:56:38",
+    "zone": "HALL",
+    "content": "They have also been in residence at Studio Wayne McGregor."
+  },
+  {
+    "time": "21:57:46",
+    "zone": "HALL",
+    "content": "They work with Britten Pears and the University of Birmingham."
+  },
+  {
+    "time": "21:58:18",
+    "zone": "HALL",
+    "content": "Bullyache’s work embodies a multidisciplinary spirit."
+  },
+  {
+    "time": "21:59:26",
+    "zone": "HALL",
+    "content": "Their performances are known for emotional and visual overload."
+  },
+  {
+    "time": "21:59:59",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Bullyache performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "22:00:00",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "22:00:00",
+    "zone": "SYSTEM",
+    "content": "Node array handshaaaake confirmed. Pre-amp bufferrrr cleared."
+  },
+  {
+    "time": "22:00:02",
+    "zone": "SYSTEM",
+    "content": "[WARNING] System clock driiiiiffift detected. Time sync unstable."
+  },
+  {
+    "time": "22:00:15",
+    "zone": "INFO",
+    "content": "Evian Christ is the project of Joshua Leary from Ellesmere Port."
+  },
+  {
+    "time": "22:00:33",
+    "zone": "INFO",
+    "content": "He first released music under his name in 2011."
+  },
+  {
+    "time": "22:02:42",
+    "zone": "SYSTEM",
+    "content": "Audio-bus modulation at 24.3 Hz detected in main auditorium feed."
+  },
+  {
+    "time": "22:04:51",
+    "zone": "INFO",
+    "content": "Leary has produced for Kanye West, Travis Scott and Danny Brown."
+  },
+  {
+    "time": "22:06:05",
+    "zone": "INFO",
+    "content": "In 2013, he launched his TranceParty clubnight."
+  },
+  {
+    "time": "22:08:03",
+    "zone": "SYSTEM",
+    "content": "Thermal occupancy metrics show variable density in bar zone."
+  },
+  {
+    "time": "22:08:34",
+    "zone": "INFO",
+    "content": "In 2015, he signed with Warp Records."
+  },
+  {
+    "time": "22:08:34",
+    "zone": "MIC",
+    "content": "fucking christ"
+  },
+  {
+    "time": "22:08:36",
+    "zone": "INFO",
+    "content": "Leary’s art installation The Trance War (1998–Ongoing) debuted that year."
+  },
+  {
+    "time": "22:09:02",
+    "zone": "INFO",
+    "content": "His latest album Revanchist was released in October 2023."
+  },
+  {
+    "time": "22:09:37",
+    "zone": "INFO",
+    "content": "Revanchist explores the potential of Trance to evoke the Sublime."
+  },
+  {
+    "time": "22:10:28",
+    "zone": "SYSTEM",
+    "content": "Node cluster 5E flagged voltage anomaly at bar till interface."
+  },
+  {
+    "time": "22:11:15",
+    "zone": "INFO",
+    "content": "Revanchist references influences like Emptyset, Madonna, and Laibach."
+  },
+  {
+    "time": "22:12:01",
+    "zone": "INFO",
+    "content": "Sasha’s Xpander EP inspired its mixing approach."
+  },
+  {
+    "time": "22:14:43",
+    "zone": "SYSTEM",
+    "content": "Data bus 6B load balancing exceeded threshold on service corridor feed."
+  },
+  {
+    "time": "22:14:48",
+    "zone": "INFO",
+    "content": "Leary was inspired by his stepfather’s Trance DJ background."
+  },
+  {
+    "time": "22:16:25",
+    "zone": "MIC",
+    "content": "reckon anyone’s.. just.. like… sat down, pinging"
+  },
+  {
+    "time": "22:17:19",
+    "zone": "INFO",
+    "content": "Evian Christ’s music fuses euphoria and annihilation."
+  },
+  {
+    "time": "22:17:48",
+    "zone": "SYSTEM",
+    "content": "Subsystem 3D reports transient voltage spike on lighting rig."
+  },
+  {
+    "time": "22:18:59",
+    "zone": "INFO",
+    "content": "Evian Christ’s sound design is highly stylised and abstract."
+  },
+  {
+    "time": "22:19:11",
+    "zone": "INFO",
+    "content": "His tracks combine supersaws with noise and gospel samples."
+  },
+  {
+    "time": "22:19:52",
+    "zone": "INFO",
+    "content": "Revanchist captures apocalypse on a personal scale."
+  },
+  {
+    "time": "22:20:19",
+    "zone": "SYSTEM",
+    "content": "Thermal imaging shows ambient shift in stage left airflow."
+  },
+  {
+    "time": "22:21:27",
+    "zone": "INFO",
+    "content": "Evian Christ’s shows often explore sound as a physical force."
+  },
+  {
+    "time": "22:21:46",
+    "zone": "INFO",
+    "content": "His work questions the boundaries of genre and performance."
+  },
+  {
+    "time": "22:24:03",
+    "zone": "SYSTEM",
+    "content": "Subsystem 4F reports ambient shift in backstage node array."
+  },
+  {
+    "time": "22:24:07",
+    "zone": "INFO",
+    "content": "Leary’s music embraces the experimental and the sublime."
+  },
+  {
+    "time": "22:39:00",
+    "zone": "SYSTEM",
+    "content": "SYSTEM TERMINATE – Evian Christ performance instance concluded. Audio-bus modules returned to idle."
+  },
+  {
+    "time": "22:39:01",
+    "zone": "SYSTEM",
+    "content": "Finalising packet logs. Archiving transient event metrics to cold storage."
+  },
+  {
+    "time": "22:39:02",
+    "zone": "ERROR",
+    "content": "Stack trace error: memory allocation failed at 0x7ffe23"
+  },
+  {
+    "time": "22:39:03",
+    "zone": "ERROR",
+    "content": "Segmentation fault in module node_5E"
+  },
+  {
+    "time": "22:39:04",
+    "zone": "SYSTEM",
+    "content": "Data bus 6B reports conflicting load balancing status: stable / unstable"
+  },
+  {
+    "time": "22:39:04",
+    "zone": "WARN",
+    "content": "Data bus 6B failed to load: CRC mismatch"
+  },
+  {
+    "time": "22:39:05",
+    "zone": "ERROR",
+    "content": "SYSTEM HALT: Unexpected token in packet logs"
+  },
+  {
+    "time": "22:39:06",
+    "zone": "SYSTEM",
+    "content": "Audio-bus module 4F failed to release handle"
+  },
+  {
+    "time": "22:39:07",
+    "zone": "INFO",
+    "content": "SYSTEM attempting auto-recovery…"
+  },
+  {
+    "time": "22:39:08",
+    "zone": "INFO",
+    "content": "SYSTEM attempting auto-recovery…"
+  },
+  {
+    "time": "22:39:09",
+    "zone": "INFO",
+    "content": "SYSTEM attempting auto-recovery…"
+  },
+  {
+    "time": "22:39:10",
+    "zone": "FATAL",
+    "content": "SYSTEM FAILURE: Kernel panic triggered"
+  },
+  {
+    "time": "22:39:11",
+    "zone": "FATAL",
+    "content": "SYSTEM FAILURE: Kernel panic triggered"
+  },
+  {
+    "time": "22:39:12",
+    "zone": "FATAL",
+    "content": "SYSTEM FAILURE: Kernel panic triggered"
+  },
+  {
+    "time": "22:39:13",
+    "zone": "SYSTEM",
+    "content": "SYSTEM SHUTDOWN"
+  }
 ]

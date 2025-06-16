@@ -34,7 +34,7 @@
     height: 100%;
     --media-object-fit: cover;
     --media-object-position: center;
-    --controls: none;
+    // --controls: none;
 }
 
 .mux-error__cover {
@@ -61,6 +61,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    pointer-events: none;
 
     .next-video-arrow {
         position: absolute;

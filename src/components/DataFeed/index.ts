@@ -1,11 +1,11 @@
-import { DATA_FEED_TYPE_SPEED, EVENT_DATE } from "../../variables/constants";
+import { DATA_FEED_TYPE_SPEED, EVENT_DATE, OFFSET_TIME } from "../../variables/constants";
 import data from "./awarphappening_script.json";
 const dataFeed = document.querySelector('.text-feed__body') as HTMLUListElement;
 const scrollElement = document.querySelector(".data-feed__table") as HTMLUListElement;
 let currentTimestamp;
 
 export function updateDataFeed() {
-    const now = new Date().getTime();
+    const now = new Date().getTime() + OFFSET_TIME;
     const previousEntries = data.sort(function (a, b) {
         return new Date(EVENT_DATE + a.time).getTime() - new Date(EVENT_DATE + b.time).getTime();
     }).filter(entry => {
@@ -18,7 +18,7 @@ export function updateDataFeed() {
     })
     let { nextEntry } = getNextEntry();
     setInterval(() => {
-        const now = new Date().getTime();
+        const now = new Date().getTime() + OFFSET_TIME;
         if (nextEntry) {
             let nextEntryTime = new Date(EVENT_DATE + nextEntry.time).getTime()
             if (now - nextEntryTime > 0) {
@@ -31,7 +31,7 @@ export function updateDataFeed() {
 }
 
 export function getNextEntry() {
-    const now = new Date().getTime();
+    const now = new Date().getTime() + OFFSET_TIME;
     const nextEntries = data.sort(function (a, b) {
         return new Date(EVENT_DATE + a.time).getTime() - new Date(EVENT_DATE + b.time).getTime();
     }).filter(entry => {

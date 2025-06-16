@@ -1,9 +1,9 @@
-import { MOBILE_BREAKPOINT } from "@/variables/constants";
+import { MOBILE_BREAKPOINT, OFFSET_TIME } from "@/variables/constants";
 
 export function getEventProgress(startTime: Date, endTime: Date) {
     const now = new Date();
     const totalDuration = endTime.getTime() - startTime.getTime();
-    const elapsed = now.getTime() - startTime.getTime();
+    const elapsed = now.getTime() + OFFSET_TIME - startTime.getTime();
     let percentage = (elapsed / totalDuration) * 100;
     percentage = Math.max(0, Math.min(100, percentage))
     const started = percentage > 0;
