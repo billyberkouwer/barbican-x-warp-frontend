@@ -44,7 +44,7 @@ if (setbutton)
 
 
 updateDataFeed()
-await initLiveFeed();
+initLiveFeed();
 initWeatherData();
 initTime();
 initCurrentAct();
