@@ -79,5 +79,6 @@ function updateCurrentActInfo() {
 }
 
 export default function initCurrentAct() {
-    setInterval(updateCurrentActInfo, 1000)
+    const interval = setInterval(updateCurrentActInfo, 1000);
+    return interval;
 }

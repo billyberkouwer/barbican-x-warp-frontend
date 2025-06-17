@@ -21,7 +21,9 @@ export default function initTime() {
     time.textContent = getCurrentTime();
     date.textContent = getCurrentDate();
 
-    setInterval(() => {
+    const interval = setInterval(() => {
         time.textContent = getCurrentTime();
-    }, 1000)
+    }, 1000);
+
+    return interval;
 }

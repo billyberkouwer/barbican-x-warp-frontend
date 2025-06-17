@@ -2,10 +2,10 @@ export const DATA_FEED_TYPE_SPEED = 80;
 export const DATA_FEED_NEW_LINE_SPEED = 10000;
 export const DEFAULT_PLAYBACK_ID = import.meta.env.VITE_DEFAULT_MUX_PLAYBACK_ID;
 export const SERVER_ORIGIN = import.meta.env.VITE_SERVER_ORIGIN;
-export const EVENT_DATE = import.meta.env.VITE_EVENT_DATE;
+export const EVENT_DATE = new Date().toISOString().split("T")[0] + "T";
 export const MOBILE_BREAKPOINT = 992;
 export let OFFSET_TIME = 0;
 
 export function setOffset(newAmount: number) {
-    OFFSET_TIME = newAmount;
+    OFFSET_TIME = newAmount * 60000;
 }

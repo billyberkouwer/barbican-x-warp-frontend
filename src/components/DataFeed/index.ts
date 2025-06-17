@@ -17,7 +17,8 @@ export function updateDataFeed() {
         text.innerHTML = content;
     })
     let { nextEntry } = getNextEntry();
-    setInterval(() => {
+    
+    const interval = setInterval(() => {
         const now = new Date().getTime() + OFFSET_TIME;
         if (nextEntry) {
             let nextEntryTime = new Date(EVENT_DATE + nextEntry.time).getTime()
@@ -28,6 +29,12 @@ export function updateDataFeed() {
             }
         }
     }, 1000)
+
+    return interval;
+}
+
+export function clearDataFeed() {
+    dataFeed.innerHTML = ""
 }
 
 export function getNextEntry() {

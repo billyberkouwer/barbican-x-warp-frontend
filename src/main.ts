@@ -1,11 +1,10 @@
 // js
 import initCurrentAct from "./components/CurrentAct";
-import { updateDataFeed } from "./components/DataFeed";
+import { clearDataFeed, updateDataFeed } from "./components/DataFeed";
 import initTime from "./components/DateTime";
 import initLiveFeed from "./components/LiveFeed";
 import { initRightTerminal } from "./components/SetTimetable";
 import initWeatherData from "./components/WeatherData";
-import { pageSize } from "./helpers";
 import mobileDOMRestructure from "./helpers/mobileDOMRestructure";
 import { setOffset } from "./variables/constants";
 
@@ -26,31 +25,34 @@ document.addEventListener("keypress", (e) => {
     }
 })
 
+let dataFeedInterval = updateDataFeed()
+initLiveFeed();
+initWeatherData();
+let timeInterval = initTime();
+let currentActInterval = initCurrentAct();
+initRightTerminal();
+mobileDOMRestructure();
+// pageSize()
+
 if (setbutton)
     setbutton.onclick = async (e) => {
         e.preventDefault()
-        // if (setbuttonval)
+
         setOffset(Number(setbuttonval?.value));
 
-        updateDataFeed()
-        await initLiveFeed();
-        // initWeatherData();
-        initTime();
-        initCurrentAct();
-        // initRightTerminal();
-        // mobileDOMRestructure();
-        pageSize()
+        clearInterval(dataFeedInterval)
+        clearDataFeed()
+        dataFeedInterval = updateDataFeed()
+
+        clearInterval(timeInterval)
+        timeInterval = initTime();
+
+        clearInterval(currentActInterval)
+        currentActInterval = initCurrentAct();
     }
 
 
-updateDataFeed()
-initLiveFeed();
-initWeatherData();
-initTime();
-initCurrentAct();
-initRightTerminal();
-mobileDOMRestructure();
-pageSize()
+
 
 
 console.log("Web Design: Felix Luke www.felixluke.co.uk | Web Development: Billy Myles-Berkouwer www.billyberkouwer.dev")
