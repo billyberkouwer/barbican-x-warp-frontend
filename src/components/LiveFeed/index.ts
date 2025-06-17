@@ -1,4 +1,4 @@
-import { io, Manager } from "socket.io-client";
+import { Manager } from "socket.io-client";
 import { DEFAULT_PLAYBACK_ID, SERVER_ORIGIN } from "../../variables/constants";
 
 const muxContainer = document.getElementById("mux-container") as HTMLDivElement;
