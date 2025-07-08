@@ -71,7 +71,7 @@ body {
         "e"
     ;
     background-color: base.$dark;
-    padding-bottom: 8px;
+    // padding-bottom: 8px;
 
     @media (min-height: 536px) {
         height: calc((var(--real-viewport-height) * 0.45) + 8px);
